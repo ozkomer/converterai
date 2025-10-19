@@ -1,0 +1,128 @@
+[
+  {
+    "templateName": "Capsule-Default",
+    "sceneOrder": 1,
+    "sceneType": "Type23",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": "Bu sahnede bir başlık bir cümle ve bir paragraf bulunmaktadır. Eğitimin amacını açıklamak için bu sahne kullanılır. \"Bu eğitimin amacı:\" cümlesinden sonra paragrafta eğitimin amacı açıklanır. Eğitimde neler işlenecek açıklandığı sahnedir."
+  },
+  {
+    "templateName": "Capsule-Default",
+    "sceneOrder": 2,
+    "sceneType": "Type10",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": "Bu sahnede bir başlık iki paragraf ve bir görsel bulunmaktadır. Bu iki paragraflı sahnelerde neden sonuç ilişkisi olan konular anlatılabilir. Bir paragrafta nedeni bir parafta bundan dolayı oluşan sonucu açıklayabiliriz. Ya da bir paragrafta açıklama yapıp diğerinde örnekler verilebilir. Konu ile ilgili tarihsel sıramalada yine iki ayrı paragrafta verilebilir. Tüm iki paragraflı sahnelerde bu olasılıklar geçerli."
+  },
+  {
+    "templateName": "Capsule-Default",
+    "sceneOrder": 3,
+    "sceneType": "Type8",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": "Bu sahnede bir başlık iki paragraf ve bir görsel bulunmaktadır. Konu açıklaması bir paragrafta yapıldıktan sonra ikinci paragraf görselle geldiği için örnek verilmek için bu ikinci paragraf kullanılabilir. Aynı zamanda konuda iki adımda anlatılacak bir bağlam varsa yine bu iki paragrafta sırayla anlatılabilir."
+  },
+  {
+    "templateName": "Capsule-Default",
+    "sceneOrder": 4,
+    "sceneType": "Type24",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": "Bu sahnede bir başlık üç paragraf bulunmaktadır. Solda bulunan paragraf sahneye gelen ilk paragraf burada konu açıklaması yapılabilir. Sağdaki iki paragraf ise sonradan sırayla çıkmaktadır burada konuya bağlı iki örnek verilebilir. Sıralı bilgiler paylaşılabilir ya da özellik açıklamaları yapılabilir. "
+  },
+  {
+    "templateName": "Capsule-Default",
+    "sceneOrder": 5,
+    "sceneType": "Type4",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": "Bu sahnede bir başlık bir paragraf dört madde ve bir görsel bulunmaktadr. Konu açıklaması ardından örneklerini vermek için kullanılabilir ya da konuya ilişkin bağlı dört başlık yine burada sıralanabilir. Örneğin bir kişi veya bir olay anlatılıyorsa kiinin yaptıkları yazılabilirya da olaya bağlı sonuçlar sıralanabilir."
+  },
+  {
+    "templateName": "Capsule-Default",
+    "sceneOrder": 6,
+    "sceneType": "Type25",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": "Bu sahnede bir ana başlık bir alt başlık iki paragraf ve bir görsel bulunmaktadır. Konu açıklamasından sonra komuya bağlı bir özellik başlığı ile ayrılıp açıklanabilir. Ya da alt başlık büyük boyutlu olduğu için başlık gibi değil ayırıcı bir cümle olarak kullanılıp altına açıklaması yapılabilir. "
+  },
+  {
+    "templateName": "Capsule-Default",
+    "sceneOrder": 7,
+    "sceneType": "Type6",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": "Bu sahnede bir başlık iki paragraf ve iki görsel bulunmaktadır. Konu ile alakalı görsellerin açıklamaları bu paragraflarda yapılabilir. Örneğin tarihi bir gelişme anlatılıyorsa ilgili olay görseli ve açıklaması gibi örneklendirmelerde kullanılabilir. Konunun farklı yönleri açıklanırken kullanılabilir. Bir önceki sahnede alt başlıkta açıklanan özelliğe ilişkin iki örnek de yine bu sahnede verilebilir."
+  },
+  {
+    "templateName": "Capsule-Default",
+    "sceneOrder": 8,
+    "sceneType": "Type7",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": "Bu sahnede bir başlık bir paragraf ve bir görsel bulunmaktadır. Büyük bir görsel olduğu için görselle alakalı bir açıklama yapmak için kullanılabilir. Örneğin bir makinenin bir parçasının görseli varsa paragrafta parçanın işleyişi anlatılabilir. "
+  },
+  {
+    "templateName": "Capsule-Default",
+    "sceneOrder": 9,
+    "sceneType": "Type10",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": "Bu sahnede bir başlık iki paragraf ve bir görsel bulunmaktadır. Konuya ilişkin iki ayrı açıklama burada sırayla verilebilir. Hem tsarımsal hem de animasyon sırası olarak paragraflar ayrı olsuğu için iki farklı özellik, neden sonuç ilişkisi ya da artılar eksiler gibi açıklamalar da burada yapılabilir."
+  },
+  {
+    "templateName": "Capsule-Default",
+    "sceneOrder": 10,
+    "sceneType": "Type8",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": "Bu sahnede bir başlık iki paragraf ve bir görsel bulunmaktadır. Sahneye geliş sıralama ilk paragraf ve görsel bir ikinci paragraf sonra olarak ayarlanmıştır. Bu durumda ilk paragrafta görselle ilişkili bir açıklama yapılıp ikinci paragrafta konuya ilişkin genel bir açıklama ile devam edilebilir. Ya da iki paragrafta da konuya ilişkin açıklamalar yapılıp genel bir örnek görselle ilk paragraftaki açıklama desteklenebilir."
+  },
+  {
+    "templateName": "Capsule-Default",
+    "sceneOrder": 11,
+    "sceneType": "Type11",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": "Bu sahnede bir başlık ve video bulunmaktadır. Tüm sahnelerde anlatılan genel eğitim konusunu özetleyen bir video kullanılabilir ya da eğitimle ilgili örneklerin verildiği açıklayıcı bir video kullanılabilir. Bu şablona da son özetleyicş video yine bir avatara yaptırılarak bu video içerisinde kullanılabilir."
+  },
+  {
+    "templateName": "Capsule-Default",
+    "sceneOrder": 12,
+    "sceneType": "Type12",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": "Soru sahnesi çoktan tek seçmeli sorular için kullanılır."
+  },
+  {
+    "templateName": "Capsule-Default",
+    "sceneOrder": 13,
+    "sceneType": "Type13",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": "Soru ahnesi çoktan çok seçmeli sorular için kullanılır."
+  },
+  {
+    "templateName": "Capsule-Default",
+    "sceneOrder": 14,
+    "sceneType": "Type14",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": "Soru sahnesi doğru yanlış soruları için kullanılır."
+  }
+]

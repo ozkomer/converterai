@@ -1,0 +1,128 @@
+[
+  {
+    "templateName": "Capsule-MAVİ",
+    "sceneOrder": 1,
+    "sceneType": "Type1",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": "Bu sahnede bir başlık bir paragraf ve bir görsel vardır. Eğitimin amacını açıklamak için bu sahneyi kullanıyoruz. Eğitimle ilgili bir görsel bu sahnede kullanılabilir. Kurum logosu olacaksa genelde sağ üstte kullanılıyor ama bu şablonda sol altta kullanılabilir."
+  },
+  {
+    "templateName": "Capsule-MAVİ",
+    "sceneOrder": 2,
+    "sceneType": "Type2",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": "Bu sahnede bir ana başlık ve buna bağlı olarak bir alt başlık bulunmaktadır. Alt başlık altında ise iki paragraf ve bir görsel bulunmaktadır. Bu sahnede eğitime giriş yapılabilir ve önemli tanımlamalardan bahsedilebilir. Eğitimde önceden bilmemiz ereken konulardan bahsedilebilir ya da bir eğitimin ikinci bölümü ise bir önceki bölümden bi kısa hattırlatma yapılabilir."
+  },
+  {
+    "templateName": "Capsule-MAVİ",
+    "sceneOrder": 3,
+    "sceneType": "Type3",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": "Bu sahnede bir ana başlık ve altında bu başlığın açıklamasının olacağı bir paragraf bulunuyor. Bu konuya bağlı bir alt başlık ve açıklama alanı daha var burada konuyla ilgili detaylandırma yapılabilir. Sahnede bir de görsel var konuya uygun genel bir görsel kullanılabilir."
+  },
+  {
+    "templateName": "Capsule-MAVİ",
+    "sceneOrder": 4,
+    "sceneType": "Type4",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": "Bu sahne bir başlık bir açıklama bir görsel ve dört maddeden oluşmaktadır. Konu başlığı ve açıklamasının ardından bu konuya ilişkin ek bilgiler maddeler halinde verilebilir. Ya da yapılan açıklamaya uygun 4 örnek verilerek konunun anlaşılmasına katkı sağlanabilir. Konuya bağlı dört alt başlık da yine burada sıralanabilir. "
+  },
+  {
+    "templateName": "Capsule-MAVİ",
+    "sceneOrder": 5,
+    "sceneType": "Type5",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": "Bu sahnede bir ana başlık altında iki alt başlık ve iki açıklama paragrafı bulunmaktadır. Sahnede bir adet de görsel var. Bu sahne bir konuyu iki ayrı başlıkta açıklamak için kullanılabilir. Örneğin konunun artıları şunlardır eksileri ise şunlardır gibi. Aynı zamanda konuyu iki farklı açıdan değerlendirmek için de kullanılabilir."
+  },
+  {
+    "templateName": "Capsule-MAVİ",
+    "sceneOrder": 6,
+    "sceneType": "Type6",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": "Bu sahnede bir ana başlık iki paragraf ve iki görsel bulunmaktadır. Konu hakkında açıklama yapmak için kullanılabilir. Uzun bir paragrafın ikiye bölünmüş hali olabilir ya da başlığa bağlı iki ayrı özellik açıklanabilir. Görseller de bu iki özellik için örnek olabilir ya da tek konuya bağlı benzer iki görsel olabilir. "
+  },
+  {
+    "templateName": "Capsule-MAVİ",
+    "sceneOrder": 7,
+    "sceneType": "Type7",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": "Bu sahnede bir ana başlık bir paragraf ve bir görsel bulunmaktadır. Görsel büyük olduğu için görselle alakalı bir açıklama yapılabilir. Konu hakkında örneklendirme için yine bu sahne kullanılabilir."
+  },
+  {
+    "templateName": "Capsule-MAVİ",
+    "sceneOrder": 8,
+    "sceneType": "Type8",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": "Bu sahnede bir ana başlık bir görsel ve iki paragraf bulunmaktadır. Başlığa bağlı iki özellik açıklamak için kullanılabilir. Bu paragraflar madde gibi de kullanılabilir. Görselle ilgili açıklamalar için de yine bu iki paragraf kullanılabilir."
+  },
+  {
+    "templateName": "Capsule-MAVİ",
+    "sceneOrder": 9,
+    "sceneType": "Type9",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": "Bu sahnede bir ana başlık bir paragraf bir görsel ve dört madde bulunmaktadır. Maddeler açıklama ile ilgili örnekler vermek için kullanılabilir. Açıklama ile ilgili bir görsel varsa görselle ilgili açıklama yapmak için maddeler kullanılabilir. Konu ile alakalı alt başlıkları sıralamak için yine maddeler kullanılabilir."
+  },
+  {
+    "templateName": "Capsule-MAVİ",
+    "sceneOrder": 10,
+    "sceneType": "Type10",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": "Bu sahnede bir ana başlık bir görsel ve iki paragraf bulunmaktadır.Paragrafların ilkinde konu açıklaması yapıp diğerinde örnek verilebilir. Ya da iki ayrı örnek açıklanabilir. Konunun artıları eksileri gibi iki zıt konular da burada bölünebilir. Görselle ilgili örnekler ve açıklamalar da bu sahnede yapılabilir."
+  },
+  {
+    "templateName": "Capsule-MAVİ",
+    "sceneOrder": 11,
+    "sceneType": "Type11",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": "Bu sahnede bir başlık ve bir video bulunmaktadır. Konu ile alakalı bir örnek video ya da açıklayıcı bir video için kullanılabilir. Yeni avatar özelliğiyle konunun bir kısmı burada avatarla anlattırılabilir."
+  },
+  {
+    "templateName": "Capsule-MAVİ",
+    "sceneOrder": 12,
+    "sceneType": "Type12",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": "Soru sahnesi çoktak tek seçmeli sorular için kullanılır."
+  },
+  {
+    "templateName": "Capsule-MAVİ",
+    "sceneOrder": 13,
+    "sceneType": "Type13",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": "Soru sahnesi çoktan çok seçmeli sorular için kullanılır."
+  },
+  {
+    "templateName": "Capsule-MAVİ",
+    "sceneOrder": 14,
+    "sceneType": "Type14",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": "Soru sahnesi doğru yanlış soruları için öullanılır."
+  }
+]

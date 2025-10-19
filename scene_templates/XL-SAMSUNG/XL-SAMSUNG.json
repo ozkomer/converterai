@@ -1,0 +1,452 @@
+[
+  {
+    "templateName": "XL-SAMSUNG",
+    "sceneOrder": 1,
+    "sceneType": "Type26",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": null
+  },
+  {
+    "templateName": "XL-SAMSUNG",
+    "sceneOrder": 2,
+    "sceneType": "Type27",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": null
+  },
+  {
+    "templateName": "XL-SAMSUNG",
+    "sceneOrder": 3,
+    "sceneType": "Type15",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": null
+  },
+  {
+    "templateName": "XL-SAMSUNG",
+    "sceneOrder": 4,
+    "sceneType": "Type21",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": null
+  },
+  {
+    "templateName": "XL-SAMSUNG",
+    "sceneOrder": 5,
+    "sceneType": "Type4",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": null
+  },
+  {
+    "templateName": "XL-SAMSUNG",
+    "sceneOrder": 6,
+    "sceneType": "Type28",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": null
+  },
+  {
+    "templateName": "XL-SAMSUNG",
+    "sceneOrder": 7,
+    "sceneType": "Type29",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": null
+  },
+  {
+    "templateName": "XL-SAMSUNG",
+    "sceneOrder": 8,
+    "sceneType": "Type30",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": null
+  },
+  {
+    "templateName": "XL-SAMSUNG",
+    "sceneOrder": 9,
+    "sceneType": "Type10",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": null
+  },
+  {
+    "templateName": "XL-SAMSUNG",
+    "sceneOrder": 10,
+    "sceneType": "Type21",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": null
+  },
+  {
+    "templateName": "XL-SAMSUNG",
+    "sceneOrder": 11,
+    "sceneType": "Type11",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": null
+  },
+  {
+    "templateName": "XL-SAMSUNG",
+    "sceneOrder": 12,
+    "sceneType": "Type27",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": null
+  },
+  {
+    "templateName": "XL-SAMSUNG",
+    "sceneOrder": 13,
+    "sceneType": "Type21",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": null
+  },
+  {
+    "templateName": "XL-SAMSUNG",
+    "sceneOrder": 14,
+    "sceneType": "Type28",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": null
+  },
+  {
+    "templateName": "XL-SAMSUNG",
+    "sceneOrder": 15,
+    "sceneType": "Type15",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": null
+  },
+  {
+    "templateName": "XL-SAMSUNG",
+    "sceneOrder": 16,
+    "sceneType": "Type4",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": null
+  },
+  {
+    "templateName": "XL-SAMSUNG",
+    "sceneOrder": 17,
+    "sceneType": "Type10",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": null
+  },
+  {
+    "templateName": "XL-SAMSUNG",
+    "sceneOrder": 18,
+    "sceneType": "Type27",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": null
+  },
+  {
+    "templateName": "XL-SAMSUNG",
+    "sceneOrder": 19,
+    "sceneType": "Type30",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": null
+  },
+  {
+    "templateName": "XL-SAMSUNG",
+    "sceneOrder": 20,
+    "sceneType": "Type29",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": null
+  },
+  {
+    "templateName": "XL-SAMSUNG",
+    "sceneOrder": 21,
+    "sceneType": "Type8",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": null
+  },
+  {
+    "templateName": "XL-SAMSUNG",
+    "sceneOrder": 22,
+    "sceneType": "Type10",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": null
+  },
+  {
+    "templateName": "XL-SAMSUNG",
+    "sceneOrder": 23,
+    "sceneType": "Type2",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": null
+  },
+  {
+    "templateName": "XL-SAMSUNG",
+    "sceneOrder": 24,
+    "sceneType": "Type10",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": null
+  },
+  {
+    "templateName": "XL-SAMSUNG",
+    "sceneOrder": 25,
+    "sceneType": "Type9",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": null
+  },
+  {
+    "templateName": "XL-SAMSUNG",
+    "sceneOrder": 26,
+    "sceneType": "Type21",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": null
+  },
+  {
+    "templateName": "XL-SAMSUNG",
+    "sceneOrder": 27,
+    "sceneType": "Type30",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": null
+  },
+  {
+    "templateName": "XL-SAMSUNG",
+    "sceneOrder": 28,
+    "sceneType": "Type28",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": null
+  },
+  {
+    "templateName": "XL-SAMSUNG",
+    "sceneOrder": 29,
+    "sceneType": "Type10",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": null
+  },
+  {
+    "templateName": "XL-SAMSUNG",
+    "sceneOrder": 30,
+    "sceneType": "Type10",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": null
+  },
+  {
+    "templateName": "XL-SAMSUNG",
+    "sceneOrder": 31,
+    "sceneType": "Type29",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": null
+  },
+  {
+    "templateName": "XL-SAMSUNG",
+    "sceneOrder": 32,
+    "sceneType": "Type8",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": null
+  },
+  {
+    "templateName": "XL-SAMSUNG",
+    "sceneOrder": 33,
+    "sceneType": "Type28",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": null
+  },
+  {
+    "templateName": "XL-SAMSUNG",
+    "sceneOrder": 34,
+    "sceneType": "Type15",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": null
+  },
+  {
+    "templateName": "XL-SAMSUNG",
+    "sceneOrder": 35,
+    "sceneType": "Type2",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": null
+  },
+  {
+    "templateName": "XL-SAMSUNG",
+    "sceneOrder": 36,
+    "sceneType": "Type28",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": null
+  },
+  {
+    "templateName": "XL-SAMSUNG",
+    "sceneOrder": 37,
+    "sceneType": "Type21",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": null
+  },
+  {
+    "templateName": "XL-SAMSUNG",
+    "sceneOrder": 38,
+    "sceneType": "Type9",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": null
+  },
+  {
+    "templateName": "XL-SAMSUNG",
+    "sceneOrder": 39,
+    "sceneType": "Type10",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": null
+  },
+  {
+    "templateName": "XL-SAMSUNG",
+    "sceneOrder": 40,
+    "sceneType": "Type8",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": null
+  },
+  {
+    "templateName": "XL-SAMSUNG",
+    "sceneOrder": 41,
+    "sceneType": "Type10",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": null
+  },
+  {
+    "templateName": "XL-SAMSUNG",
+    "sceneOrder": 42,
+    "sceneType": "Type10",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": null
+  },
+  {
+    "templateName": "XL-SAMSUNG",
+    "sceneOrder": 43,
+    "sceneType": "Type28",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": null
+  },
+  {
+    "templateName": "XL-SAMSUNG",
+    "sceneOrder": 44,
+    "sceneType": "Type28",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": null
+  },
+  {
+    "templateName": "XL-SAMSUNG",
+    "sceneOrder": 45,
+    "sceneType": "Type8",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": null
+  },
+  {
+    "templateName": "XL-SAMSUNG",
+    "sceneOrder": 46,
+    "sceneType": "Type29",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": null
+  },
+  {
+    "templateName": "XL-SAMSUNG",
+    "sceneOrder": 47,
+    "sceneType": "Type27",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": null
+  },
+  {
+    "templateName": "XL-SAMSUNG",
+    "sceneOrder": 48,
+    "sceneType": "Type28",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": null
+  },
+  {
+    "templateName": "XL-SAMSUNG",
+    "sceneOrder": 49,
+    "sceneType": "Type4",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": null
+  },
+  {
+    "templateName": "XL-SAMSUNG",
+    "sceneOrder": 50,
+    "sceneType": "Type2",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": null
+  }
+]

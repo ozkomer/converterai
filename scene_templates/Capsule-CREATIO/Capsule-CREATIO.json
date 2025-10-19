@@ -1,0 +1,92 @@
+[
+  {
+    "templateName": "Capsule-CREATIO",
+    "sceneOrder": 1,
+    "sceneType": "Type23",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": null
+  },
+  {
+    "templateName": "Capsule-CREATIO",
+    "sceneOrder": 2,
+    "sceneType": "Type26",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": null
+  },
+  {
+    "templateName": "Capsule-CREATIO",
+    "sceneOrder": 3,
+    "sceneType": "Type31",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": null
+  },
+  {
+    "templateName": "Capsule-CREATIO",
+    "sceneOrder": 4,
+    "sceneType": "Type26",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": null
+  },
+  {
+    "templateName": "Capsule-CREATIO",
+    "sceneOrder": 5,
+    "sceneType": "Type31",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": null
+  },
+  {
+    "templateName": "Capsule-CREATIO",
+    "sceneOrder": 6,
+    "sceneType": "Type24",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": null
+  },
+  {
+    "templateName": "Capsule-CREATIO",
+    "sceneOrder": 7,
+    "sceneType": "Type26",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": null
+  },
+  {
+    "templateName": "Capsule-CREATIO",
+    "sceneOrder": 8,
+    "sceneType": "Type24",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": null
+  },
+  {
+    "templateName": "Capsule-CREATIO",
+    "sceneOrder": 9,
+    "sceneType": "Type26",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": null
+  },
+  {
+    "templateName": "Capsule-CREATIO",
+    "sceneOrder": 10,
+    "sceneType": "Type26",
+    "sceneStateBlock": null,
+    "sceneImage": null,
+    "templateLink": "ideaLStudio",
+    "technologDescription": null
+  }
+]

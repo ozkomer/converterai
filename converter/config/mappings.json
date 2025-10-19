@@ -1,0 +1,51 @@
+{
+  "pageStyleMapping": {
+    "26": "type1_1",
+    "27": "type2_2",
+    "15": "type9_9",
+    "21": "type8_8",
+    "4": "type4_4",
+    "28": "type9_9",
+    "29": "type6_6",
+    "30": "type5_5",
+    "10": "type10_10",
+    "11": "type11_11",
+    "12": "type12_12",
+    "13": "type13_13",
+    "14": "type14_14",
+    "100": "type100",
+    "101": "type101"
+  },
+  "templateTags": {
+    "global": [
+      "training-title",
+      "training-description",
+      "ai-mandatory",
+      "files-uploaded"
+    ],
+    "cover": [
+      "type0:title",
+      "type0:speech",
+      "type0:imageurl",
+      "type0:audioduration"
+    ],
+    "section": [
+      "title",
+      "speech",
+      "imageurl",
+      "imageurl1",
+      "imageurl2",
+      "audioduration"
+    ],
+    "quiz": [
+      "speech",
+      "audioduration"
+    ]
+  },
+  "imageSize": {
+    "small": "W1024xH1024",
+    "medium": "W1024xH1792",
+    "large": "W1792xH1024"
+  }
+}
+

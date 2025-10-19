@@ -1,0 +1,113 @@
+📊 ŞABLON TAG LİSTESİ
+
+=== GLOBAL EĞITIM TAGLERI ===
+#{[training-title]}#
+#{[training-description]}#
+#{[ai-mandatory]}#
+#{[files-uploaded]}#
+
+=== SORU AYARLARI ===
+#{[localized-question]}#
+#{[question-feedback-enable]}#
+#{[question-feedback-shuffle]}#
+
+=== KAPAK SAHNESİ (Sahne 0) ===
+#{[type0:title]}#
+#{[type0:speech]}#
+#{[type0:imageurl]}#
+#{[type0:audioduration]}#
+
+=== İÇERİK SAHNELERİ (Sahne 1-10) ===
+
+Type1 - Başlık + Paragraf + Görsel:
+#{[type1_1:title]}#
+#{[type1_1:speech]}#
+#{[type1_1:imageurl]}#
+#{[type1_1:audioduration]}#
+
+Type2 - Başlık + Alt Başlık + 2 Paragraf + Görsel:
+#{[type2_2:title]}#
+#{[type2_2:speech]}#
+#{[type2_2:imageurl]}#
+#{[type2_2:audioduration]}#
+
+Type3 - Başlık + Paragraf + 2 Görsel:
+#{[type3_3:title]}#
+#{[type3_3:speech]}#
+#{[type3_3:imageurl1]}#
+#{[type3_3:imageurl2]}#
+#{[type3_3:audioduration]}#
+
+Type4 - Başlık + Paragraf + 4 Madde + Görsel:
+#{[type4_4:title]}#
+#{[type4_4:speech]}#
+#{[type4_4:imageurl]}#
+#{[type4_4:audioduration]}#
+
+Type5 - Başlık + 2 Alt Başlık + 2 Paragraf + Görsel:
+#{[type5_5:title]}#
+#{[type5_5:speech]}#
+#{[type5_5:imageurl]}#
+#{[type5_5:audioduration]}#
+
+Type6 - Başlık + 2 Paragraf + 2 Görsel:
+#{[type6_6:title]}#
+#{[type6_6:speech]}#
+#{[type6_6:imageurl1]}#
+#{[type6_6:imageurl2]}#
+#{[type6_6:audioduration]}#
+
+Type7 - Başlık + Paragraf + Büyük Görsel:
+#{[type7_7:title]}#
+#{[type7_7:speech]}#
+#{[type7_7:imageurl]}#
+#{[type7_7:audioduration]}#
+
+Type8 - Başlık + Görsel + 2 Paragraf:
+#{[type8_8:title]}#
+#{[type8_8:speech]}#
+#{[type8_8:imageurl]}#
+#{[type8_8:audioduration]}#
+
+Type9 - Başlık + Paragraf + Görsel + 4 Madde:
+#{[type9_9:title]}#
+#{[type9_9:speech]}#
+#{[type9_9:imageurl]}#
+#{[type9_9:audioduration]}#
+
+Type10 - Başlık + Görsel + 2 Paragraf:
+#{[type10_10:title]}#
+#{[type10_10:speech]}#
+#{[type10_10:imageurl]}#
+#{[type10_10:audioduration]}#
+
+=== VİDEO SAHNESİ ===
+Type11 - Video Sahnesi:
+#{[type11_11:title]}#
+
+=== SORU SAHNELERİ ===
+
+Type12 - Tek Seçmeli Soru:
+#{[type12_12:speech]}#
+#{[type12_12:audioduration]}#
+
+Type13 - Çok Seçmeli Soru:
+#{[type13_13:speech]}#
+#{[type13_13:audioduration]}#
+
+Type14 - Doğru/Yanlış Soruları:
+#{[type14_14:speech]}#
+#{[type14_14:audioduration]}#
+
+=== KAPANIŞ SAHNELERİ ===
+
+Type100 - "Şimdi Sıra Sizde":
+#{[type100:title]}#
+#{[type100:speech]}#
+#{[type100:audioduration]}#
+
+Type101 - "Tebrikler":
+#{[type101:title]}#
+#{[type101:speech]}#
+#{[type101:audioduration]}#
+

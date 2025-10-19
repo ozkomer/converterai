@@ -1,0 +1,70 @@
+{
+  "global": {
+    "training-title": {
+      "description": "Eğitim başlığı",
+      "source": "CourseInfo.Title",
+      "required": true
+    },
+    "training-description": {
+      "description": "Eğitim açıklaması", 
+      "source": "CourseInfo.Description",
+      "required": true
+    }
+  },
+  "pageStyles": {
+    "1": {
+      "type0:imageurl": {
+        "description": "Ana görsel URL",
+        "source": "CourseInfo.CourseImageUrl",
+        "required": true
+      }
+    },
+    "2": {
+      "type2_2:imageurl": {
+        "description": "İkinci sayfa görseli",
+        "source": "Sections[1].Images[0].ImageUrl",
+        "required": false
+      }
+    },
+    "3": {
+      "type3_3:imageurl1": {
+        "description": "Üçüncü sayfa ilk görsel",
+        "source": "Sections[2].Images[0].ImageUrl",
+        "required": false
+      },
+      "type3_3:imageurl2": {
+        "description": "Üçüncü sayfa ikinci görsel",
+        "source": "Sections[2].Images[1].ImageUrl",
+        "required": false
+      }
+    }
+  },
+  "quiz": {
+    "question-feedback-enable": {
+      "description": "Soru geri bildirimi aktif",
+      "default": true,
+      "type": "boolean"
+    },
+    "question-feedback-shuffle": {
+      "description": "Soru karıştırma",
+      "default": false,
+      "type": "boolean"
+    }
+  },
+  "audio": {
+    "audioduration": {
+      "description": "Ses süresi",
+      "source": "AudioDuration",
+      "default": 10.5,
+      "type": "number"
+    }
+  },
+  "files": {
+    "files-uploaded": {
+      "description": "Yüklenen dosyalar",
+      "default": "",
+      "type": "string"
+    }
+  }
+}
+
