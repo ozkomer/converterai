@@ -141,7 +141,6 @@ converter-api/outputs/*
 !converter-api/outputs/.gitkeep
 
 # Build outputs
-converter/dist/
 converter-api/dist/
 
 # Test outputs
