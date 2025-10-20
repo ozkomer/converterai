@@ -14,6 +14,9 @@ import { Logger } from './utils/logger';
 import { specs } from './config/swagger';
 
 const app = express();
+
+// Export app for testing
+export { app };
 const PORT = process.env.PORT || 3000;
 
 // Middleware
@@ -23,6 +26,13 @@ app.use(compression());
 app.use(morgan('combined'));
 app.use(express.json({ limit: '50mb' }));
 app.use(express.urlencoded({ extended: true, limit: '50mb' }));
+
+// Increase timeout for large requests
+app.use((req, res, next) => {
+  req.setTimeout(300000); // 5 minutes
+  res.setTimeout(300000); // 5 minutes
+  next();
+});
 
 // Static files
 app.use('/uploads', express.static(path.join(__dirname, '../uploads')));
@@ -80,21 +90,23 @@ async function ensureDirectories() {
   }
 }
 
-// Start server
-async function startServer() {
-  try {
-    await ensureDirectories();
-    
-    app.listen(PORT, () => {
-      Logger.info(`🚀 Server running on port ${PORT}`);
-      Logger.info(`📁 Upload directory: ${path.join(__dirname, '../uploads')}`);
-      Logger.info(`📁 Output directory: ${path.join(__dirname, '../outputs')}`);
-      Logger.info(`🌐 API URL: http://localhost:${PORT}`);
-    });
-  } catch (error) {
-    Logger.error('Failed to start server:', error);
-    process.exit(1);
+// Start server only if not in test environment
+if (process.env.NODE_ENV !== 'test') {
+  async function startServer() {
+    try {
+      await ensureDirectories();
+      
+      app.listen(PORT, () => {
+        Logger.info(`🚀 Server running on port ${PORT}`);
+        Logger.info(`📁 Upload directory: ${path.join(__dirname, '../uploads')}`);
+        Logger.info(`📁 Output directory: ${path.join(__dirname, '../outputs')}`);
+        Logger.info(`🌐 API URL: http://localhost:${PORT}`);
+      });
+    } catch (error) {
+      Logger.error('Failed to start server:', error);
+      process.exit(1);
+    }
   }
-}
 
-startServer();
+  startServer();
+}
