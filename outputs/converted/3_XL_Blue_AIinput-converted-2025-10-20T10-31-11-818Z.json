@@ -1,0 +1,10 @@
+{
+  "training-title": "Çağrı Merkezi Takım Liderleri için Etkili Sunum Becerileri Eğitimi",
+  "training-description": "Bu eğitimde, çağrı merkezi takım liderlerinin bilgi, fikir ve önerilerini amaca uygun, etkili ve profesyonel bir biçimde aktarabilmeleri için gerekli temel sunum becerileri, tarihsel ve kuramsal temelleri, çağrı merkezi liderliği bağlamındaki önemi, uygulama ve değerlendirme yöntemleri ile eğitim sonrası performans ve kurumsal kazanımlar aktarılmaktadır.",
+  "type1_1:title": "#{[section-1-title]}#",
+  "type1_1:content": "#{[section-1-content]}#",
+  "type1_1:narration": "#{[section-1-narration]}#",
+  "quiz1:question": "#{[quiz-1-question]}#",
+  "quiz1:options": "#{[quiz-1-options]}#",
+  "quiz1:correct": "#{[quiz-1-correct]}#"
+}

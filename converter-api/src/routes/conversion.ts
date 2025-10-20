@@ -3,6 +3,7 @@ import path from 'path';
 import { Logger } from '../utils/logger';
 import { asyncHandler, createError } from '../middleware/errorHandler';
 import { ConversionService } from '../services/conversionService';
+import fs from 'fs-extra';
 
 const router = Router();
 
@@ -61,13 +62,69 @@ const router = Router();
 router.post('/', asyncHandler(async (req: Request, res: Response) => {
   const { aiOutput, template, templateType = 'Capsule-Default' } = req.body;
 
-  if (!aiOutput || !template) {
-    throw createError('Both aiOutput and template are required', 400);
+  if (!aiOutput) {
+    throw createError('aiOutput is required', 400);
   }
 
   Logger.info(`Conversion started with template type: ${templateType}`);
 
   const conversionService = new ConversionService();
+
+  // XL path: allow omitting template and load proper RawXL template file dynamically
+  if ((templateType || '').startsWith('XL') && !template) {
+    const chooseTemplatePath = async (): Promise<string> => {
+      const candidates: string[] = [];
+      if (templateType === 'XL-SOMPO') {
+        candidates.push(
+          path.resolve(__dirname, '../../../TestCases/inputs/templates/RawXLTemplates/voiceidealStudioTemplate_sompo.json'),
+          path.resolve(__dirname, '../../TestCases/inputs/templates/RawXLTemplates/voiceidealStudioTemplate_sompo.json')
+        );
+      } else {
+        candidates.push(
+          path.resolve(__dirname, '../../../TestCases/inputs/templates/RawXLTemplates/voiceidealStudioTemplate.json'),
+          path.resolve(__dirname, '../../TestCases/inputs/templates/RawXLTemplates/voiceidealStudioTemplate.json')
+        );
+      }
+      for (const p of candidates) {
+        if (await fs.pathExists(p)) return p;
+      }
+      throw createError('RawXL template file not found for XL conversion', 404);
+    };
+    await chooseTemplatePath(); // ensure template availability if needed later
+    const skeletonCandidates: string[] = templateType === 'XL-SOMPO'
+      ? [
+          path.resolve(__dirname, '../../../TestCases/outputs/xl-outputs/9_XL_SOMPO_FinalOutput.json'),
+          path.resolve(__dirname, '../../TestCases/outputs/xl-outputs/9_XL_SOMPO_FinalOutput.json')
+        ]
+      : [
+          path.resolve(__dirname, '../../../TestCases/outputs/xl-outputs/5_XL_Blue_FinalOutput.json'),
+          path.resolve(__dirname, '../../TestCases/outputs/xl-outputs/5_XL_Blue_FinalOutput.json')
+        ];
+    let skeletonPath: string | null = null;
+    for (const p of skeletonCandidates) {
+      if (await fs.pathExists(p)) { skeletonPath = p; break; }
+    }
+    if (!skeletonPath) {
+      throw createError('Skeleton FinalOutput not found', 404);
+    }
+    const result = await conversionService.convertXLUsingSkeleton(aiOutput, skeletonPath);
+
+    res.json({
+      success: true,
+      message: 'Conversion completed successfully',
+      data: {
+        convertedTemplate: result.convertedTemplate,
+        stats: result.stats,
+        templateType: templateType
+      }
+    });
+    return; // ensure function returns here
+  }
+
+  if (!template) {
+    throw createError('Both aiOutput and template are required', 400);
+  }
+
   const result = await conversionService.convertFromData(aiOutput, template, templateType);
 
   Logger.success(`Conversion completed successfully`);
@@ -81,6 +138,7 @@ router.post('/', asyncHandler(async (req: Request, res: Response) => {
       templateType: templateType
     }
   });
+  return; // explicit return
 }));
 
 /**

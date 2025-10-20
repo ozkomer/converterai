@@ -1,0 +1,10 @@
+{
+  "training-title": "Çağrı Merkezlerinde ve İş Dünyasında Temel İletişim Becerileri",
+  "training-description": "Bu eğitim, çağrı merkezlerinin bordrolu ve freelance çalışanları ile iş dünyasının tüm kademelerinde görev alan bireyler için hazırlanmıştır. Katılımcılar, temel iletişim becerilerinin tanımı, tarihçesi, iş ve özel yaşamda uygulama biçimleri, anahtar bileşenleri ve eğitim metotları hakkında kapsamlı bilgi edineceklerdir. Eğitimde, yalnızca dokümandan alınan kavramsal ve açıklayıcı bilgiler sunulacaktır.",
+  "type1_1:title": "#{[section-1-title]}#",
+  "type1_1:content": "#{[section-1-content]}#",
+  "type1_1:narration": "#{[section-1-narration]}#",
+  "quiz1:question": "#{[quiz-1-question]}#",
+  "quiz1:options": "#{[quiz-1-options]}#",
+  "quiz1:correct": "#{[quiz-1-correct]}#"
+}

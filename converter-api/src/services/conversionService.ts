@@ -306,4 +306,190 @@ export class ConversionService {
 
     return obj;
   }
+
+  // XL helper: load a RawXL template file (with tag placeholders),
+  // replace tags using aiOutput, and return parsed object + stats
+  async convertXLFromTemplateFile(aiOutput: any, templateFilePath: string): Promise<DataConversionResult> {
+    try {
+      Logger.info('Starting XL file-based conversion...');
+
+      if (!aiOutput || !templateFilePath) {
+        throw createError('Invalid XL input data provided', 400);
+      }
+
+      const templateStr = await fs.readFile(templateFilePath, 'utf8');
+
+      const tagMap = await this.buildTagMappings(aiOutput);
+      Logger.info(`Tag mappings built: ${Object.keys(tagMap).length} tags`);
+
+      let replacedTemplate = this.replaceTags(templateStr, tagMap);
+      Logger.info('Tags replaced in template');
+
+      let convertedTemplate: any;
+      try {
+        // Remove any leftover placeholders to guarantee valid JSON
+        replacedTemplate = replacedTemplate.replace(/#\{\[[^\]]+\]\}#/g, '');
+        convertedTemplate = JSON.parse(replacedTemplate);
+      } catch (error) {
+        throw createError('Failed to parse XL template after replacement', 500);
+      }
+
+      convertedTemplate = this.fixEmptyFileFieldsInObject(convertedTemplate);
+
+      const statsData = {
+        sections: aiOutput.Sections?.length || 0,
+        quizzes: aiOutput.GeneralQuiz?.length || 0,
+        totalTags: Object.keys(tagMap).length,
+        replacedTags: Object.keys(tagMap).length
+      };
+
+      Logger.success('XL file-based conversion completed successfully');
+
+      return {
+        convertedTemplate,
+        stats: statsData
+      };
+    } catch (error: any) {
+      Logger.error('XL file-based conversion failed:', error);
+      throw createError(`XL file-based conversion failed: ${error.message}`, 500);
+    }
+  }
+
+  // Dynamic: build FinalOutput using skeleton and inject all fields from AI output
+  async convertXLUsingSkeleton(aiOutput: any, skeletonPath: string): Promise<DataConversionResult> {
+    try {
+      const skeleton = await fs.readJson(skeletonPath);
+      const tagMap = await this.buildTagMappings(aiOutput);
+
+      // 1. Global config injection
+      if (skeleton?.present?.globalConfig) {
+        const config = skeleton.present.globalConfig;
+        if (tagMap['training-title']) config.title = tagMap['training-title'];
+        if (tagMap['training-description']) config.description = tagMap['training-description'];
+        if (tagMap['type0:imageurl']) config.thumbnail = tagMap['type0:imageurl'];
+        if (tagMap['type0:audioduration']) config.typicalLearningTime = { h: 0, m: Math.floor(tagMap['type0:audioduration'] / 60), s: tagMap['type0:audioduration'] % 60 };
+      }
+
+      // 2. Dynamic boxesById mapping based on AI sections
+      if (skeleton?.present?.boxesById && aiOutput.Sections) {
+        const boxes = skeleton.present.boxesById;
+        
+        // Map sections to boxes dynamically
+        aiOutput.Sections.forEach((section: any, index: number) => {
+          const typeName = this.mapPageStyleToType(section.PageStyle);
+          
+          // Find matching box by type or position
+          const matchingBoxId = this.findMatchingBoxId(boxes, typeName, index);
+          if (matchingBoxId && boxes[matchingBoxId]) {
+            const box = boxes[matchingBoxId];
+            
+            // Inject section data
+            if (section.Title && box.pagination?.title !== undefined) {
+              box.pagination.title = section.Title;
+            }
+            if (section.NarrationText && box.pagination?.narration !== undefined) {
+              box.pagination.narration = section.NarrationText;
+            }
+            if (section.Content?.paragraph && box.pagination?.content !== undefined) {
+              box.pagination.content = section.Content.paragraph;
+            }
+            
+            // Handle images
+            if (section.Images && section.Images.length > 0) {
+              if (box.pagination?.imageurl !== undefined) {
+                box.pagination.imageurl = section.Images[0].ImageUrl || '';
+              }
+              if (section.Images.length > 1 && box.pagination?.imageurl2 !== undefined) {
+                box.pagination.imageurl2 = section.Images[1].ImageUrl || '';
+              }
+            }
+            
+            // Handle audio
+            if (section.SpeechAudioUrl && box.pagination?.speech !== undefined) {
+              box.pagination.speech = section.SpeechAudioUrl;
+            }
+            if (section.AudioDuration && box.pagination?.audioduration !== undefined) {
+              box.pagination.audioduration = section.AudioDuration;
+            }
+          }
+        });
+      }
+
+      // 3. Quiz mapping
+      if (skeleton?.present?.boxesById && aiOutput.GeneralQuiz) {
+        const boxes = skeleton.present.boxesById;
+        
+        aiOutput.GeneralQuiz.forEach((quiz: any, index: number) => {
+          const quizBoxId = this.findQuizBoxId(boxes, index);
+          if (quizBoxId && boxes[quizBoxId]) {
+            const box = boxes[quizBoxId];
+            
+            if (quiz.Question && box.pagination?.question !== undefined) {
+              box.pagination.question = quiz.Question;
+            }
+            if (quiz.Options && box.pagination?.options !== undefined) {
+              box.pagination.options = quiz.Options;
+            }
+            if (quiz.CorrectAnswers && box.pagination?.correct !== undefined) {
+              box.pagination.correct = quiz.CorrectAnswers;
+            }
+          }
+        });
+      }
+
+      const statsData = {
+        sections: aiOutput.Sections?.length || 0,
+        quizzes: aiOutput.GeneralQuiz?.length || 0,
+        totalTags: Object.keys(tagMap).length,
+        replacedTags: Object.keys(tagMap).length
+      };
+
+      return {
+        convertedTemplate: skeleton,
+        stats: statsData
+      };
+    } catch (error: any) {
+      Logger.error('XL skeleton conversion failed:', error);
+      throw createError(`XL skeleton conversion failed: ${error.message}`, 500);
+    }
+  }
+
+  private findMatchingBoxId(boxes: any, typeName: string, index: number): string | null {
+    const boxIds = Object.keys(boxes);
+    
+    // Try to find by type pattern first
+    for (const boxId of boxIds) {
+      const box = boxes[boxId];
+      if (box?.type === typeName || box?.pagination?.type === typeName) {
+        return boxId;
+      }
+    }
+    
+    // Fallback to index-based matching
+    if (index < boxIds.length) {
+      return boxIds[index];
+    }
+    
+    return boxIds[0] || null;
+  }
+
+  private findQuizBoxId(boxes: any, quizIndex: number): string | null {
+    const boxIds = Object.keys(boxes);
+    
+    // Look for quiz-type boxes
+    for (const boxId of boxIds) {
+      const box = boxes[boxId];
+      if (box?.type?.includes('quiz') || box?.pagination?.question !== undefined) {
+        return boxId;
+      }
+    }
+    
+    // Fallback to last boxes (usually quiz sections are at the end)
+    const lastBoxes = boxIds.slice(-5); // Check last 5 boxes
+    if (quizIndex < lastBoxes.length) {
+      return lastBoxes[quizIndex];
+    }
+    
+    return lastBoxes[0] || null;
+  }
 }

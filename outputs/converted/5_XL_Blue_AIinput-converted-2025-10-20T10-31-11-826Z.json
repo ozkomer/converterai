@@ -1,0 +1,10 @@
+{
+  "training-title": "Trendyol Milla Müşteri İşlemleri ve Süreçleri Eğitimi",
+  "training-description": "Bu eğitimde Trendyol Milla'nın müşteri ilişkileri, sipariş yönetimi, iade, kargo, üyelik, kampanya, fatura ve ödeme hataları gibi temel süreç akışlarını ve ilgili işlemleri ayrıntılı biçimde öğreneceksiniz. Katılımcılar, müşteriyle temas edilen tüm noktalarda süreçlere dair doğru adımları ve gereklilikleri eksiksiz olarak listeleyebilecek ve açıklayabilecektir.",
+  "type1_1:title": "#{[section-1-title]}#",
+  "type1_1:content": "#{[section-1-content]}#",
+  "type1_1:narration": "#{[section-1-narration]}#",
+  "quiz1:question": "#{[quiz-1-question]}#",
+  "quiz1:options": "#{[quiz-1-options]}#",
+  "quiz1:correct": "#{[quiz-1-correct]}#"
+}

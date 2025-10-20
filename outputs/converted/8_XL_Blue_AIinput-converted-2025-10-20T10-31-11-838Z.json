@@ -1,0 +1,10 @@
+{
+  "training-title": "İklim Değişiklikleri ve Teknolojik Evrim",
+  "training-description": "Bu kurs, insanlık tarihindeki teknolojik evrimin ve icatların, başta iklimsel değişimler olmak üzere çevresel faktörlerle nasıl yakından bağlantılı olduğunu inceler. Paleolitik dönemden başlayarak günümüze kadar farklı çağlarda iklimsel değişimlerin insan uygarlığı ve teknolojik gelişmeler üzerindeki etkisi, dönüm noktaları ve arkeolojik bulgular eşliğinde kronolojik olarak aktarılır. Ateşin kontrol altına alınmasının, tarım ve hayvancılığa geçişin, kentleşme ve uygarlıkların yükseliş ve çöküşünün, Endüstri Devrimi ve Antroposen Çağ’a kadar olan süreçte insanın çevre üzerindeki etkisinin aşamaları detaylı biçimde ele alınır.",
+  "type1_1:title": "#{[section-1-title]}#",
+  "type1_1:content": "#{[section-1-content]}#",
+  "type1_1:narration": "#{[section-1-narration]}#",
+  "quiz1:question": "#{[quiz-1-question]}#",
+  "quiz1:options": "#{[quiz-1-options]}#",
+  "quiz1:correct": "#{[quiz-1-correct]}#"
+}

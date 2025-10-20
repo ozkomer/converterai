@@ -1,0 +1,10 @@
+{
+  "training-title": "16. Yüzyılda Rabelais ve İnançsızlık Sorunu",
+  "training-description": "Bu eğitim, Rönesans dönemi ve özellikle Rabelais'in çevresinde 'inançsızlığın' tarihsel bağlamını ve dönemin kolektif dini, toplumsal duyarlılık ve zihniyetini Lucien Febvre'in eserindeki, döneme ilişkin tanık, belge ve kavramsal çözümlemelerine dayanarak aktarmaktadır. Katılımcılar, Rabelais’in çağdaşlarıyla ilişkilerini, Reform ve Erasmian eğilimler özelinde Hristiyanlık ile bağını, 16. yüzyılda inançsızlık kavramının sosyal, psikolojik ve felsefi sınırlarını, dönemin bilimsel ve toplumsal yapılarını, anakronizmin tehlikesi ve tarihsel değerlendirme gerekliliğini, Rabelais’in fikirlerinin dönemin zihniyet tarihindeki yerini öğreneceklerdir.",
+  "type1_1:title": "#{[section-1-title]}#",
+  "type1_1:content": "#{[section-1-content]}#",
+  "type1_1:narration": "#{[section-1-narration]}#",
+  "quiz1:question": "#{[quiz-1-question]}#",
+  "quiz1:options": "#{[quiz-1-options]}#",
+  "quiz1:correct": "#{[quiz-1-correct]}#"
+}

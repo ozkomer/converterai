@@ -1,0 +1,10 @@
+{
+  "training-title": "Sağlık Sektöründe Etkili İletişim, Beden Dili ve Hitabet Kuralları",
+  "training-description": "Bu eğitim, sağlık sektöründe etkili iletişim stratejilerinin temel kavramlarını, teorilerini ve modellerini; iletişimin sözlü ve sözsüz (beden dili) öğelerini; topluluk önünde etkili konuşma ve hitabet kurallarını klinik uygulamalara uygun, kapsamlı ve sistematik biçimde aktarır.",
+  "type1_1:title": "#{[section-1-title]}#",
+  "type1_1:content": "#{[section-1-content]}#",
+  "type1_1:narration": "#{[section-1-narration]}#",
+  "quiz1:question": "#{[quiz-1-question]}#",
+  "quiz1:options": "#{[quiz-1-options]}#",
+  "quiz1:correct": "#{[quiz-1-correct]}#"
+}
