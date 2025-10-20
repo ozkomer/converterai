@@ -606,6 +606,6 @@ For enterprise support and custom implementations, contact: support@example.com
 
 ---
 
-**Made with ❤️ by the AI Template Converter Team**
+**Made with ❤️ by Omer Ozkan**
 
 *Transforming AI content into professional educational templates since 2025*

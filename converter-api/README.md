@@ -596,5 +596,5 @@ MIT License - see [LICENSE](LICENSE) file for details.
 
 ---
 
-**Built with ❤️ using TypeScript, Express.js, and modern web technologies**
+**Built with ❤️ by Omer Ozkan using TypeScript, Express.js, and modern web technologies**
 
