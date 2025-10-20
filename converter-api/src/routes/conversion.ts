@@ -1,5 +1,4 @@
 import { Router, Request, Response } from 'express';
-import multer from 'multer';
 import path from 'path';
 import { Logger } from '../utils/logger';
 import { asyncHandler, createError } from '../middleware/errorHandler';
@@ -7,45 +6,19 @@ import { ConversionService } from '../services/conversionService';
 
 const router = Router();
 
-// Configure multer for file uploads
-const storage = multer.diskStorage({
-  destination: (_req, _file, cb) => {
-    const uploadPath = path.join(__dirname, '../../uploads');
-    cb(null, uploadPath);
-  },
-  filename: (_req, file, cb) => {
-    const uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1E9);
-    cb(null, `${file.fieldname}-${uniqueSuffix}${path.extname(file.originalname)}`);
-  }
-});
-
-const upload = multer({
-  storage,
-  limits: {
-    fileSize: 50 * 1024 * 1024 // 50MB limit
-  },
-  fileFilter: (_req, file, cb) => {
-    if (file.mimetype === 'application/json' || 
-        file.originalname.toLowerCase().endsWith('.json') ||
-        file.mimetype === 'text/plain') {
-      cb(null, true);
-    } else {
-      cb(new Error('Only JSON files are allowed'));
-    }
-  }
-});
+// Multer configuration removed - now using direct JSON input
 
 /**
  * @swagger
  * /api/convert:
  *   post:
- *     summary: Convert AI output to template using file upload
- *     description: Upload AI output and template files to convert them
+ *     summary: Convert AI output to VoiceIdeal Studio template
+ *     description: Send AI output data and template data directly in JSON format for conversion
  *     tags: [Conversion]
  *     requestBody:
  *       required: true
  *       content:
- *         multipart/form-data:
+ *         application/json:
  *           schema:
  *             type: object
  *             required:
@@ -53,13 +26,26 @@ const upload = multer({
  *               - template
  *             properties:
  *               aiOutput:
- *                 type: string
- *                 format: binary
- *                 description: AI output JSON file
+ *                 type: object
+ *                 description: AI generated content in JSON format
+ *                 example:
+ *                   CourseInfo:
+ *                     Title: "Sample Course"
+ *                     Description: "Course description"
+ *                   Sections:
+ *                     - Title: "Section 1"
+ *                       Content: "Section content"
  *               template:
+ *                 type: object
+ *                 description: VoiceIdeal Studio template in JSON format
+ *                 example:
+ *                   training-title: "{{title}}"
+ *                   training-description: "{{description}}"
+ *               templateType:
  *                 type: string
- *                 format: binary
- *                 description: Template JSON file
+ *                 description: Template type identifier
+ *                 enum: ["Capsule-Default", "Capsule-Siyah", "XL-Blue", "XL-Samsung"]
+ *                 default: "Capsule-Default"
  *     responses:
  *       200:
  *         description: Conversion completed successfully
@@ -72,93 +58,27 @@ const upload = multer({
  *       500:
  *         $ref: '#/components/responses/InternalServerError'
  */
-router.post('/', 
-  upload.fields([
-    { name: 'aiOutput', maxCount: 1 },
-    { name: 'template', maxCount: 1 }
-  ]),
-  asyncHandler(async (req: Request, res: Response) => {
-    const files = req.files as { [fieldname: string]: Express.Multer.File[] };
-    
-    if (!files.aiOutput || !files.template) {
-      throw createError('Both aiOutput and template files are required', 400);
-    }
+router.post('/', asyncHandler(async (req: Request, res: Response) => {
+  const { aiOutput, template, templateType = 'Capsule-Default' } = req.body;
 
-    const aiOutputFile = files.aiOutput[0];
-    const templateFile = files.template[0];
-
-    Logger.info(`Conversion started: ${aiOutputFile.filename} + ${templateFile.filename}`);
-
-    const conversionService = new ConversionService();
-    const result = await conversionService.convert(
-      aiOutputFile.path,
-      templateFile.path
-    );
-
-    Logger.success(`Conversion completed: ${result.outputPath}`);
-
-    res.json({
-      success: true,
-      message: 'Conversion completed successfully',
-      data: {
-        outputPath: result.outputPath,
-        downloadUrl: `/outputs/converted/${path.basename(result.outputPath)}`,
-        stats: result.stats,
-        fileSize: result.fileSize
-      }
-    });
-  })
-);
-
-/**
- * @swagger
- * /api/convert/url:
- *   post:
- *     summary: Convert AI output to template using file paths
- *     description: Convert using existing file paths on the server
- *     tags: [Conversion]
- *     requestBody:
- *       required: true
- *       content:
- *         application/json:
- *           schema:
- *             $ref: '#/components/schemas/ConversionRequest'
- *     responses:
- *       200:
- *         description: Conversion completed successfully
- *         content:
- *           application/json:
- *             schema:
- *               $ref: '#/components/schemas/ConversionResponse'
- *       400:
- *         $ref: '#/components/responses/BadRequest'
- *       404:
- *         $ref: '#/components/responses/NotFound'
- *       500:
- *         $ref: '#/components/responses/InternalServerError'
- */
-router.post('/url', asyncHandler(async (req: Request, res: Response) => {
-  const { aiOutputPath, templatePath } = req.body;
-
-  if (!aiOutputPath || !templatePath) {
-    throw createError('Both aiOutputPath and templatePath are required', 400);
+  if (!aiOutput || !template) {
+    throw createError('Both aiOutput and template are required', 400);
   }
 
-  Logger.info(`Conversion started from URLs: ${aiOutputPath} + ${templatePath}`);
+  Logger.info(`Conversion started with template type: ${templateType}`);
 
   const conversionService = new ConversionService();
-  const result = await conversionService.convert(aiOutputPath, templatePath);
+  const result = await conversionService.convertFromData(aiOutput, template, templateType);
 
-  Logger.success(`Conversion completed: ${result.outputPath}`);
+  Logger.success(`Conversion completed successfully`);
 
   res.json({
     success: true,
     message: 'Conversion completed successfully',
     data: {
-      outputPath: result.outputPath,
-      downloadUrl: `/outputs/converted/${path.basename(result.outputPath)}`,
+      convertedTemplate: result.convertedTemplate,
       stats: result.stats,
-      fileSize: result.fileSize
+      templateType: templateType
     }
   });
 }));

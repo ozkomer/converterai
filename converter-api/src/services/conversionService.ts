@@ -17,6 +17,16 @@ export interface ConversionResult {
   fileSize: string;
 }
 
+export interface DataConversionResult {
+  convertedTemplate: any;
+  stats: {
+    sections: number;
+    quizzes: number;
+    totalTags: number;
+    replacedTags: number;
+  };
+}
+
 export class ConversionService {
   async convert(aiOutputPath: string, templatePath: string): Promise<ConversionResult> {
     try {
@@ -214,5 +224,86 @@ export class ConversionService {
     } catch (error: any) {
       Logger.warn('Failed to fix file fields:', error.message);
     }
+  }
+
+  async convertFromData(aiOutput: any, template: any, _templateType: string): Promise<DataConversionResult> {
+    try {
+      Logger.info('Starting data-based conversion process...');
+
+      // Validate input data
+      if (!aiOutput || !template) {
+        throw createError('Invalid input data provided', 400);
+      }
+
+      Logger.info(`AI output loaded: ${aiOutput.Sections?.length || 0} sections, ${aiOutput.GeneralQuiz?.length || 0} quizzes`);
+
+      // Build tag mappings
+      const tagMap = await this.buildTagMappings(aiOutput);
+      Logger.info(`Tag mappings built: ${Object.keys(tagMap).length} tags`);
+
+      // Convert template object to string for processing
+      const templateStr = JSON.stringify(template);
+
+      // Replace tags in template
+      const replacedTemplate = this.replaceTags(templateStr, tagMap);
+      Logger.info('Tags replaced in template');
+
+      // Parse back to object
+      let convertedTemplate;
+      try {
+        convertedTemplate = JSON.parse(replacedTemplate);
+      } catch (error) {
+        // If parsing fails, return as string
+        convertedTemplate = replacedTemplate;
+      }
+
+      // Fix empty file fields in the object
+      convertedTemplate = this.fixEmptyFileFieldsInObject(convertedTemplate);
+
+      const statsData = {
+        sections: aiOutput.Sections?.length || 0,
+        quizzes: aiOutput.GeneralQuiz?.length || 0,
+        totalTags: Object.keys(tagMap).length,
+        replacedTags: Object.keys(tagMap).length
+      };
+
+      Logger.success('Data conversion completed successfully');
+
+      return {
+        convertedTemplate,
+        stats: statsData
+      };
+
+    } catch (error: any) {
+      Logger.error('Data conversion failed:', error);
+      throw createError(`Data conversion failed: ${error.message}`, 500);
+    }
+  }
+
+  private fixEmptyFileFieldsInObject(obj: any): any {
+    if (typeof obj === 'string') {
+      return obj.replace(
+        /"file": ""/g,
+        '"file": "https://localhost/ContentFiles/IdealStudioFiles/default-audio.mp3"'
+      );
+    }
+
+    if (Array.isArray(obj)) {
+      return obj.map(item => this.fixEmptyFileFieldsInObject(item));
+    }
+
+    if (obj && typeof obj === 'object') {
+      const fixed: any = {};
+      for (const [key, value] of Object.entries(obj)) {
+        if (key === 'file' && value === '') {
+          fixed[key] = 'https://localhost/ContentFiles/IdealStudioFiles/default-audio.mp3';
+        } else {
+          fixed[key] = this.fixEmptyFileFieldsInObject(value);
+        }
+      }
+      return fixed;
+    }
+
+    return obj;
   }
 }

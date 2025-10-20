@@ -89,27 +89,28 @@ const swaggerDefinition: SwaggerDefinition = {
           data: {
             type: 'object',
             properties: {
-              outputPath: {
-                type: 'string',
-                description: 'Path to generated output file'
-              },
-              downloadUrl: {
-                type: 'string',
-                description: 'URL to download the output file',
-                example: '/outputs/converted/output.json'
+              convertedTemplate: {
+                type: 'object',
+                description: 'The converted VoiceIdeal Studio template',
+                example: {
+                  'training-title': 'Sample Course Title',
+                  'training-description': 'Course description',
+                  'type1_1:title': 'Section 1 Title',
+                  'type1_1:imageurl': 'https://example.com/image.jpg'
+                }
               },
               stats: {
                 type: 'object',
                 properties: {
-                  sections: { type: 'number', example: 49 },
-                  quizzes: { type: 'number', example: 15 },
-                  totalTags: { type: 'number', example: 71 },
-                  replacedTags: { type: 'number', example: 71 }
+                  sections: { type: 'number', example: 16 },
+                  quizzes: { type: 'number', example: 3 },
+                  totalTags: { type: 'number', example: 91 },
+                  replacedTags: { type: 'number', example: 91 }
                 }
               },
-              fileSize: {
+              templateType: {
                 type: 'string',
-                example: '1.62 MB'
+                example: 'Capsule-Default'
               }
             }
           }
