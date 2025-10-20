@@ -42,6 +42,125 @@ A comprehensive REST API for converting AI-generated educational content to Voic
 - [Contributing](#-contributing)
 - [License](#-license)
 
+## 🔄 System Architecture
+
+### High-Level Architecture Flow
+
+```mermaid
+graph TB
+    A[AI Generated Content] --> B[Template Converter API]
+    B --> C[VoiceIdeal Studio Templates]
+    
+    subgraph "API Components"
+        D[File Upload Handler]
+        E[Template Processor]
+        F[Tag Mapper]
+        G[Output Generator]
+    end
+    
+    B --> D
+    D --> E
+    E --> F
+    F --> G
+    G --> C
+    
+    subgraph "Storage"
+        H[Uploads Directory]
+        I[Templates Directory]
+        J[Outputs Directory]
+    end
+    
+    D --> H
+    E --> I
+    G --> J
+    
+    subgraph "Monitoring"
+        K[Health Check]
+        L[Swagger Docs]
+        M[Error Handler]
+    end
+    
+    B --> K
+    B --> L
+    B --> M
+```
+
+### API Request Flow
+
+```mermaid
+sequenceDiagram
+    participant Client
+    participant API
+    participant FileSystem
+    participant Converter
+    participant TemplateEngine
+    
+    Client->>API: POST /api/convert
+    API->>FileSystem: Save uploaded files
+    API->>Converter: Process conversion
+    Converter->>TemplateEngine: Load template
+    Converter->>TemplateEngine: Map AI content to tags
+    Converter->>TemplateEngine: Generate output
+    TemplateEngine-->>Converter: Return processed template
+    Converter-->>API: Return conversion result
+    API->>FileSystem: Save output file
+    API-->>Client: Return success response
+```
+
+### Template Processing Flow
+
+```mermaid
+graph LR
+    A[AI Output JSON] --> B[Extract Course Info]
+    A --> C[Extract Sections]
+    A --> D[Extract Quizzes]
+    
+    B --> E[Map Course Tags]
+    C --> F[Map Section Tags]
+    D --> G[Map Quiz Tags]
+    
+    E --> H[Template Engine]
+    F --> H
+    G --> H
+    
+    H --> I[Tag Replacement]
+    I --> J[Generate Output]
+    J --> K[VoiceIdeal Template]
+    
+    subgraph "Tag Mapping Examples"
+        L["training-title → Course Title"]
+        M["type1_1:title → Section Title"]
+        N["type1_1:imageurl → Section Image"]
+        O["question-* → Quiz Questions"]
+    end
+    
+    H --> L
+    H --> M
+    H --> N
+    H --> O
+```
+
+### Deployment Flow
+
+```mermaid
+graph TD
+    A[Development] --> B[Git Commit]
+    B --> C[Docker Build]
+    C --> D[Container Registry]
+    D --> E[Production Deployment]
+    
+    E --> F[Health Check]
+    F --> G{API Healthy?}
+    G -->|Yes| H[Traffic Routing]
+    G -->|No| I[Rollback]
+    I --> E
+    
+    H --> J[Load Balancer]
+    J --> K[API Instances]
+    K --> L[Monitoring]
+    L --> M[Logs & Metrics]
+```
+
 ## 🚀 Quick Start
 
 ### Prerequisites

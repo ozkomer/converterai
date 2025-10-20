@@ -210,6 +210,116 @@ converter-api/
 └── README.md                # This file
 ```
 
+## 🔄 API Architecture Flow
+
+### Request Processing Flow
+
+```mermaid
+graph TD
+    A[Client Request] --> B{Request Type}
+    B -->|Health Check| C[Health Route]
+    B -->|File Upload| D[Conversion Route]
+    B -->|URL Conversion| E[URL Conversion Route]
+    B -->|List Templates| F[Template Route]
+    B -->|List Outputs| G[Output Route]
+    
+    C --> H[Health Service]
+    D --> I[Multer Middleware]
+    E --> J[Conversion Service]
+    F --> K[Template Service]
+    G --> L[Output Service]
+    
+    I --> M[File Validation]
+    M --> J
+    J --> N[Tag Mapping]
+    N --> O[Template Processing]
+    O --> P[Output Generation]
+    P --> Q[File Save]
+    
+    H --> R[Response]
+    J --> R
+    K --> R
+    L --> R
+    Q --> R
+    R --> S[Client Response]
+```
+
+### Conversion Service Flow
+
+```mermaid
+sequenceDiagram
+    participant Client
+    participant API
+    participant Multer
+    participant ConversionService
+    participant FileSystem
+    participant TemplateEngine
+    
+    Client->>API: POST /api/convert (multipart)
+    API->>Multer: Handle file upload
+    Multer->>FileSystem: Save uploaded files
+    Multer-->>API: Return file paths
+    API->>ConversionService: convert(aiPath, templatePath)
+    
+    ConversionService->>FileSystem: Read AI output file
+    ConversionService->>FileSystem: Read template file
+    ConversionService->>TemplateEngine: buildTagMappings(aiOutput)
+    TemplateEngine-->>ConversionService: Return tag mappings
+    ConversionService->>TemplateEngine: replaceTags(template, tagMap)
+    TemplateEngine-->>ConversionService: Return processed template
+    ConversionService->>FileSystem: Save output file
+    ConversionService-->>API: Return conversion result
+    
+    API-->>Client: Return success response with download URL
+```
+
+### Error Handling Flow
+
+```mermaid
+graph TD
+    A[API Request] --> B[Route Handler]
+    B --> C{Validation}
+    C -->|Success| D[Business Logic]
+    C -->|Error| E[Validation Error]
+    D --> F{Processing}
+    F -->|Success| G[Success Response]
+    F -->|Error| H[Processing Error]
+    
+    E --> I[Error Handler]
+    H --> I
+    I --> J[Log Error]
+    J --> K[Format Error Response]
+    K --> L[Send Error to Client]
+    
+    G --> M[Log Success]
+    M --> N[Send Success to Client]
+```
+
+### Docker Container Flow
+
+```mermaid
+graph TB
+    A[Docker Compose] --> B[Build Image]
+    B --> C[Start Container]
+    C --> D[Health Check]
+    D --> E{Container Healthy?}
+    E -->|Yes| F[API Ready]
+    E -->|No| G[Restart Container]
+    G --> D
+    
+    F --> H[Volume Mounts]
+    H --> I[Uploads Directory]
+    H --> J[Outputs Directory]
+    H --> K[Templates Directory]
+    
+    F --> L[Port Mapping]
+    L --> M[localhost:3000]
+    
+    F --> N[Environment Variables]
+    N --> O[NODE_ENV=production]
+    N --> P[PORT=3000]
+```
+
 ## 🔧 Configuration
 
 ### Environment Variables
