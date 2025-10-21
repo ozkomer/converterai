@@ -3,9 +3,15 @@ import path from 'path';
 import { Logger } from '../utils/logger';
 import { asyncHandler, createError } from '../middleware/errorHandler';
 import { ConversionService } from '../services/conversionService';
+import { TemplateService } from '../services/templateService';
+import { DynamicTemplateService } from '../services/dynamicTemplateService';
+import { TemplateRequestService } from '../services/templateRequestService';
 import fs from 'fs-extra';
 
 const router = Router();
+const templateService = new TemplateService();
+const dynamicTemplateService = new DynamicTemplateService();
+const templateRequestService = new TemplateRequestService();
 
 // Multer configuration removed - now using direct JSON input
 
@@ -277,6 +283,471 @@ router.get('/outputs', asyncHandler(async (_req: Request, res: Response) => {
     });
   } catch (error) {
     throw createError('Failed to list outputs', 500);
+  }
+}));
+
+/**
+ * @swagger
+ * /api/templates/list:
+ *   get:
+ *     summary: List all available templates
+ *     description: Get list of all available template sizes and variants
+ *     tags: [Templates]
+ *     responses:
+ *       200:
+ *         description: List of available templates
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                   example: true
+ *                 data:
+ *                   type: array
+ *                   items:
+ *                     type: object
+ *                     properties:
+ *                       size:
+ *                         type: string
+ *                         example: "LSCapsule"
+ *                       variant:
+ *                         type: string
+ *                         example: "default"
+ *                       fileName:
+ *                         type: string
+ *                         example: "voiceidealStudioTemplate_default.json"
+ *                       exists:
+ *                         type: boolean
+ *                         example: true
+ */
+router.get('/templates/list', asyncHandler(async (_req: Request, res: Response) => {
+  try {
+    const templates = await templateService.listAvailableTemplates();
+    
+    res.json({
+      success: true,
+      data: templates
+    });
+  } catch (error: any) {
+    throw createError(`Failed to list templates: ${error.message}`, 500);
+  }
+}));
+
+/**
+ * @swagger
+ * /api/templates/{templateType}/info:
+ *   get:
+ *     summary: Get template information
+ *     description: Get detailed information about a specific template
+ *     tags: [Templates]
+ *     parameters:
+ *       - in: path
+ *         name: templateType
+ *         required: true
+ *         schema:
+ *           type: string
+ *         description: Template type (e.g., LSCapsule-default, LSXL-samsung)
+ *     responses:
+ *       200:
+ *         description: Template information
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                   example: true
+ *                 data:
+ *                   type: object
+ *                   properties:
+ *                     size:
+ *                       type: string
+ *                       example: "LSCapsule"
+ *                     variant:
+ *                       type: string
+ *                       example: "default"
+ *                     fileName:
+ *                       type: string
+ *                       example: "voiceidealStudioTemplate_default.json"
+ *                     exists:
+ *                       type: boolean
+ *                       example: true
+ *       404:
+ *         description: Template not found
+ */
+router.get('/templates/:templateType/info', asyncHandler(async (req: Request, res: Response) => {
+  const { templateType } = req.params;
+  
+  try {
+    const templateInfo = await templateService.getTemplateInfo(templateType);
+    
+    res.json({
+      success: true,
+      data: templateInfo
+    });
+  } catch (error: any) {
+    throw createError(`Failed to get template info: ${error.message}`, 404);
+  }
+}));
+
+/**
+ * @swagger
+ * /api/templates/{templateType}/metadata:
+ *   get:
+ *     summary: Get template metadata
+ *     description: Get metadata about a specific template (version, config, etc.)
+ *     tags: [Templates]
+ *     parameters:
+ *       - in: path
+ *         name: templateType
+ *         required: true
+ *         schema:
+ *           type: string
+ *         description: Template type (e.g., LSCapsule-default, LSXL-samsung)
+ *     responses:
+ *       200:
+ *         description: Template metadata
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                   example: true
+ *                 data:
+ *                   type: object
+ *                   properties:
+ *                     version:
+ *                       type: string
+ *                       example: "3"
+ *                     boxesCount:
+ *                       type: number
+ *                       example: 25
+ *                     templateType:
+ *                       type: string
+ *                       example: "LSCapsule-default"
+ *       404:
+ *         description: Template not found
+ */
+router.get('/templates/:templateType/metadata', asyncHandler(async (req: Request, res: Response) => {
+  const { templateType } = req.params;
+  
+  try {
+    const metadata = await templateService.getTemplateMetadata(templateType);
+    
+    res.json({
+      success: true,
+      data: metadata
+    });
+  } catch (error: any) {
+    throw createError(`Failed to get template metadata: ${error.message}`, 404);
+  }
+}));
+
+/**
+ * @swagger
+ * /api/convert/dynamic:
+ *   post:
+ *     summary: Create dynamic template from AI output
+ *     description: Create a new template dynamically based on AI output using reference templates
+ *     tags: [Conversion]
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             required:
+ *               - aiOutput
+ *               - templateType
+ *             properties:
+ *               aiOutput:
+ *                 type: object
+ *                 description: AI generated content in JSON format
+ *               templateType:
+ *                 type: string
+ *                 description: Template type (e.g., LSCapsule-default, LSXL-samsung, LSMaxi-sompo)
+ *                 example: "LSCapsule-blue"
+ *     responses:
+ *       200:
+ *         description: Dynamic template created successfully
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                   example: true
+ *                 message:
+ *                   type: string
+ *                   example: "Dynamic template created successfully"
+ *                 data:
+ *                   type: object
+ *                   properties:
+ *                     convertedTemplate:
+ *                       type: object
+ *                       description: Dynamically created template JSON
+ *                     templateInfo:
+ *                       type: object
+ *                       description: Template information
+ *                       properties:
+ *                         size:
+ *                           type: string
+ *                           example: "LSCapsule"
+ *                         variant:
+ *                           type: string
+ *                           example: "blue"
+ *                         boxesCount:
+ *                           type: number
+ *                           example: 25
+ *                         sectionsMapped:
+ *                           type: number
+ *                           example: 5
+ *                         quizzesMapped:
+ *                           type: number
+ *                           example: 3
+ *                     stats:
+ *                       type: object
+ *                       properties:
+ *                         sections:
+ *                           type: number
+ *                           example: 5
+ *                         quizzes:
+ *                           type: number
+ *                           example: 3
+ *                         totalTags:
+ *                           type: number
+ *                           example: 25
+ *                         replacedTags:
+ *                           type: number
+ *                           example: 8
+ *                         templateSize:
+ *                           type: string
+ *                           example: "2.5 MB"
+ *                         dynamicBoxesCreated:
+ *                           type: number
+ *                           example: 8
+ *       400:
+ *         description: Bad request - missing required fields
+ *       404:
+ *         description: Template not found
+ *       500:
+ *         description: Dynamic template creation failed
+ */
+router.post('/convert/dynamic', asyncHandler(async (req: Request, res: Response) => {
+  const { aiOutput, templateType } = req.body;
+
+  if (!aiOutput) {
+    throw createError('aiOutput is required', 400);
+  }
+
+  if (!templateType) {
+    throw createError('templateType is required', 400);
+  }
+
+  Logger.info(`Dynamic template creation started with template type: ${templateType}`);
+
+  try {
+    const result = await dynamicTemplateService.createDynamicTemplate(aiOutput, templateType);
+
+    Logger.success(`Dynamic template created for ${templateType}: ${result.stats.dynamicBoxesCreated} boxes created`);
+
+    res.json({
+      success: true,
+      message: 'Dynamic template created successfully',
+      data: result
+    });
+  } catch (error: any) {
+    Logger.error(`Dynamic template creation failed for ${templateType}:`, error);
+    throw createError(`Dynamic template creation failed: ${error.message}`, 500);
+  }
+}));
+
+/**
+ * @swagger
+ * /api/convert/template/request:
+ *   post:
+ *     summary: Get template by size and brand
+ *     description: Request a specific template by size (Capsule, XL, Maxi, etc.) and brand (Creatio, Samsung, etc.). Returns raw template content with placeholders.
+ *     tags: [Template Request]
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             $ref: '#/components/schemas/TemplateRequest'
+ *     responses:
+ *       200:
+ *         description: Template retrieved successfully
+ *         content:
+ *           application/json:
+ *             schema:
+ *               $ref: '#/components/schemas/TemplateResponse'
+ *       400:
+ *         description: Bad request - invalid size or brand
+ *         content:
+ *           application/json:
+ *             schema:
+ *               $ref: '#/components/schemas/ErrorResponse'
+ *       404:
+ *         description: Template not found
+ *         content:
+ *           application/json:
+ *             schema:
+ *               $ref: '#/components/schemas/ErrorResponse'
+ *       500:
+ *         description: Server error
+ *         content:
+ *           application/json:
+ *             schema:
+ *               $ref: '#/components/schemas/ErrorResponse'
+ */
+router.post('/template/request', asyncHandler(async (req: Request, res: Response) => {
+  const { size, brand } = req.body;
+
+  if (!size) {
+    throw createError('size is required', 400);
+  }
+
+  if (!brand) {
+    throw createError('brand is required', 400);
+  }
+
+  Logger.info(`Template request: ${size}-${brand}`);
+
+  try {
+    const result = await templateRequestService.getTemplate({ size, brand });
+
+    Logger.success(`Template retrieved: ${size}-${brand}`);
+
+    res.json(result);
+  } catch (error: any) {
+    Logger.error(`Template request failed for ${size}-${brand}:`, error);
+    throw createError(`Template request failed: ${error.message}`, error.status || 500);
+  }
+}));
+
+/**
+ * @swagger
+ * /api/convert/template/list:
+ *   get:
+ *     summary: List all available templates
+ *     description: Get list of all available template sizes and brands
+ *     tags: [Template Request]
+ *     responses:
+ *       200:
+ *         description: List of available templates
+ *         content:
+ *           application/json:
+ *             schema:
+ *               $ref: '#/components/schemas/TemplateListResponse'
+ *       500:
+ *         description: Server error
+ *         content:
+ *           application/json:
+ *             schema:
+ *               $ref: '#/components/schemas/ErrorResponse'
+ */
+router.get('/template/list', asyncHandler(async (_req: Request, res: Response) => {
+  try {
+    const templates = await templateRequestService.listAvailableTemplates();
+    
+    res.json({
+      success: true,
+      data: templates
+    });
+  } catch (error: any) {
+    throw createError(`Failed to list templates: ${error.message}`, 500);
+  }
+}));
+
+/**
+ * @swagger
+ * /api/convert/template/{size}/{brand}/metadata:
+ *   get:
+ *     summary: Get template metadata
+ *     description: Get metadata about a specific template
+ *     tags: [Template Request]
+ *     parameters:
+ *       - in: path
+ *         name: size
+ *         required: true
+ *         schema:
+ *           type: string
+ *           enum: [Capsule, XL, Maxi, Micro, Midi, Mini]
+ *         description: Template size
+ *         example: "Capsule"
+ *       - in: path
+ *         name: brand
+ *         required: true
+ *         schema:
+ *           type: string
+ *           enum: [creatio, samsung, sompo, default]
+ *         description: Template brand
+ *         example: "creatio"
+ *     responses:
+ *       200:
+ *         description: Template metadata retrieved successfully
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                   example: true
+ *                 data:
+ *                   type: object
+ *                   properties:
+ *                     size:
+ *                       type: string
+ *                       example: "Capsule"
+ *                     brand:
+ *                       type: string
+ *                       example: "creatio"
+ *                     fileName:
+ *                       type: string
+ *                       example: "voiceidealStudioTemplate_creatio.json"
+ *                     fileSize:
+ *                       type: string
+ *                       example: "0.25 MB"
+ *                     boxesCount:
+ *                       type: number
+ *                       example: 0
+ *                     lastModified:
+ *                       type: string
+ *                       format: date-time
+ *                       example: "2025-10-21T08:25:37.000Z"
+ *       404:
+ *         description: Template not found
+ *         content:
+ *           application/json:
+ *             schema:
+ *               $ref: '#/components/schemas/ErrorResponse'
+ *       500:
+ *         description: Server error
+ *         content:
+ *           application/json:
+ *             schema:
+ *               $ref: '#/components/schemas/ErrorResponse'
+ */
+router.get('/template/:size/:brand/metadata', asyncHandler(async (req: Request, res: Response) => {
+  const { size, brand } = req.params;
+  
+  try {
+    const metadata = await templateRequestService.getTemplateMetadata(size, brand);
+    
+    res.json({
+      success: true,
+      data: metadata
+    });
+  } catch (error: any) {
+    throw createError(`Failed to get template metadata: ${error.message}`, 404);
   }
 }));
 

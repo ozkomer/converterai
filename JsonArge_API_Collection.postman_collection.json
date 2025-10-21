@@ -1,0 +1,100 @@
+{
+  "info": {
+    "name": "JsonArge API Collection",
+    "description": "AI Template Converter API için Postman Collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Health Check",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/health",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "health"]
+        },
+        "description": "API'nin çalışıp çalışmadığını kontrol eder"
+      },
+      "response": []
+    },
+    {
+      "name": "Convert Template",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"aiOutput\": {\n    \"CourseInfo\": {\n      \"Title\": \"Algoritmalar ve Programlama: Kavramlardan Çizge Algoritmalarına\",\n      \"Description\": \"Bu eğitim, algoritma kavramını, algoritma türlerini, veri yapılarının mantığını ve karşılaştırmalarını, ağaçlar ile özetleme tabloları dahil olmak üzere ileri düzey yapıların avantajlarını, problem çözmeden analiz ve karmaşıklık hesaplamalarına kadar algoritma tasarım süreçlerini, temel arama ve sıralama algoritmalarını ve çizge kuramının algoritmalarını sistematik ve örneklerle açıklar.\",\n      \"Objective\": null,\n      \"TargetAudience\": null,\n      \"CourseImageUrl\": \"https://aidea.elearningsolutions.net/IdealStudioEditor/images/placeholder.png\",\n      \"AudioDuration\": 5,\n      \"SpeechAudioUrl\": \"https://aidea.elearningsolutions.net/ContentFiles/IdealStudioFiles/1-ai-CourseCoverSpeech-bfa3aef0-9024-4d45-a852-5812837dfcfa.mp3\",\n      \"SpeechFileName\": \"1-ai-CourseCoverSpeech-bfa3aef0-9024-4d45-a852-5812837dfcfa.mp3\"\n    },\n    \"Sections\": [\n      {\n        \"PageStyle\": 26,\n        \"YoutubeSearchKeyword\": null,\n        \"Index\": 1,\n        \"Title\": \"Algoritmalar ve Programlama: Eğitimin Amacı ve Genel Bakış\",\n        \"Description\": null,\n        \"Content\": {\n          \"paragraph\": \"Bu eğitimde algoritmanın ve programlamanın temel kavramları sistematik biçimde işlenecektir; Algoritma Türleri Ve Veri Yapıları Mantığıyla Karşılaştırma; Ağaçlar Ve Özetleme Tabloları Gibi İleri Düzey Yapıların Avantajları; Problemi Analiz Etme Ve Karmaşıklık Hesaplama Yöntemleri; Temel Arama Ve Sıralama Algoritmaları; Çizge Teorisi Algoritmaları Sistematik Açıklamalar; Bilgi Ve Uygulama Becerisi Kazandırılması Hedeflenir.\"\n        },\n        \"NarrationText\": \"Bu eğitimde, algoritmanın temel kavramı, algoritma türlerinin ve veri yapıların mantığı ile karşılaştırması, ağaçlar ve özetleme tabloları gibi ileri düzey yapıların avantajları, problem çözmeden analiz ve karmaşıklık hesaplamalarına kadar algoritma tasarım süreçleri kapsamlı olarak ele alınacaktır. Ayrıca temel arama, sıralama algoritmaları ile çizge teorisinin algoritmaları örneklerle ve sistematik biçimde açıklanmaktadır. Amaç, algoritma ve programlama konularında bilgi ve uygulama becerisi kazandırmaktır.\",\n        \"Images\": [],\n        \"YoutubeUrl\": null,\n        \"AudioDuration\": 32,\n        \"SpeechAudioUrl\": \"https://aidea.elearningsolutions.net/ContentFiles/IdealStudioFiles/AI_Section_1_fed122d6-bd76-4b2e-831e-5f5e8fe50e91.mp3\",\n        \"SpeechFileName\": \"AI_Section_1_fed122d6-bd76-4b2e-831e-5f5e8fe50e91.mp3\",\n        \"RelevantDocumentPart\": null\n      }\n    ],\n    \"GeneralQuiz\": [\n      {\n        \"Index\": 51,\n        \"Type\": 0,\n        \"Question\": \"Algoritma analizinde zaman karmaşıklığını gösteren büyük O notasyonu aşağıdakilerden hangisini tanımlar?\",\n        \"Options\": [\n          \"Algoritmanın en iyi sonucu verdiği alt sınırı\",\n          \"Algoritmanın en kötü durumda büyüme üst sınırını\",\n          \"Algoritmanın bellekte kapladığı alanı\",\n          \"Algoritmanın ortalama verimliliğini\"\n        ],\n        \"CorrectAnswers\": [\"Algoritmanın en kötü durumda büyüme üst sınırını\"],\n        \"Statements\": null,\n        \"IsSuccess\": true,\n        \"ErrorMessage\": null\n      }\n    ],\n    \"IsSuccess\": true,\n    \"ErrorMessage\": null,\n    \"ErrorCode\": 0,\n    \"ThreadId\": null,\n    \"FullDocumentText\": null,\n    \"SummaryDocumentText\": null\n  },\n  \"template\": {\n    \"present\": {\n      \"version\": \"3\",\n      \"lastActionDispatched\": \"SELECT_BOX\",\n      \"globalConfig\": {\n        \"allowComments\": true,\n        \"allowClone\": true,\n        \"allowDownload\": true,\n        \"title\": \"#{[training-title]}#\",\n        \"canvasRatio\": 1.7777777777777777,\n        \"minTimeProgress\": 0,\n        \"visorNav\": {\n          \"player\": true,\n          \"sidebar\": true,\n          \"keyBindings\": true\n        },\n        \"trackProgress\": true,\n        \"age\": {\n          \"min\": 0,\n          \"max\": 0\n        },\n        \"rights\": \"public\",\n        \"keywords\": [],\n        \"typicalLearningTime\": {\n          \"h\": 0,\n          \"m\": 0,\n          \"s\": 0\n        },\n        \"version\": \"1.0.0\",\n        \"thumbnail\": \"\",\n        \"structure\": \"linear\"\n      },\n      \"boxesById\": {\n        \"bo-1752061734007\": {\n          \"id\": \"bo-1752061734007\",\n          \"parent\": \"pa-1497983247795\",\n          \"container\": 0,\n          \"level\": 0,\n          \"col\": 0,\n          \"row\": 0,\n          \"position\": {\n            \"x\": \"48.216%\",\n            \"y\": \"6.441185774647888%\",\n            \"type\": \"absolute\"\n          },\n          \"content\": {},\n          \"draggable\": true,\n          \"resizable\": true,\n          \"showTextEditor\": false,\n          \"fragment\": {},\n          \"children\": [],\n          \"sortableContainers\": {},\n          \"containedViews\": []\n        }\n      }\n    }\n  },\n  \"templateType\": \"sompo\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/convert",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "convert"]
+        },
+        "description": "AI output'u template ile birleştirerek converted template oluşturur"
+      },
+      "response": []
+    },
+    {
+      "name": "Convert Template (Minimal Example)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"aiOutput\": {\n    \"CourseInfo\": {\n      \"Title\": \"Test Eğitimi\",\n      \"Description\": \"Bu bir test eğitimidir.\"\n    },\n    \"Sections\": [\n      {\n        \"Index\": 1,\n        \"Title\": \"Test Bölümü\",\n        \"Content\": {\n          \"paragraph\": \"Test içeriği\"\n        }\n      }\n    ],\n    \"GeneralQuiz\": [\n      {\n        \"Index\": 1,\n        \"Type\": 0,\n        \"Question\": \"Test sorusu?\",\n        \"Options\": [\"A\", \"B\", \"C\", \"D\"],\n        \"CorrectAnswers\": [\"A\"]\n      }\n    ]\n  },\n  \"template\": {\n    \"present\": {\n      \"globalConfig\": {\n        \"title\": \"#{[training-title]}#\"\n      }\n    }\n  },\n  \"templateType\": \"sompo\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/convert",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "convert"]
+        },
+        "description": "Minimal örnek ile template conversion test eder"
+      },
+      "response": []
+    },
+    {
+      "name": "Get API Documentation",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api-docs",
+          "host": ["{{baseUrl}}"],
+          "path": ["api-docs"]
+        },
+        "description": "Swagger API dokümantasyonunu getirir"
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:3000",
+      "type": "string"
+    }
+  ]
+}

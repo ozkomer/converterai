@@ -116,6 +116,111 @@ const swaggerDefinition: SwaggerDefinition = {
           }
         }
       },
+      TemplateRequest: {
+        type: 'object',
+        required: ['size', 'brand'],
+        properties: {
+          size: {
+            type: 'string',
+            enum: ['Capsule', 'XL', 'Maxi', 'Micro', 'Midi', 'Mini'],
+            description: 'Template size',
+            example: 'Capsule'
+          },
+          brand: {
+            type: 'string',
+            enum: ['creatio', 'samsung', 'sompo', 'default'],
+            description: 'Template brand',
+            example: 'creatio'
+          }
+        }
+      },
+      TemplateResponse: {
+        type: 'object',
+        properties: {
+          success: {
+            type: 'boolean',
+            example: true
+          },
+          template: {
+            type: 'string',
+            description: 'Raw template content with placeholders',
+            example: '{"present": {"globalConfig": {...}, "boxesById": {...}}}'
+          },
+          metadata: {
+            type: 'object',
+            properties: {
+              size: {
+                type: 'string',
+                example: 'Capsule'
+              },
+              brand: {
+                type: 'string',
+                example: 'creatio'
+              },
+              fileName: {
+                type: 'string',
+                example: 'voiceidealStudioTemplate_creatio.json'
+              },
+              fileSize: {
+                type: 'string',
+                example: '0.25 MB'
+              },
+              boxesCount: {
+                type: 'number',
+                example: 0,
+                description: 'Number of boxes in template (0 for raw templates)'
+              },
+              lastModified: {
+                type: 'string',
+                format: 'date-time',
+                example: '2025-10-21T08:25:37.000Z'
+              }
+            }
+          }
+        }
+      },
+      TemplateListResponse: {
+        type: 'object',
+        properties: {
+          success: {
+            type: 'boolean',
+            example: true
+          },
+          templates: {
+            type: 'array',
+            items: {
+              type: 'object',
+              properties: {
+                size: {
+                  type: 'string',
+                  example: 'Capsule'
+                },
+                brand: {
+                  type: 'string',
+                  example: 'creatio'
+                },
+                fileName: {
+                  type: 'string',
+                  example: 'voiceidealStudioTemplate_creatio.json'
+                },
+                filePath: {
+                  type: 'string',
+                  example: '/templates/LSCapsule/voiceidealStudioTemplate_creatio.json'
+                },
+                fileSize: {
+                  type: 'string',
+                  example: '0.25 MB'
+                },
+                lastModified: {
+                  type: 'string',
+                  format: 'date-time',
+                  example: '2025-10-21T08:25:37.000Z'
+                }
+              }
+            }
+          }
+        }
+      },
       TemplateInfo: {
         type: 'object',
         properties: {
@@ -224,7 +329,11 @@ const swaggerDefinition: SwaggerDefinition = {
     },
     {
       name: 'Templates',
-      description: 'Template management endpoints'
+      description: 'Template management and request endpoints'
+    },
+    {
+      name: 'Template Request',
+      description: 'Request specific templates by size and brand'
     },
     {
       name: 'Outputs',

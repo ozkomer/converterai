@@ -28,6 +28,127 @@ export interface DataConversionResult {
 }
 
 export class ConversionService {
+  // Template boyutları ve dosya yolları mapping'i
+  private readonly templateMappings: Record<string, Record<string, string>> = {
+    'LSCapsule': {
+      'default': 'voiceidealStudioTemplate_default.json',
+      'blue': 'voiceidealStudioTemplate_blue.json',
+      'black': 'voiceidealStudioTemplate_black.json',
+      'green': 'voiceidealStudioTemplate_green.json',
+      'samsung': 'voiceidealStudioTemplate_samsung.json',
+      'sompo': 'voiceidealStudioTemplate_sompo.json',
+      'creatio': 'voiceidealStudioTemplate_creatio.json',
+      'champs': 'voiceidealStudioTemplate_champs.json',
+      'silent': 'silentIIdealStudioTemplate.json'
+    },
+    'LSXL': {
+      'default': 'voiceidealStudioTemplate.json',
+      'samsung': 'voiceidealStudioTemplate_samsung.json',
+      'sompo': 'voiceidealStudioTemplate_sompo.json'
+    },
+    'LSMaxi': {
+      'default': 'voiceidealStudioTemplate.json',
+      'samsung': 'voiceidealStudioTemplate_samsung.json',
+      'sompo': 'voiceidealStudioTemplate_sompo.json'
+    },
+    'LSMicro': {
+      'default': 'voiceidealStudioTemplate.json',
+      'samsung': 'voiceidealStudioTemplate_samsung.json',
+      'sompo': 'voiceidealStudioTemplate_sompo.json'
+    },
+    'LSMidi': {
+      'default': 'voiceidealStudioTemplate.json',
+      'samsung': 'voiceidealStudioTemplate_samsung.json',
+      'sompo': 'voiceidealStudioTemplate_sompo.json'
+    },
+    'LSMini': {
+      'default': 'voiceidealStudioTemplate.json',
+      'samsung': 'voiceidealStudioTemplate_samsung.json',
+      'sompo': 'voiceidealStudioTemplate_sompo.json'
+    }
+  };
+
+  // Template boyutunu ve varyantını parse et
+  private parseTemplateType(templateType: string): { size: string; variant: string } {
+    const parts = templateType.split('-');
+    if (parts.length === 1) {
+      return { size: 'LSCapsule', variant: 'default' };
+    }
+    if (parts.length === 2) {
+      return { size: parts[0], variant: parts[1].toLowerCase() };
+    }
+    return { size: 'LSCapsule', variant: 'default' };
+  }
+
+  // Template dosya yolunu oluştur
+  private getTemplatePath(templateType: string): string {
+    const { size, variant } = this.parseTemplateType(templateType);
+    const templateDir = path.join(__dirname, '../../../templates', size);
+    const fileName = this.templateMappings[size]?.[variant] || this.templateMappings[size]?.default;
+    
+    if (!fileName) {
+      throw createError(`Template not found for type: ${templateType}`, 404);
+    }
+    
+    return path.join(templateDir, fileName);
+  }
+
+  // Dinamik conversion - tüm template boyutları için
+  async convertDynamic(aiOutput: any, templateType: string): Promise<DataConversionResult> {
+    try {
+      Logger.info(`Starting dynamic conversion for template type: ${templateType}`);
+
+      // Template dosya yolunu al
+      const templatePath = this.getTemplatePath(templateType);
+      
+      // Template dosyasının var olup olmadığını kontrol et
+      if (!await fs.pathExists(templatePath)) {
+        throw createError(`Template file not found: ${templatePath}`, 404);
+      }
+
+      // Template'i oku
+      const templateStr = await fs.readFile(templatePath, 'utf8');
+      Logger.info(`Template loaded: ${templatePath}`);
+
+      // Tag mappings oluştur
+      const tagMap = await this.buildTagMappings(aiOutput);
+      Logger.info(`Tag mappings built: ${Object.keys(tagMap).length} tags`);
+
+      // Tag'leri replace et
+      const replacedTemplate = this.replaceTags(templateStr, tagMap);
+      Logger.info('Tags replaced in template');
+
+      // JSON parse et
+      let convertedTemplate;
+      try {
+        convertedTemplate = JSON.parse(replacedTemplate);
+      } catch (parseError: any) {
+        Logger.error('JSON parse error after tag replacement:', parseError.message);
+        throw createError(`Invalid JSON after tag replacement: ${parseError.message}`, 500);
+      }
+
+      // Empty file fields'ları düzelt
+      this.fixEmptyFileFieldsInObject(convertedTemplate);
+
+      const statsData = {
+        sections: aiOutput.Sections?.length || 0,
+        quizzes: aiOutput.GeneralQuiz?.length || 0,
+        totalTags: Object.keys(tagMap).length,
+        replacedTags: Object.keys(tagMap).length
+      };
+
+      Logger.success(`Dynamic conversion completed for ${templateType}`);
+      return {
+        convertedTemplate,
+        stats: statsData
+      };
+
+    } catch (error: any) {
+      Logger.error('Dynamic conversion failed:', error);
+      throw createError(`Dynamic conversion failed: ${error.message}`, 500);
+    }
+  }
+
   async convert(aiOutputPath: string, templatePath: string): Promise<ConversionResult> {
     try {
       Logger.info('Starting conversion process...');
