@@ -1,0 +1,7 @@
+{
+  "brand": "CHAMPS",
+  "sceneIndex": 1,
+  "pageConfigRaw": "\"pa-1756882835_1\": {\n\"aspectRatio\": \"true\",",
+  "textBoxRaw": "{\"box\":{\"children\":[],\"col\":0,\"containedViews\":[],\"container\":0,\"content\":[],\"draggable\":true,\"fragment\":{},\"id\":\"bo-1756882835_1\",\"level\":0,\"parent\":\"pa-1756882835_1\",\"position\":{\"x\":\"53.960396039603964%\",\"y\":\"40.70422535211268%\",\"type\":\"absolute\"},\"resizable\":true,\"row\":0,\"showTextEditor\":false,\"sortableContainers\":{}},\"toolbar\":{\"id\":\"bo-1756882835_1\",\"pluginId\":\"BasicText\",\"showTextEditor\":false,\"state\":{\"__text\":\"%3Cp%20style=%22;font-family:Times%20New%20Roman;text-align:left;%22%3E%3Cspan%20style=%22font-size:3.5714285714285716em;%22%3E%3Cspan%20style=%22font-family:Roboto,sans-serif;%22%3E%3Cfont%20color=%22#d03f8f%22%3E#%7B%5Btype0:title%5D%7D#%3C/font%3E%3C/span%3E%3C/span%3E%3C/p%3E%0A\"},\"structure\":{\"height\":\"auto\",\"width\":43.2817268371582,\"widthUnit\":\"%\",\"heightUnit\":\"%\",\"rotation\":0,\"aspectRatio\":true,\"position\":\"absolute\",\"x\":\"54.152245%\",\"y\":\"51.006866%\"},\"style\":{\"borderWidth\":0,\"borderColor\":\"#000000\",\"borderRadius\":0,\"opacity\":1,\"padding\":0,\"backgroundColor\":\"rgba(255,255,255,0)\",\"borderStyle\":\"solid\"},\"position\":{\"x\":\"53.960396039603964%\",\"y\":\"40.70422535211268%\",\"type\":\"absolute\"}},\"marks\":{},\"childBoxes\":{},\"childToolbars\":{}}",
+  "imageBoxRaw": ""
+}

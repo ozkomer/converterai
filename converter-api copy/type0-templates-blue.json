@@ -1,0 +1,145 @@
+{
+  "brand": "BLUE",
+  "sceneIndex": 1,
+  "pageConfig": {
+    "id": "pa-type0-blue",
+    "breadcrumb": "hidden",
+    "doc_type": "slide",
+    "viewName": "{{TITLE}}",
+    "courseTitle": "hidden",
+    "documentSubtitle": "hidden",
+    "documentSubtitleContent": "Alt Başlık",
+    "documentTitle": "hidden",
+    "documentTitleContent": "",
+    "numPage": "hidden",
+    "numPageContent": 1,
+    "customSize": 0,
+    "aspectRatio": true,
+    "background": "https://ls.elearningsolutions.net//ContentFiles/IdealStudioFiles/611_e12c9d51-de9f-4d6c-925e-9dff8ad77046.png",
+    "backgroundAttr": "full",
+    "backgroundZoom": 100,
+    "backgroundOpacity": 100,
+    "isMandatory": "{{MANDATORY}}",
+    "mandatoryType": "waitForSound"
+  },
+  "textBox": {
+    "box": {
+      "id": "bo-type0-text",
+      "parent": "pa-type0-blue",
+      "container": 0,
+      "level": 0,
+      "col": 0,
+      "row": 0,
+      "position": {
+        "x": "47.586200000000005%",
+        "y": "30.790200000000002%",
+        "type": "absolute"
+      },
+      "content": {},
+      "draggable": true,
+      "resizable": true,
+      "showTextEditor": false,
+      "fragment": {},
+      "children": [],
+      "sortableContainers": {},
+      "containedViews": []
+    },
+    "toolbar": {
+      "id": "bo-type0-text",
+      "pluginId": "BasicText",
+      "state": {
+        "__text": "{{TITLE_TEXT}}"
+      },
+      "structure": {
+        "height": "auto",
+        "width": 51.40380952380952,
+        "widthUnit": "%",
+        "heightUnit": "%",
+        "rotation": 0,
+        "aspectRatio": false,
+        "position": "absolute",
+        "x": "47.586200000000005%",
+        "y": "30.790200000000002%"
+      },
+      "style": {
+        "padding": 7,
+        "backgroundColor": "rgba(255,255,255,0)",
+        "borderWidth": 0,
+        "borderStyle": "solid",
+        "borderColor": "#000000",
+        "borderRadius": 0,
+        "opacity": 1
+      },
+      "showTextEditor": false,
+      "position": {
+        "x": "47.586200000000005%",
+        "y": "30.790200000000002%",
+        "type": "absolute"
+      }
+    },
+    "marks": {},
+    "childBoxes": {},
+    "childToolbars": {}
+  },
+  "imageBox": {
+    "box": {
+      "id": "bo-type0-image",
+      "parent": "pa-type0-blue",
+      "container": 0,
+      "level": 0,
+      "col": 0,
+      "row": 0,
+      "position": {
+        "x": "3%",
+        "y": "20.29972752043597%",
+        "type": "absolute"
+      },
+      "content": {},
+      "draggable": true,
+      "resizable": true,
+      "showTextEditor": false,
+      "fragment": {},
+      "children": [],
+      "sortableContainers": {},
+      "containedViews": []
+    },
+    "toolbar": {
+      "id": "bo-type0-image",
+      "pluginId": "HotspotImages",
+      "state": {
+        "url": "{{IMAGE_URL}}",
+        "allowDeformed": true
+      },
+      "structure": {
+        "height": 54.504359673024524,
+        "width": 37.18153256704981,
+        "widthUnit": "%",
+        "heightUnit": "%",
+        "rotation": 0,
+        "aspectRatio": true,
+        "position": "absolute",
+        "x": "11.08%",
+        "y": "24.82%"
+      },
+      "style": {
+        "padding": 0,
+        "backgroundColor": "rgba(255,255,255,0)",
+        "borderWidth": 0,
+        "borderStyle": "solid",
+        "borderColor": "#000000",
+        "borderRadius": 0,
+        "opacity": 1
+      },
+      "showTextEditor": false,
+      "position": {
+        "x": "3%",
+        "y": "20.29972752043597%",
+        "type": "absolute"
+      }
+    },
+    "marks": {},
+    "childBoxes": {},
+    "childToolbars": {}
+  }
+}
+
