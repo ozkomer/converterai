@@ -56,6 +56,7 @@ app.get('/', (_req, res) => {
     version: '1.0.0',
     endpoints: {
       health: '/api/health',
+      ping: '/api/health/ping',
       convert: '/api/convert',
       uploads: '/uploads',
       outputs: '/outputs',

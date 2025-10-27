@@ -76,4 +76,27 @@ router.get('/detailed', (_req: Request, res: Response) => {
   res.json(health);
 });
 
+/**
+ * @swagger
+ * /api/health/ping:
+ *   get:
+ *     summary: Ping endpoint
+ *     description: Simple ping endpoint that returns ponkponk
+ *     tags: [Health]
+ *     responses:
+ *       200:
+ *         description: Ping successful
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 message:
+ *                   type: string
+ *                   example: ponkponk
+ */
+router.get('/ping', (_req: Request, res: Response) => {
+  res.json({ message: 'ponkponk' });
+});
+
 export { router as healthRoutes };
