@@ -96,7 +96,7 @@ router.get('/detailed', (_req: Request, res: Response) => {
  *                   example: ponkponk
  */
 router.get('/ping', (_req: Request, res: Response) => {
-  res.json({ message: 'ponkponk' });
+  res.json({ message: 'ponkponk123' });
 });
 
 export { router as healthRoutes };
