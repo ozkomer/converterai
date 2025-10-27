@@ -1,10 +1,15 @@
 #!/bin/bash
 set -e
+
 cd /home/idearoot/idea.converter.api
-echo ">>> Pulling latest code..."
+
+echo ">>> Fetching latest code from GitHub..."
 git fetch --all
-git reset --hard origin/main
-echo ">>> Rebuilding containers..."
+git reset --hard origin/master
+
+echo ">>> Rebuilding Docker containers..."
 docker compose down
-docker compose up -d --build
+docker compose build --no-cache
+docker compose up -d
+
 echo ">>> Deploy completed!"
