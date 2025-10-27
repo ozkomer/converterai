@@ -95,7 +95,7 @@ router.get('/detailed', (_req: Request, res: Response) => {
  *                   type: string
  *                   example: ponkponk
  */
-router.get('/ping', (_req: Request, res: Response) => {
+router.get('/ping2', (_req: Request, res: Response) => {
   res.json({ message: 'ponkponk123' });
 });
 
