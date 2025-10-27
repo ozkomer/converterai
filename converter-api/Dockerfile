@@ -10,7 +10,7 @@ COPY package*.json ./
 # Install dependencies (including dev dependencies for build)
 RUN npm ci
 
-# Copy source code
+# Copy source code (excluding files in .dockerignore)
 COPY . .
 
 # Build TypeScript

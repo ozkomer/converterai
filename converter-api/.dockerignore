@@ -1,0 +1,26 @@
+node_modules
+npm-debug.log
+.env
+.env.local
+.git
+.gitignore
+README.md
+*.md
+.vscode
+.idea
+*.log
+coverage
+dist
+*.test.js
+*.test.ts
+test_cases
+TestCases
+outputs/
+uploads/
+scripts/
+type0-templates/
+type0-templates-*.json
+type0.txt
+# Keep templates directory
+!templates/
+
