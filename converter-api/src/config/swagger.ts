@@ -22,7 +22,7 @@ const swaggerDefinition: SwaggerDefinition = {
       description: 'Development server'
     },
     {
-      url: 'https://api.example.com',
+      url: 'https://ideatemplates.elearningsolutions.net',
       description: 'Production server'
     }
   ],
