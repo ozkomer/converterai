@@ -45,6 +45,12 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(specs, {
   customSiteTitle: 'AI to Template Converter API'
 }));
 
+// Swagger JSON endpoint
+app.get('/api-docs.json', (_req, res) => {
+  res.setHeader('Content-Type', 'application/json');
+  res.send(specs);
+});
+
 // Routes
 app.use('/api/health', healthRoutes);
 app.use('/api/convert', conversionRoutes);

@@ -78,10 +78,10 @@ router.get('/detailed', (_req: Request, res: Response) => {
 
 /**
  * @swagger
- * /api/health/ping:
+ * /api/health/ping2:
  *   get:
  *     summary: Ping endpoint
- *     description: Simple ping endpoint that returns ponkponk
+ *     description: Simple ping endpoint that returns ponkponk123
  *     tags: [Health]
  *     responses:
  *       200:
@@ -93,7 +93,7 @@ router.get('/detailed', (_req: Request, res: Response) => {
  *               properties:
  *                 message:
  *                   type: string
- *                   example: ponkponk
+ *                   example: ponkponk123
  */
 router.get('/ping2', (_req: Request, res: Response) => {
   res.json({ message: 'ponkponk123' });
