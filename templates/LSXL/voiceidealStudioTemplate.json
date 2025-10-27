@@ -21350,8 +21350,8 @@
         "pluginId": "MultipleChoice",
         "state": {
           "nBoxes": 4,
-          "showFeedback": true,
-          "shuffle": true,
+          "showFeedback": "#{[question-feedback-enable]}#",
+          "shuffle": "#{[question-feedback-shuffle]}#",
           "buttons": "tryAgain",
           "letters": "Harfler",
           "quizColor": "rgba(234, 183, 0, 1)",
@@ -24209,8 +24209,8 @@
         "pluginId": "MultipleAnswer",
         "state": {
           "nBoxes": 4,
-          "showFeedback": true,
-          "shuffle": true,
+          "showFeedback": "#{[question-feedback-enable]}#",
+          "shuffle": "#{[question-feedback-shuffle]}#",
           "buttons": "tryAgain",
           "letters": "Harfler",
           "allowPartialScore": false,
@@ -24639,8 +24639,8 @@
         "pluginId": "TrueFalse",
         "state": {
           "nBoxes": 4,
-          "showFeedback": true,
-          "shuffle": true,
+          "showFeedback": "#{[question-feedback-enable]}#",
+          "shuffle": "#{[question-feedback-shuffle]}#",
           "buttons": "tryAgain",
           "allowPartialScore": true,
           "quizColor": "rgba(234, 183, 0, 1)",
@@ -28464,8 +28464,8 @@
         "pluginId": "MultipleChoice",
         "state": {
           "nBoxes": 4,
-          "showFeedback": true,
-          "shuffle": true,
+          "showFeedback": "#{[question-feedback-enable]}#",
+          "shuffle": "#{[question-feedback-shuffle]}#",
           "buttons": "tryAgain",
           "letters": "Harfler",
           "quizColor": "rgba(234, 183, 0, 1)",
@@ -28927,8 +28927,8 @@
         "pluginId": "MultipleAnswer",
         "state": {
           "nBoxes": 4,
-          "showFeedback": true,
-          "shuffle": true,
+          "showFeedback": "#{[question-feedback-enable]}#",
+          "shuffle": "#{[question-feedback-shuffle]}#",
           "buttons": "tryAgain",
           "letters": "Harfler",
           "allowPartialScore": false,
@@ -29391,8 +29391,8 @@
         "pluginId": "TrueFalse",
         "state": {
           "nBoxes": 4,
-          "showFeedback": true,
-          "shuffle": true,
+          "showFeedback": "#{[question-feedback-enable]}#",
+          "shuffle": "#{[question-feedback-shuffle]}#",
           "buttons": "tryAgain",
           "allowPartialScore": true,
           "quizColor": "rgba(234, 183, 0, 1)",
@@ -32714,8 +32714,8 @@
         "pluginId": "MultipleChoice",
         "state": {
           "nBoxes": 4,
-          "showFeedback": true,
-          "shuffle": true,
+          "showFeedback": "#{[question-feedback-enable]}#",
+          "shuffle": "#{[question-feedback-shuffle]}#",
           "buttons": "tryAgain",
           "letters": "Harfler",
           "quizColor": "rgba(234, 183, 0, 1)",
@@ -33177,8 +33177,8 @@
         "pluginId": "MultipleAnswer",
         "state": {
           "nBoxes": 4,
-          "showFeedback": true,
-          "shuffle": true,
+          "showFeedback": "#{[question-feedback-enable]}#",
+          "shuffle": "#{[question-feedback-shuffle]}#",
           "buttons": "tryAgain",
           "letters": "Harfler",
           "allowPartialScore": false,
@@ -33641,8 +33641,8 @@
         "pluginId": "TrueFalse",
         "state": {
           "nBoxes": 4,
-          "showFeedback": true,
-          "shuffle": true,
+          "showFeedback": "#{[question-feedback-enable]}#",
+          "shuffle": "#{[question-feedback-shuffle]}#",
           "buttons": "tryAgain",
           "allowPartialScore": true,
           "quizColor": "rgba(234, 183, 0, 1)",
@@ -37368,8 +37368,8 @@
         "pluginId": "MultipleChoice",
         "state": {
           "nBoxes": 4,
-          "showFeedback": true,
-          "shuffle": true,
+          "showFeedback": "#{[question-feedback-enable]}#",
+          "shuffle": "#{[question-feedback-shuffle]}#",
           "buttons": "tryAgain",
           "letters": "Harfler",
           "quizColor": "rgba(234, 183, 0, 1)",
@@ -37831,8 +37831,8 @@
         "pluginId": "MultipleAnswer",
         "state": {
           "nBoxes": 4,
-          "showFeedback": true,
-          "shuffle": true,
+          "showFeedback": "#{[question-feedback-enable]}#",
+          "shuffle": "#{[question-feedback-shuffle]}#",
           "buttons": "tryAgain",
           "letters": "Harfler",
           "allowPartialScore": false,
@@ -38295,8 +38295,8 @@
         "pluginId": "TrueFalse",
         "state": {
           "nBoxes": 4,
-          "showFeedback": true,
-          "shuffle": true,
+          "showFeedback": "#{[question-feedback-enable]}#",
+          "shuffle": "#{[question-feedback-shuffle]}#",
           "buttons": "tryAgain",
           "allowPartialScore": true,
           "quizColor": "rgba(234, 183, 0, 1)",
@@ -42094,8 +42094,8 @@
         "pluginId": "MultipleChoice",
         "state": {
           "nBoxes": 4,
-          "showFeedback": true,
-          "shuffle": true,
+          "showFeedback": "#{[question-feedback-enable]}#",
+          "shuffle": "#{[question-feedback-shuffle]}#",
           "buttons": "tryAgain",
           "letters": "Harfler",
           "quizColor": "rgba(234, 183, 0, 1)",
@@ -42557,8 +42557,8 @@
         "pluginId": "MultipleAnswer",
         "state": {
           "nBoxes": 4,
-          "showFeedback": true,
-          "shuffle": true,
+          "showFeedback": "#{[question-feedback-enable]}#",
+          "shuffle": "#{[question-feedback-shuffle]}#",
           "buttons": "tryAgain",
           "letters": "Harfler",
           "allowPartialScore": false,
@@ -43021,8 +43021,8 @@
         "pluginId": "TrueFalse",
         "state": {
           "nBoxes": 4,
-          "showFeedback": true,
-          "shuffle": true,
+          "showFeedback": "#{[question-feedback-enable]}#",
+          "shuffle": "#{[question-feedback-shuffle]}#",
           "buttons": "tryAgain",
           "allowPartialScore": true,
           "quizColor": "rgba(234, 183, 0, 1)",
@@ -44780,8 +44780,8 @@
             "currentAnswer": false,
             "attempted": false,
             "score": 0,
-            "showFeedback": true,
-            "shuffle": true
+            "showFeedback": "#{[question-feedback-enable]}#",
+            "shuffle": "#{[question-feedback-shuffle]}#"
           }
         }
       },
@@ -44877,8 +44877,8 @@
             "currentAnswer": [],
             "attempted": false,
             "score": 0,
-            "showFeedback": true,
-            "shuffle": true
+            "showFeedback": "#{[question-feedback-enable]}#",
+            "shuffle": "#{[question-feedback-shuffle]}#"
           }
         }
       },
@@ -44908,8 +44908,8 @@
             ],
             "attempted": false,
             "score": 0,
-            "showFeedback": true,
-            "shuffle": true
+            "showFeedback": "#{[question-feedback-enable]}#",
+            "shuffle": "#{[question-feedback-shuffle]}#"
           }
         }
       },
@@ -45030,8 +45030,8 @@
             "currentAnswer": false,
             "attempted": false,
             "score": 0,
-            "showFeedback": true,
-            "shuffle": true
+            "showFeedback": "#{[question-feedback-enable]}#",
+            "shuffle": "#{[question-feedback-shuffle]}#"
           }
         }
       },
@@ -45055,8 +45055,8 @@
             "currentAnswer": [],
             "attempted": false,
             "score": 0,
-            "showFeedback": true,
-            "shuffle": true
+            "showFeedback": "#{[question-feedback-enable]}#",
+            "shuffle": "#{[question-feedback-shuffle]}#"
           }
         }
       },
@@ -45086,8 +45086,8 @@
             ],
             "attempted": false,
             "score": 0,
-            "showFeedback": true,
-            "shuffle": true
+            "showFeedback": "#{[question-feedback-enable]}#",
+            "shuffle": "#{[question-feedback-shuffle]}#"
           }
         }
       },
@@ -45208,8 +45208,8 @@
             "currentAnswer": false,
             "attempted": false,
             "score": 0,
-            "showFeedback": true,
-            "shuffle": true
+            "showFeedback": "#{[question-feedback-enable]}#",
+            "shuffle": "#{[question-feedback-shuffle]}#"
           }
         }
       },
@@ -45233,8 +45233,8 @@
             "currentAnswer": [],
             "attempted": false,
             "score": 0,
-            "showFeedback": true,
-            "shuffle": true
+            "showFeedback": "#{[question-feedback-enable]}#",
+            "shuffle": "#{[question-feedback-shuffle]}#"
           }
         }
       },
@@ -45264,8 +45264,8 @@
             ],
             "attempted": false,
             "score": 0,
-            "showFeedback": true,
-            "shuffle": true
+            "showFeedback": "#{[question-feedback-enable]}#",
+            "shuffle": "#{[question-feedback-shuffle]}#"
           }
         }
       },
@@ -45386,8 +45386,8 @@
             "currentAnswer": false,
             "attempted": false,
             "score": 0,
-            "showFeedback": true,
-            "shuffle": true
+            "showFeedback": "#{[question-feedback-enable]}#",
+            "shuffle": "#{[question-feedback-shuffle]}#"
           }
         }
       },
@@ -45411,8 +45411,8 @@
             "currentAnswer": [],
             "attempted": false,
             "score": 0,
-            "showFeedback": true,
-            "shuffle": true
+            "showFeedback": "#{[question-feedback-enable]}#",
+            "shuffle": "#{[question-feedback-shuffle]}#"
           }
         }
       },
@@ -45442,8 +45442,8 @@
             ],
             "attempted": false,
             "score": 0,
-            "showFeedback": true,
-            "shuffle": true
+            "showFeedback": "#{[question-feedback-enable]}#",
+            "shuffle": "#{[question-feedback-shuffle]}#"
           }
         }
       },
@@ -45564,8 +45564,8 @@
             "currentAnswer": false,
             "attempted": false,
             "score": 0,
-            "showFeedback": true,
-            "shuffle": true
+            "showFeedback": "#{[question-feedback-enable]}#",
+            "shuffle": "#{[question-feedback-shuffle]}#"
           }
         }
       },
@@ -45589,8 +45589,8 @@
             "currentAnswer": [],
             "attempted": false,
             "score": 0,
-            "showFeedback": true,
-            "shuffle": true
+            "showFeedback": "#{[question-feedback-enable]}#",
+            "shuffle": "#{[question-feedback-shuffle]}#"
           }
         }
       },
@@ -45620,8 +45620,8 @@
             ],
             "attempted": false,
             "score": 0,
-            "showFeedback": true,
-            "shuffle": true
+            "showFeedback": "#{[question-feedback-enable]}#",
+            "shuffle": "#{[question-feedback-shuffle]}#"
           }
         }
       }
@@ -45643,7 +45643,7 @@
           "file": "#{[type13_52:speech]}#",
           "name": "53.mp3",
           "startTime": 0,
-          "endTime": #{[type13_52:audioduration]}#,
+          "endTime": "#{[type13_52:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -45652,7 +45652,7 @@
           "file": "#{[type14_53:speech]}#",
           "name": "54.mp3",
           "startTime": 0,
-          "endTime": #{[type14_53:audioduration]}#,
+          "endTime": "#{[type14_53:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -45661,7 +45661,7 @@
           "file": "#{[type0:speech]}#",
           "name": "1.mp3",
           "startTime": 0,
-          "endTime": #{[type0:audioduration]}#,
+          "endTime": "#{[type0:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -45670,7 +45670,7 @@
           "file": "#{[type1_1:speech]}#",
           "name": "2.mp3",
           "startTime": 0,
-          "endTime": #{[type1_1:audioduration]}#,
+          "endTime": "#{[type1_1:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -45679,7 +45679,7 @@
           "file": "#{[type2_2:speech]}#",
           "name": "3.mp3",
           "startTime": 0,
-          "endTime": #{[type2_2:audioduration]}#,
+          "endTime": "#{[type2_2:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -45688,7 +45688,7 @@
           "file": "#{[type3_3:speech]}#",
           "name": "4.mp3",
           "startTime": 0,
-          "endTime": #{[type3_3:audioduration]}#,
+          "endTime": "#{[type3_3:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -45697,7 +45697,7 @@
           "file": "#{[type4_4:speech]}#",
           "name": "5.mp3",
           "startTime": 0,
-          "endTime": #{[type4_4:audioduration]}#,
+          "endTime": "#{[type4_4:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -45706,7 +45706,7 @@
           "file": "#{[type5_5:speech]}#",
           "name": "6.mp3",
           "startTime": 0,
-          "endTime": #{[type5_5:audioduration]}#,
+          "endTime": "#{[type5_5:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -45715,7 +45715,7 @@
           "file": "#{[type6_6:speech]}#",
           "name": "7.mp3",
           "startTime": 0,
-          "endTime": #{[type6_6:audioduration]}#,
+          "endTime": "#{[type6_6:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -45724,7 +45724,7 @@
           "file": "#{[type7_7:speech]}#",
           "name": "8.mp3",
           "startTime": 0,
-          "endTime": #{[type7_7:audioduration]}#,
+          "endTime": "#{[type7_7:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -45733,7 +45733,7 @@
           "file": "#{[type8_8:speech]}#",
           "name": "9.mp3",
           "startTime": 0,
-          "endTime": #{[type8_8:audioduration]}#,
+          "endTime": "#{[type8_8:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -45742,7 +45742,7 @@
           "file": "#{[type9_9:speech]}#",
           "name": "10.mp3",
           "startTime": 0,
-          "endTime": #{[type9_9:audioduration]}#,
+          "endTime": "#{[type9_9:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -45751,7 +45751,7 @@
           "file": "#{[type10_10:speech]}#",
           "name": "11.mp3",
           "startTime": 0,
-          "endTime": #{[type10_10:audioduration]}#,
+          "endTime": "#{[type10_10:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -45760,7 +45760,7 @@
           "file": "#{[type100:speech]}#",
           "name": "AI-Şimdi Sıra Sizde",
           "startTime": 0,
-          "endTime": #{[type100:audioduration]}#,
+          "endTime": "#{[type100:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -45769,7 +45769,7 @@
           "file": "#{[type12_51:speech]}#",
           "name": "52.mp3",
           "startTime": 0,
-          "endTime": #{[type12_51:audioduration]}#,
+          "endTime": "#{[type12_51:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -45778,7 +45778,7 @@
           "file": "#{[type10_12:speech]}#",
           "name": "13.mp3",
           "startTime": 0,
-          "endTime": #{[type10_12:audioduration]}#,
+          "endTime": "#{[type10_12:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -45787,7 +45787,7 @@
           "file": "#{[type8_13:speech]}#",
           "name": "14.mp3",
           "startTime": 0,
-          "endTime": #{[type8_13:audioduration]}#,
+          "endTime": "#{[type8_13:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -45798,7 +45798,7 @@
           "file": "#{[type10_12:speech]}#",
           "name": "13.mp3",
           "startTime": 0,
-          "endTime": #{[type10_12:audioduration]}#,
+          "endTime": "#{[type10_12:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -45807,7 +45807,7 @@
           "file": "#{[type8_13:speech]}#",
           "name": "14.mp3",
           "startTime": 0,
-          "endTime": #{[type8_13:audioduration]}#,
+          "endTime": "#{[type8_13:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -45816,7 +45816,7 @@
           "file": "#{[type12_54:speech]}#",
           "name": "55.mp3",
           "startTime": 0,
-          "endTime": #{[type12_54:audioduration]}#,
+          "endTime": "#{[type12_54:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -45825,7 +45825,7 @@
           "file": "#{[type13_55:speech]}#",
           "name": "56.mp3",
           "startTime": 0,
-          "endTime": #{[type13_55:audioduration]}#,
+          "endTime": "#{[type13_55:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -45834,7 +45834,7 @@
           "file": "#{[type14_56:speech]}#",
           "name": "57.mp3",
           "startTime": 0,
-          "endTime": #{[type14_56:audioduration]}#,
+          "endTime": "#{[type14_56:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -45843,7 +45843,7 @@
           "file": "#{[type8_14:speech]}#",
           "name": "15.mp3",
           "startTime": 0,
-          "endTime": #{[type8_14:audioduration]}#,
+          "endTime": "#{[type8_14:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -45852,7 +45852,7 @@
           "file": "#{[type15_15:speech]}#",
           "name": "16.mp3",
           "startTime": 0,
-          "endTime": #{[type15_15:audioduration]}#,
+          "endTime": "#{[type15_15:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -45861,7 +45861,7 @@
           "file": "#{[type16_16:speech]}#",
           "name": "17.mp3",
           "startTime": 0,
-          "endTime": #{[type16_16:audioduration]}#,
+          "endTime": "#{[type16_16:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -45870,7 +45870,7 @@
           "file": "#{[type17_17:speech]}#",
           "name": "18.mp3",
           "startTime": 0,
-          "endTime": #{[type17_17:audioduration]}#,
+          "endTime": "#{[type17_17:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -45879,7 +45879,7 @@
           "file": "#{[type6_18:speech]}#",
           "name": "19.mp3",
           "startTime": 0,
-          "endTime": #{[type6_18:audioduration]}#,
+          "endTime": "#{[type6_18:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -45888,7 +45888,7 @@
           "file": "#{[type8_19:speech]}#",
           "name": "20.mp3",
           "startTime": 0,
-          "endTime": #{[type8_19:audioduration]}#,
+          "endTime": "#{[type8_19:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -45897,7 +45897,7 @@
           "file": "#{[type8_20:speech]}#",
           "name": "21.mp3",
           "startTime": 0,
-          "endTime": #{[type8_20:audioduration]}#,
+          "endTime": "#{[type8_20:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -45906,7 +45906,7 @@
           "file": "#{[type6_21:speech]}#",
           "name": "22.mp3",
           "startTime": 0,
-          "endTime": #{[type6_21:audioduration]}#,
+          "endTime": "#{[type6_21:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -45915,7 +45915,7 @@
           "file": "#{[type18_22:speech]}#",
           "name": "23.mp3",
           "startTime": 0,
-          "endTime": #{[type18_22:audioduration]}#,
+          "endTime": "#{[type18_22:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -45924,7 +45924,7 @@
           "file": "#{[type19_23:speech]}#",
           "name": "24.mp3",
           "startTime": 0,
-          "endTime": #{[type19_23:audioduration]}#,
+          "endTime": "#{[type19_23:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -45933,7 +45933,7 @@
           "file": "#{[type20_24:speech]}#",
           "name": "25.mp3",
           "startTime": 0,
-          "endTime": #{[type20_24:audioduration]}#,
+          "endTime": "#{[type20_24:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -45942,7 +45942,7 @@
           "file": "#{[type8_25:speech]}#",
           "name": "26.mp3",
           "startTime": 0,
-          "endTime": #{[type8_25:audioduration]}#,
+          "endTime": "#{[type8_25:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -45951,7 +45951,7 @@
           "file": "#{[type21_26:speech]}#",
           "name": "27.mp3",
           "startTime": 0,
-          "endTime": #{[type21_26:audioduration]}#,
+          "endTime": "#{[type21_26:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -45960,7 +45960,7 @@
           "file": "#{[type22_27:speech]}#",
           "name": "28.mp3",
           "startTime": 0,
-          "endTime": #{[type22_27:audioduration]}#,
+          "endTime": "#{[type22_27:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -45969,7 +45969,7 @@
           "file": "#{[type10_28:speech]}#",
           "name": "29.mp3",
           "startTime": 0,
-          "endTime": #{[type10_28:audioduration]}#,
+          "endTime": "#{[type10_28:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -45978,7 +45978,7 @@
           "file": "#{[type7_29:speech]}#",
           "name": "30.mp3",
           "startTime": 0,
-          "endTime": #{[type7_29:audioduration]}#,
+          "endTime": "#{[type7_29:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -45987,7 +45987,7 @@
           "file": "#{[type1_30:speech]}#",
           "name": "31.mp3",
           "startTime": 0,
-          "endTime": #{[type1_30:audioduration]}#,
+          "endTime": "#{[type1_30:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -45996,7 +45996,7 @@
           "file": "#{[type12_57:speech]}#",
           "name": "58.mp3",
           "startTime": 0,
-          "endTime": #{[type12_57:audioduration]}#,
+          "endTime": "#{[type12_57:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -46005,7 +46005,7 @@
           "file": "#{[type13_58:speech]}#",
           "name": "59.mp3",
           "startTime": 0,
-          "endTime": #{[type13_58:audioduration]}#,
+          "endTime": "#{[type13_58:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -46014,7 +46014,7 @@
           "file": "#{[type14_59:speech]}#",
           "name": "60.mp3",
           "startTime": 0,
-          "endTime": #{[type14_59:audioduration]}#,
+          "endTime": "#{[type14_59:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -46023,7 +46023,7 @@
           "file": "#{[type2_31:speech]}#",
           "name": "32.mp3",
           "startTime": 0,
-          "endTime": #{[type2_31:audioduration]}#,
+          "endTime": "#{[type2_31:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -46032,7 +46032,7 @@
           "file": "#{[type4_32:speech]}#",
           "name": "33.mp3",
           "startTime": 0,
-          "endTime": #{[type4_32:audioduration]}#,
+          "endTime": "#{[type4_32:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -46041,7 +46041,7 @@
           "file": "#{[type8_33:speech]}#",
           "name": "34.mp3",
           "startTime": 0,
-          "endTime": #{[type8_33:audioduration]}#,
+          "endTime": "#{[type8_33:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -46050,7 +46050,7 @@
           "file": "#{[type10_34:speech]}#",
           "name": "35.mp3",
           "startTime": 0,
-          "endTime": #{[type10_34:audioduration]}#,
+          "endTime": "#{[type10_34:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -46059,7 +46059,7 @@
           "file": "#{[type8_35:speech]}#",
           "name": "36.mp3",
           "startTime": 0,
-          "endTime": #{[type8_35:audioduration]}#,
+          "endTime": "#{[type8_35:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -46068,7 +46068,7 @@
           "file": "#{[type16_36:speech]}#",
           "name": "37.mp3",
           "startTime": 0,
-          "endTime": #{[type16_36:audioduration]}#,
+          "endTime": "#{[type16_36:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -46077,7 +46077,7 @@
           "file": "#{[type8_37:speech]}#",
           "name": "38.mp3",
           "startTime": 0,
-          "endTime": #{[type8_37:audioduration]}#,
+          "endTime": "#{[type8_37:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -46086,7 +46086,7 @@
           "file": "#{[type18_38:speech]}#",
           "name": "39.mp3",
           "startTime": 0,
-          "endTime": #{[type18_38:audioduration]}#,
+          "endTime": "#{[type18_38:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -46095,7 +46095,7 @@
           "file": "#{[type8_39:speech]}#",
           "name": "40.mp3",
           "startTime": 0,
-          "endTime": #{[type8_39:audioduration]}#,
+          "endTime": "#{[type8_39:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -46104,7 +46104,7 @@
           "file": "#{[type10_40:speech]}#",
           "name": "41.mp3",
           "startTime": 0,
-          "endTime": #{[type10_40:audioduration]}#,
+          "endTime": "#{[type10_40:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -46113,7 +46113,7 @@
           "file": "#{[type12_60:speech]}#",
           "name": "61.mp3",
           "startTime": 0,
-          "endTime": #{[type12_60:audioduration]}#,
+          "endTime": "#{[type12_60:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -46122,7 +46122,7 @@
           "file": "#{[type13_61:speech]}#",
           "name": "62.mp3",
           "startTime": 0,
-          "endTime": #{[type13_61:audioduration]}#,
+          "endTime": "#{[type13_61:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -46131,7 +46131,7 @@
           "file": "#{[type14_62:speech]}#",
           "name": "63.mp3",
           "startTime": 0,
-          "endTime": #{[type14_62:audioduration]}#,
+          "endTime": "#{[type14_62:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -46140,7 +46140,7 @@
           "file": "#{[type5_41:speech]}#",
           "name": "42.mp3",
           "startTime": 0,
-          "endTime": #{[type5_41:audioduration]}#,
+          "endTime": "#{[type5_41:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -46149,7 +46149,7 @@
           "file": "#{[type6_42:speech]}#",
           "name": "43.mp3",
           "startTime": 0,
-          "endTime": #{[type6_42:audioduration]}#,
+          "endTime": "#{[type6_42:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -46158,7 +46158,7 @@
           "file": "#{[type7_43:speech]}#",
           "name": "44.mp3",
           "startTime": 0,
-          "endTime": #{[type7_43:audioduration]}#,
+          "endTime": "#{[type7_43:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -46167,7 +46167,7 @@
           "file": "#{[type10_44:speech]}#",
           "name": "45.mp3",
           "startTime": 0,
-          "endTime": #{[type10_44:audioduration]}#,
+          "endTime": "#{[type10_44:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -46176,7 +46176,7 @@
           "file": "#{[type8_45:speech]}#",
           "name": "46.mp3",
           "startTime": 0,
-          "endTime": #{[type8_45:audioduration]}#,
+          "endTime": "#{[type8_45:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -46185,7 +46185,7 @@
           "file": "#{[type6_46:speech]}#",
           "name": "47.mp3",
           "startTime": 0,
-          "endTime": #{[type6_46:audioduration]}#,
+          "endTime": "#{[type6_46:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -46194,7 +46194,7 @@
           "file": "#{[type8_47:speech]}#",
           "name": "48.mp3",
           "startTime": 0,
-          "endTime": #{[type8_47:audioduration]}#,
+          "endTime": "#{[type8_47:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -46203,7 +46203,7 @@
           "file": "#{[type19_48:speech]}#",
           "name": "49.mp3",
           "startTime": 0,
-          "endTime": #{[type19_48:audioduration]}#,
+          "endTime": "#{[type19_48:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -46212,7 +46212,7 @@
           "file": "#{[type20_49:speech]}#",
           "name": "50.mp3",
           "startTime": 0,
-          "endTime": #{[type20_49:audioduration]}#,
+          "endTime": "#{[type20_49:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -46221,7 +46221,7 @@
           "file": "#{[type22_50:speech]}#",
           "name": "51.mp3",
           "startTime": 0,
-          "endTime": #{[type22_50:audioduration]}#,
+          "endTime": "#{[type22_50:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -46230,7 +46230,7 @@
           "file": "#{[type12_63:speech]}#",
           "name": "64.mp3",
           "startTime": 0,
-          "endTime": #{[type12_63:audioduration]}#,
+          "endTime": "#{[type12_63:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -46239,7 +46239,7 @@
           "file": "#{[type13_64:speech]}#",
           "name": "65.mp3",
           "startTime": 0,
-          "endTime": #{[type13_64:audioduration]}#,
+          "endTime": "#{[type13_64:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -46248,7 +46248,7 @@
           "file": "#{[type14_65:speech]}#",
           "name": "66.mp3",
           "startTime": 0,
-          "endTime": #{[type14_65:audioduration]}#,
+          "endTime": "#{[type14_65:audioduration]}#",
           "volumeLevel": 1
         }
       ]
@@ -57137,7 +57137,6 @@
       "reason": "saving_state"
     },
     "filesUploaded": {
-		#{[files-uploaded]}#
       "file-1743071022006": {
         "id": "file-1743071022006",
         "url": "https://ls.elearningsolutions.net//ContentFiles/IdealStudioFiles/611_bb9de5ae-d237-461d-94cb-d4882e95191f.png",

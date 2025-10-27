@@ -4858,8 +4858,8 @@
         "pluginId": "MultipleChoice",
         "state": {
           "nBoxes": 4,
-          "showFeedback": #{[question-feedback-enable]}#,
-          "shuffle": #{[question-feedback-shuffle]}#,
+          "showFeedback": "#{[question-feedback-enable]}#",
+          "shuffle": "#{[question-feedback-shuffle]}#",
           "buttons": "tryAgain",
           "letters": "Harfler",
           "quizColor": "rgba(208,63,143,1)",
@@ -6838,8 +6838,8 @@
         "pluginId": "MultipleAnswer",
         "state": {
           "nBoxes": 4,
-          "showFeedback": #{[question-feedback-enable]}#,
-          "shuffle": #{[question-feedback-shuffle]}#,
+          "showFeedback": "#{[question-feedback-enable]}#",
+          "shuffle": "#{[question-feedback-shuffle]}#",
           "buttons": "tryAgain",
           "letters": "Harfler",
           "allowPartialScore": false,
@@ -7135,8 +7135,8 @@
         "pluginId": "TrueFalse",
         "state": {
           "nBoxes": 4,
-          "showFeedback": #{[question-feedback-enable]}#,
-          "shuffle": #{[question-feedback-shuffle]}#,
+          "showFeedback": "#{[question-feedback-enable]}#",
+          "shuffle": "#{[question-feedback-shuffle]}#",
           "buttons": "tryAgain",
           "allowPartialScore": true,
           "quizColor": "rgba(0,0,0,1)",
@@ -7441,7 +7441,7 @@
         "documentTitle": "hidden",
         "documentTitleContent": "",
         "id": "pa-1756882835_1",
-        "isMandatory": #{[ai-mandatory]}#,
+        "isMandatory": "#{[ai-mandatory]}#",
         "mandatoryType": "waitForSound",
         "minTime": 0,
         "numPage": "hidden",
@@ -7463,7 +7463,7 @@
         "documentTitle": "hidden",
         "documentTitleContent": "",
         "id": "pa-1756882835_2",
-        "isMandatory": #{[ai-mandatory]}#,
+        "isMandatory": "#{[ai-mandatory]}#",
         "mandatoryType": "waitForSound",
         "minTime": 0,
         "numPage": "hidden",
@@ -7485,7 +7485,7 @@
         "documentTitle": "hidden",
         "documentTitleContent": "",
         "id": "pa-1756882835_3",
-        "isMandatory": #{[ai-mandatory]}#,
+        "isMandatory": "#{[ai-mandatory]}#",
         "mandatoryType": "waitForSound",
         "minTime": 0,
         "numPage": "hidden",
@@ -7507,7 +7507,7 @@
         "documentTitle": "hidden",
         "documentTitleContent": "",
         "id": "pa-1756882835_4",
-        "isMandatory": #{[ai-mandatory]}#,
+        "isMandatory": "#{[ai-mandatory]}#",
         "mandatoryType": "waitForSound",
         "minTime": 0,
         "numPage": "hidden",
@@ -7529,7 +7529,7 @@
         "documentTitle": "hidden",
         "documentTitleContent": "",
         "id": "pa-1756882835_5",
-        "isMandatory": #{[ai-mandatory]}#,
+        "isMandatory": "#{[ai-mandatory]}#",
         "mandatoryType": "waitForSound",
         "minTime": 0,
         "numPage": "hidden",
@@ -7551,7 +7551,7 @@
         "documentTitle": "hidden",
         "documentTitleContent": "",
         "id": "pa-1756882835_6",
-        "isMandatory": #{[ai-mandatory]}#,
+        "isMandatory": "#{[ai-mandatory]}#",
         "mandatoryType": "waitForSound",
         "minTime": 0,
         "numPage": "hidden",
@@ -7573,7 +7573,7 @@
         "documentTitle": "hidden",
         "documentTitleContent": "",
         "id": "pa-1756882835_8",
-        "isMandatory": #{[ai-mandatory]}#,
+        "isMandatory": "#{[ai-mandatory]}#",
         "mandatoryType": "waitForSound",
         "minTime": 0,
         "numPage": "hidden",
@@ -7595,7 +7595,7 @@
         "documentTitle": "hidden",
         "documentTitleContent": "",
         "id": "pa-1756882835_9",
-        "isMandatory": #{[ai-mandatory]}#,
+        "isMandatory": "#{[ai-mandatory]}#",
         "mandatoryType": "waitForSound",
         "minTime": 0,
         "numPage": "hidden",
@@ -7617,7 +7617,7 @@
         "documentTitle": "hidden",
         "documentTitleContent": "",
         "id": "pa-1756882835_10",
-        "isMandatory": #{[ai-mandatory]}#,
+        "isMandatory": "#{[ai-mandatory]}#",
         "mandatoryType": "waitForSound",
         "minTime": 0,
         "numPage": "hidden",
@@ -7639,7 +7639,7 @@
         "documentTitle": "hidden",
         "documentTitleContent": "",
         "id": "pa-1756887580733",
-        "isMandatory": #{[ai-mandatory]}#,
+        "isMandatory": "#{[ai-mandatory]}#",
         "mandatoryType": "waitForSound",
         "minTime": 0,
         "numPage": "hidden",
@@ -7661,7 +7661,7 @@
         "documentTitle": "hidden",
         "documentTitleContent": "",
         "id": "pa-1756887621957",
-        "isMandatory": #{[ai-mandatory]}#,
+        "isMandatory": "#{[ai-mandatory]}#",
         "mandatoryType": "waitForSound",
         "minTime": 0,
         "numPage": "hidden",
@@ -7688,7 +7688,7 @@
         "backgroundAttr": "full",
         "backgroundZoom": 100,
         "backgroundOpacity": 100,
-        "isMandatory": #{[ai-mandatory]}#,
+        "isMandatory": "#{[ai-mandatory]}#",
         "mandatoryType": "waitForAction"
       },
       "pa-1756897597403": {
@@ -7704,7 +7704,7 @@
         "documentTitle": "hidden",
         "documentTitleContent": "",
         "id": "pa-1756897597403",
-        "isMandatory": #{[ai-mandatory]}#,
+        "isMandatory": "#{[ai-mandatory]}#",
         "mandatoryType": "waitForSound",
         "minTime": 0,
         "numPage": "hidden",
@@ -7726,7 +7726,7 @@
         "documentTitle": "hidden",
         "documentTitleContent": "",
         "id": "pa-1756897605707",
-        "isMandatory": #{[ai-mandatory]}#,
+        "isMandatory": "#{[ai-mandatory]}#",
         "mandatoryType": "waitForSound",
         "minTime": 0,
         "numPage": "hidden",
@@ -7753,7 +7753,7 @@
         "backgroundAttr": "full",
         "backgroundZoom": 100,
         "backgroundOpacity": 100,
-        "isMandatory": #{[ai-mandatory]}#,
+        "isMandatory": "#{[ai-mandatory]}#",
         "mandatoryType": "waitForAction"
       },
       "pa-1756898203417": {
@@ -7774,7 +7774,7 @@
         "backgroundAttr": "full",
         "backgroundZoom": 100,
         "backgroundOpacity": 100,
-        "isMandatory": #{[ai-mandatory]}#,
+        "isMandatory": "#{[ai-mandatory]}#",
         "mandatoryType": "waitForAction"
       }
     },
@@ -7926,10 +7926,10 @@
             "weight": 1,
             "correctAnswer": 2,
             "currentAnswer": false,
-            "showFeedback": #{[question-feedback-enable]}#,
+            "showFeedback": "#{[question-feedback-enable]}#",
             "attempted": false,
             "score": 0,
-            "shuffle": #{[question-feedback-shuffle]}#,
+            "shuffle": "#{[question-feedback-shuffle]}#",
             "quizColor": "rgba(208,63,143,1)"
           }
         }
@@ -7979,7 +7979,7 @@
             "attempted": false,
             "score": 0,
             "allowPartialScore": false,
-            "shuffle": #{[question-feedback-shuffle]}#,
+            "shuffle": "#{[question-feedback-shuffle]}#",
             "quizColor": "rgba(208,63,143,1)"
           }
         }
@@ -8025,7 +8025,7 @@
           "file": "#{[type24_6:speech]}#",
           "name": "7.mp3",
           "startTime": 0,
-          "endTime": #{[type24_6:audioduration]}#,
+          "endTime": "#{[type24_6:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -8034,7 +8034,7 @@
           "file": "#{[type26_9:speech]}#",
           "name": "10.mp3",
           "startTime": 0,
-          "endTime": #{[type26_9:audioduration]}#,
+          "endTime": "#{[type26_9:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -8043,7 +8043,7 @@
           "file": "#{[type26_10:speech]}#",
           "name": "11.mp3",
           "startTime": 0,
-          "endTime": #{[type26_10:audioduration]}#,
+          "endTime": "#{[type26_10:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -8052,7 +8052,7 @@
           "file": "#{[type13_12:speech]}#",
           "name": "13.mp3",
           "startTime": 0,
-          "endTime": #{[type13_12:audioduration]}#,
+          "endTime": "#{[type13_12:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -8061,7 +8061,7 @@
           "file": "#{[type14_13:speech]}#",
           "name": "14.mp3",
           "startTime": 0,
-          "endTime": #{[type14_13:audioduration]}#,
+          "endTime": "#{[type14_13:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -8070,7 +8070,7 @@
           "file": "#{[type0:speech]}#",
           "name": "1.mp3",
           "startTime": 0,
-          "endTime": #{[type0:audioduration]}#,
+          "endTime": "#{[type0:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -8079,7 +8079,7 @@
           "file": "#{[type23_1:speech]}#",
           "name": "2.mp3",
           "startTime": 0,
-          "endTime": #{[type23_1:audioduration]}#,
+          "endTime": "#{[type23_1:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -8088,7 +8088,7 @@
           "file": "#{[type26_2:speech]}#",
           "name": "3.mp3",
           "startTime": 0,
-          "endTime": #{[type26_2:audioduration]}#,
+          "endTime": "#{[type26_2:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -8097,7 +8097,7 @@
           "file": "#{[type31_3:speech]}#",
           "name": "4.mp3",
           "startTime": 0,
-          "endTime": #{[type31_3:audioduration]}#,
+          "endTime": "#{[type31_3:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -8106,7 +8106,7 @@
           "file": "#{[type26_4:speech]}#",
           "name": "5.mp3",
           "startTime": 0,
-          "endTime": #{[type26_4:audioduration]}#,
+          "endTime": "#{[type26_4:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -8115,7 +8115,7 @@
           "file": "#{[type31_5:speech]}#",
           "name": "6.mp3",
           "startTime": 0,
-          "endTime": #{[type31_5:audioduration]}#,
+          "endTime": "#{[type31_5:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -8124,7 +8124,7 @@
           "file": "#{[type26_7:speech]}#",
           "name": "8.mp3",
           "startTime": 0,
-          "endTime": #{[type26_7:audioduration]}#,
+          "endTime": "#{[type26_7:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -8133,7 +8133,7 @@
           "file": "#{[type24_8:speech]}#",
           "name": "9.mp3",
           "startTime": 0,
-          "endTime": #{[type24_8:audioduration]}#,
+          "endTime": "#{[type24_8:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -8142,7 +8142,7 @@
           "file": "#{[type12_11:speech]}#",
           "name": "12.mp3",
           "startTime": 0,
-          "endTime": #{[type12_11:audioduration]}#,
+          "endTime": "#{[type12_11:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -8151,7 +8151,7 @@
           "file": "#{[type101:speech]}#",
           "name": "15.mp3",
           "startTime": 0,
-          "endTime": #{[type101:audioduration]}#,
+          "endTime": "#{[type101:audioduration]}#",
           "volumeLevel": 1
         }
       ]
@@ -8830,7 +8830,6 @@
       "reason": "saving_state"
     },
     "filesUploaded": {
-		#{[files-uploaded]}#
       "File-fcd4c9fd-ccb7-4d85-ac31-1d4f9dc4bbb2": {
         "id": "File-fcd4c9fd-ccb7-4d85-ac31-1d4f9dc4bbb2",
         "url": "https://ls.elearningsolutions.net/ContentFiles/IdealStudioFiles/IdealStudioMediafff1a613-af37-4d02-b662-5544fd2570eeimage13.svg",

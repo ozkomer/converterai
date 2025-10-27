@@ -226,12 +226,12 @@
               },
               "transition": {
                 "duration": 1,
-                "delay": #%7B%5Btype26_1:paragraph_time%5D%7D#
+                "delay": "#%7B%5Btype26_1:paragraph_time%5D%7D#"
               }
             }
           },
           "duration": 1,
-          "delay": #%7B%5Btype26_1:paragraph_time%5D%7D#
+          "delay": "#%7B%5Btype26_1:paragraph_time%5D%7D#"
         }
       },
       "bo-17520624952211": {
@@ -325,12 +325,12 @@
               },
               "transition": {
                 "duration": 1,
-                "delay": #%7B%5Btype27_2:paragraph_time%5D%7D#
+                "delay": "#%7B%5Btype27_2:paragraph_time%5D%7D#"
               }
             }
           },
           "duration": 1,
-          "delay": #%7B%5Btype27_2:paragraph_time%5D%7D#
+          "delay": "#%7B%5Btype27_2:paragraph_time%5D%7D#"
         }
       },
       "bo-1752062967391": {
@@ -367,12 +367,12 @@
               },
               "transition": {
                 "duration": 1,
-                "delay": #%7B%5Btype27_2:subtext1_time%5D%7D#
+                "delay": "#%7B%5Btype27_2:subtext1_time%5D%7D#"
               }
             }
           },
           "duration": 1,
-          "delay": #%7B%5Btype27_2:subtext1_time%5D%7D#
+          "delay": "#%7B%5Btype27_2:subtext1_time%5D%7D#"
         }
       },
       "bo-17520631357001": {
@@ -449,7 +449,7 @@
             }
           },
           "duration": 1,
-          "delay": #%7B%5Btype15_3:paragraph_time%5D%7D#
+          "delay": "#%7B%5Btype15_3:paragraph_time%5D%7D#"
         }
       },
       "bo-17520664777780": {
@@ -627,12 +627,12 @@
               },
               "transition": {
                 "duration": 1,
-                "delay": #%7B%5Btype17_5:paragraph_time%5D%7D#
+                "delay": "#%7B%5Btype17_5:paragraph_time%5D%7D#"
               }
             }
           },
           "duration": 1,
-          "delay": #%7B%5Btype17_5:paragraph_time%5D%7D#
+          "delay": "#%7B%5Btype17_5:paragraph_time%5D%7D#"
         }
       },
       "bo-17521343833993": {
@@ -668,12 +668,12 @@
               "transition": {
                 "duration": 2,
                 "ease": "linear",
-                "delay": #%7B%5Btype17_5:subtitle_time%5D%7D#
+                "delay": "#%7B%5Btype17_5:subtitle_time%5D%7D#"
               }
             }
           },
           "duration": 1,
-          "delay": #%7B%5Btype17_5:subtitle_time%5D%7D#
+          "delay": "#%7B%5Btype17_5:subtitle_time%5D%7D#"
         }
       },
       "bo-1752134488034": {
@@ -710,12 +710,12 @@
               },
               "transition": {
                 "duration": 1,
-                "delay": #%7B%5Btype17_5:subtext1_time%5D%7D#
+                "delay": "#%7B%5Btype17_5:subtext1_time%5D%7D#"
               }
             }
           },
           "duration": 1,
-          "delay": #%7B%5Btype17_5:subtext1_time%5D%7D#
+          "delay": "#%7B%5Btype17_5:subtext1_time%5D%7D#"
         }
       },
       "bo-1752134501641": {
@@ -752,12 +752,12 @@
               },
               "transition": {
                 "duration": 1,
-                "delay": #%7B%5Btype17_5:subtext2_time%5D%7D#
+                "delay": "#%7B%5Btype17_5:subtext2_time%5D%7D#"
               }
             }
           },
           "duration": 1,
-          "delay": #%7B%5Btype17_5:subtext2_time%5D%7D#
+          "delay": "#%7B%5Btype17_5:subtext2_time%5D%7D#"
         }
       },
       "bo-1752134565782": {
@@ -2710,12 +2710,12 @@
               },
               "transition": {
                 "duration": 1,
-                "delay": #%7B%5Btype27_2:subtext2_time%5D%7D#
+                "delay": "#%7B%5Btype27_2:subtext2_time%5D%7D#"
               }
             }
           },
           "duration": 1,
-          "delay": #%7B%5Btype27_2:subtext2_time%5D%7D#
+          "delay": "#%7B%5Btype27_2:subtext2_time%5D%7D#"
         }
       },
       "bo-1755247841732": {
@@ -2752,12 +2752,12 @@
               },
               "transition": {
                 "duration": 1,
-                "delay": #%7B%5Btype15_3:list1_time%5D%7D#
+                "delay": "#%7B%5Btype15_3:list1_time%5D%7D#"
               }
             }
           },
           "duration": 1,
-          "delay": #%7B%5Btype15_3:list1_time%5D%7D#
+          "delay": "#%7B%5Btype15_3:list1_time%5D%7D#"
         }
       },
       "bo-1755247876804": {
@@ -2794,12 +2794,12 @@
               },
               "transition": {
                 "duration": 1,
-                "delay": #%7B%5Btype15_3:list2_time%5D%7D#
+                "delay": "#%7B%5Btype15_3:list2_time%5D%7D#"
               }
             }
           },
           "duration": 1,
-          "delay": #%7B%5Btype15_3:list2_time%5D%7D#
+          "delay": "#%7B%5Btype15_3:list2_time%5D%7D#"
         }
       },
       "bo-1755247919333": {
@@ -2836,12 +2836,12 @@
               },
               "transition": {
                 "duration": 1,
-                "delay": #%7B%5Btype15_3:list3_time%5D%7D#
+                "delay": "#%7B%5Btype15_3:list3_time%5D%7D#"
               }
             }
           },
           "duration": 1,
-          "delay": #%7B%5Btype15_3:list3_time%5D%7D#
+          "delay": "#%7B%5Btype15_3:list3_time%5D%7D#"
         }
       },
       "bo-1755248037700": {
@@ -2878,12 +2878,12 @@
               },
               "transition": {
                 "duration": 1,
-                "delay": #%7B%5Btype10_4:paragraph2_time%5D%7D#
+                "delay": "#%7B%5Btype10_4:paragraph2_time%5D%7D#"
               }
             }
           },
           "duration": 1,
-          "delay": #%7B%5Btype10_4:paragraph2_time%5D%7D#
+          "delay": "#%7B%5Btype10_4:paragraph2_time%5D%7D#"
         }
       },
       "bo-1755248135380": {
@@ -2920,12 +2920,12 @@
               },
               "transition": {
                 "duration": 1,
-                "delay": #%7B%5Btype28_6:list1_time%5D%7D#
+                "delay": "#%7B%5Btype28_6:list1_time%5D%7D#"
               }
             }
           },
           "duration": 1,
-          "delay": #%7B%5Btype28_6:list1_time%5D%7D#
+          "delay": "#%7B%5Btype28_6:list1_time%5D%7D#"
         }
       },
       "bo-1755248139044": {
@@ -2962,12 +2962,12 @@
               },
               "transition": {
                 "duration": 1,
-                "delay": #%7B%5Btype28_6:list2_time%5D%7D#
+                "delay": "#%7B%5Btype28_6:list2_time%5D%7D#"
               }
             }
           },
           "duration": 1,
-          "delay": #%7B%5Btype28_6:list2_time%5D%7D#
+          "delay": "#%7B%5Btype28_6:list2_time%5D%7D#"
         }
       },
       "bo-1755248142349": {
@@ -3004,12 +3004,12 @@
               },
               "transition": {
                 "duration": 1,
-                "delay": #%7B%5Btype28_6:list3_time%5D%7D#
+                "delay": "#%7B%5Btype28_6:list3_time%5D%7D#"
               }
             }
           },
           "duration": 1,
-          "delay": #%7B%5Btype28_6:list3_time%5D%7D#
+          "delay": "#%7B%5Btype28_6:list3_time%5D%7D#"
         }
       },
       "bo-1755248146924": {
@@ -3046,12 +3046,12 @@
               },
               "transition": {
                 "duration": 1,
-                "delay": #%7B%5Btype28_6:list4_time%5D%7D#
+                "delay": "#%7B%5Btype28_6:list4_time%5D%7D#"
               }
             }
           },
           "duration": 1,
-          "delay": #%7B%5Btype28_6:list4_time%5D%7D#
+          "delay": "#%7B%5Btype28_6:list4_time%5D%7D#"
         }
       },
       "bo-1755248202700": {
@@ -3088,12 +3088,12 @@
               },
               "transition": {
                 "duration": 1,
-                "delay": #%7B%5Btype6_7:paragraph1_time%5D%7D#
+                "delay": "#%7B%5Btype6_7:paragraph1_time%5D%7D#"
               }
             }
           },
           "duration": 1,
-          "delay": #%7B%5Btype6_7:paragraph1_time%5D%7D#
+          "delay": "#%7B%5Btype6_7:paragraph1_time%5D%7D#"
         }
       },
       "bo-1755248223844": {
@@ -3130,12 +3130,12 @@
               },
               "transition": {
                 "duration": 1,
-                "delay": #%7B%5Btype6_7:paragraph2_time%5D%7D#
+                "delay": "#%7B%5Btype6_7:paragraph2_time%5D%7D#"
               }
             }
           },
           "duration": 1,
-          "delay": #%7B%5Btype6_7:paragraph2_time%5D%7D#
+          "delay": "#%7B%5Btype6_7:paragraph2_time%5D%7D#"
         }
       },
       "bo-1755248266300": {
@@ -3172,12 +3172,12 @@
               },
               "transition": {
                 "duration": 1,
-                "delay": #%7B%5Btype1_8:paragraph_time%5D%7D#
+                "delay": "#%7B%5Btype1_8:paragraph_time%5D%7D#"
               }
             }
           },
           "duration": 1,
-          "delay": #%7B%5Btype1_8:paragraph_time%5D%7D#
+          "delay": "#%7B%5Btype1_8:paragraph_time%5D%7D#"
         }
       },
       "bo-1755248304748": {
@@ -3214,12 +3214,12 @@
               },
               "transition": {
                 "duration": 1,
-                "delay": #%7B%5Btype10_9:paragraph1_time%5D%7D#
+                "delay": "#%7B%5Btype10_9:paragraph1_time%5D%7D#"
               }
             }
           },
           "duration": 1,
-          "delay": #%7B%5Btype10_9:paragraph1_time%5D%7D#
+          "delay": "#%7B%5Btype10_9:paragraph1_time%5D%7D#"
         }
       },
       "bo-1755248312140": {
@@ -3256,12 +3256,12 @@
               },
               "transition": {
                 "duration": 1,
-                "delay": #%7B%5Btype10_9:paragraph2_time%5D%7D#
+                "delay": "#%7B%5Btype10_9:paragraph2_time%5D%7D#"
               }
             }
           },
           "duration": 1,
-          "delay": #%7B%5Btype10_9:paragraph2_time%5D%7D#
+          "delay": "#%7B%5Btype10_9:paragraph2_time%5D%7D#"
         }
       },
       "bo-1755248425860": {
@@ -3298,12 +3298,12 @@
               },
               "transition": {
                 "duration": 1,
-                "delay": #%7B%5Btype21_10:paragraph1_time%5D%7D#
+                "delay": "#%7B%5Btype21_10:paragraph1_time%5D%7D#"
               }
             }
           },
           "duration": 1,
-          "delay": #%7B%5Btype21_10:paragraph1_time%5D%7D#
+          "delay": "#%7B%5Btype21_10:paragraph1_time%5D%7D#"
         }
       },
       "bo-1755248430660": {
@@ -3340,12 +3340,12 @@
               },
               "transition": {
                 "duration": 1,
-                "delay": #%7B%5Btype21_10:paragraph2_time%5D%7D#
+                "delay": "#%7B%5Btype21_10:paragraph2_time%5D%7D#"
               }
             }
           },
           "duration": 1,
-          "delay": #%7B%5Btype21_10:paragraph2_time%5D%7D#
+          "delay": "#%7B%5Btype21_10:paragraph2_time%5D%7D#"
         }
       },
       "bo-1755248437021": {
@@ -3382,12 +3382,12 @@
               },
               "transition": {
                 "duration": 1,
-                "delay": #%7B%5Btype21_10:paragraph3_time%5D%7D#
+                "delay": "#%7B%5Btype21_10:paragraph3_time%5D%7D#"
               }
             }
           },
           "duration": 1,
-          "delay": #%7B%5Btype21_10:paragraph3_time%5D%7D#
+          "delay": "#%7B%5Btype21_10:paragraph3_time%5D%7D#"
         }
       },
       "bo-1755248522508": {
@@ -5835,8 +5835,8 @@
         "pluginId": "MultipleChoice",
         "state": {
           "nBoxes": 4,
-          "showFeedback": #{[question-feedback-enable]}#,
-          "shuffle": #{[question-feedback-shuffle]}#,
+          "showFeedback": "#{[question-feedback-enable]}#",
+          "shuffle": "#{[question-feedback-shuffle]}#",
           "buttons": "tryAgain",
           "letters": "Harfler",
           "quizColor": "rgba(0,0,0,1)",
@@ -6198,8 +6198,8 @@
         "pluginId": "MultipleAnswer",
         "state": {
           "nBoxes": 4,
-          "showFeedback": #{[question-feedback-enable]}#,
-          "shuffle": #{[question-feedback-shuffle]}#,
+          "showFeedback": "#{[question-feedback-enable]}#",
+          "shuffle": "#{[question-feedback-shuffle]}#",
           "buttons": "tryAgain",
           "letters": "Harfler",
           "allowPartialScore": false,
@@ -6562,8 +6562,8 @@
         "pluginId": "TrueFalse",
         "state": {
           "nBoxes": 4,
-          "showFeedback": #{[question-feedback-enable]}#,
-          "shuffle": #{[question-feedback-shuffle]}#,
+          "showFeedback": "#{[question-feedback-enable]}#",
+          "shuffle": "#{[question-feedback-shuffle]}#",
           "buttons": "tryAgain",
           "allowPartialScore": true,
           "quizColor": "rgba(0,0,0,1)",
@@ -8327,7 +8327,7 @@
         "background": "rgba(254,240,241,1)",
         "backgroundAttr": "full",
         "aspectRatio": "",
-        "isMandatory": #{[ai-mandatory]}#,
+        "isMandatory": "#{[ai-mandatory]}#",
         "mandatoryType": "waitForOneClick",
         "backgroundZoom": 100,
         "backgroundOpacity": 100
@@ -8346,7 +8346,7 @@
         "background": "rgba(255,255,255,1)",
         "backgroundAttr": "full",
         "aspectRatio": "",
-        "isMandatory": #{[ai-mandatory]}#,
+        "isMandatory": "#{[ai-mandatory]}#",
         "mandatoryType": "waitForSound",
         "backgroundZoom": 100,
         "backgroundOpacity": 100
@@ -8365,7 +8365,7 @@
         "background": "#ffffff",
         "backgroundAttr": "full",
         "aspectRatio": "",
-        "isMandatory": #{[ai-mandatory]}#,
+        "isMandatory": "#{[ai-mandatory]}#",
         "mandatoryType": "waitForSound",
         "backgroundZoom": 100,
         "backgroundOpacity": 100
@@ -8384,7 +8384,7 @@
         "background": "rgba(239,244,245,1)",
         "backgroundAttr": "full",
         "aspectRatio": "",
-        "isMandatory": #{[ai-mandatory]}#,
+        "isMandatory": "#{[ai-mandatory]}#",
         "mandatoryType": "waitForSound",
         "backgroundZoom": 100,
         "backgroundOpacity": 100
@@ -8403,7 +8403,7 @@
         "background": "rgba(255,255,255,1)",
         "backgroundAttr": "full",
         "aspectRatio": "",
-        "isMandatory": #{[ai-mandatory]}#,
+        "isMandatory": "#{[ai-mandatory]}#",
         "mandatoryType": "waitForSound",
         "backgroundZoom": 100,
         "backgroundOpacity": 100
@@ -8422,7 +8422,7 @@
         "background": "rgba(254,240,241,1)",
         "backgroundAttr": "full",
         "aspectRatio": "",
-        "isMandatory": #{[ai-mandatory]}#,
+        "isMandatory": "#{[ai-mandatory]}#",
         "mandatoryType": "waitForSound",
         "backgroundZoom": 100,
         "backgroundOpacity": 100
@@ -8441,7 +8441,7 @@
         "background": "rgba(255,255,255,1)",
         "backgroundAttr": "full",
         "aspectRatio": "",
-        "isMandatory": #{[ai-mandatory]}#,
+        "isMandatory": "#{[ai-mandatory]}#",
         "mandatoryType": "waitForSound",
         "backgroundZoom": 100,
         "backgroundOpacity": 100
@@ -8460,7 +8460,7 @@
         "background": "#ffffff",
         "backgroundAttr": "full",
         "aspectRatio": "",
-        "isMandatory": #{[ai-mandatory]}#,
+        "isMandatory": "#{[ai-mandatory]}#",
         "mandatoryType": "waitForSound",
         "backgroundZoom": 100,
         "backgroundOpacity": 100
@@ -8479,7 +8479,7 @@
         "background": "rgba(239,244,245,1)",
         "backgroundAttr": "full",
         "aspectRatio": "",
-        "isMandatory": #{[ai-mandatory]}#,
+        "isMandatory": "#{[ai-mandatory]}#",
         "mandatoryType": "waitForSound",
         "backgroundZoom": 100,
         "backgroundOpacity": 100
@@ -8498,7 +8498,7 @@
         "background": "rgba(239,244,245,1)",
         "backgroundAttr": "full",
         "aspectRatio": "",
-        "isMandatory": #{[ai-mandatory]}#,
+        "isMandatory": "#{[ai-mandatory]}#",
         "mandatoryType": "waitForSound",
         "backgroundZoom": 100,
         "backgroundOpacity": 100
@@ -8517,7 +8517,7 @@
         "background": "#ffffff",
         "backgroundAttr": "full",
         "aspectRatio": "",
-        "isMandatory": #{[ai-mandatory]}#,
+        "isMandatory": "#{[ai-mandatory]}#",
         "mandatoryType": "waitForSound",
         "backgroundZoom": 100,
         "backgroundOpacity": 100
@@ -8536,7 +8536,7 @@
         "background": "rgba(254,240,241,1)",
         "backgroundAttr": "full",
         "aspectRatio": "",
-        "isMandatory": #{[ai-mandatory]}#,
+        "isMandatory": "#{[ai-mandatory]}#",
         "mandatoryType": "waitForVideo",
         "backgroundZoom": 100,
         "backgroundOpacity": 100
@@ -8555,7 +8555,7 @@
         "background": "rgba(254,240,241,1)",
         "backgroundAttr": "full",
         "aspectRatio": "",
-        "isMandatory": #{[ai-mandatory]}#,
+        "isMandatory": "#{[ai-mandatory]}#",
         "mandatoryType": "waitForSound",
         "backgroundZoom": 100,
         "backgroundOpacity": 100
@@ -8574,7 +8574,7 @@
         "background": "rgba(254,240,241,1)",
         "backgroundAttr": "full",
         "aspectRatio": "",
-        "isMandatory": #{[ai-mandatory]}#,
+        "isMandatory": "#{[ai-mandatory]}#",
         "mandatoryType": "waitForAction",
         "backgroundZoom": 100,
         "backgroundOpacity": 100
@@ -8593,7 +8593,7 @@
         "background": "rgba(254,240,241,1)",
         "backgroundAttr": "full",
         "aspectRatio": "",
-        "isMandatory": #{[ai-mandatory]}#,
+        "isMandatory": "#{[ai-mandatory]}#",
         "mandatoryType": "waitForAction",
         "backgroundZoom": 100,
         "backgroundOpacity": 100
@@ -8612,7 +8612,7 @@
         "background": "rgba(254,240,241,1)",
         "backgroundAttr": "full",
         "aspectRatio": "",
-        "isMandatory": #{[ai-mandatory]}#,
+        "isMandatory": "#{[ai-mandatory]}#",
         "mandatoryType": "waitForAction",
         "backgroundZoom": 100,
         "backgroundOpacity": 100
@@ -8631,7 +8631,7 @@
         "background": "rgba(254,240,241,1)",
         "backgroundAttr": "full",
         "aspectRatio": "",
-        "isMandatory": #{[ai-mandatory]}#,
+        "isMandatory": "#{[ai-mandatory]}#",
         "mandatoryType": "waitForSound",
         "backgroundZoom": 100,
         "backgroundOpacity": 100
@@ -8653,7 +8653,7 @@
         "background": "#ffffff",
         "backgroundAttr": "",
         "autoNext": true,
-        "isMandatory": #{[ai-mandatory]}#,
+        "isMandatory": "#{[ai-mandatory]}#",
         "mandatoryType": "waitForVideo"
       }
     },
@@ -8828,10 +8828,10 @@
             "weight": 1,
             "correctAnswer": 2,
             "currentAnswer": false,
-            "showFeedback": #{[question-feedback-enable]}#,
+            "showFeedback": "#{[question-feedback-enable]}#",
             "attempted": false,
             "score": 0,
-            "shuffle": #{[question-feedback-shuffle]}#,
+            "shuffle": "#{[question-feedback-shuffle]}#",
             "quizColor": "rgba(0,0,0,1)"
           }
         },
@@ -8859,7 +8859,7 @@
             "attempted": false,
             "score": 0,
             "allowPartialScore": false,
-            "shuffle": #{[question-feedback-shuffle]}#,
+            "shuffle": "#{[question-feedback-shuffle]}#",
             "quizColor": "rgba(0,0,0,1)"
           }
         },
@@ -8928,7 +8928,7 @@
           "file": "#{[type26_1:speech]}#",
           "name": "2.mp3",
           "startTime": 0,
-          "endTime": #{[type26_1:audioduration]}#,
+          "endTime": "#{[type26_1:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -8937,7 +8937,7 @@
           "file": "#{[type27_2:speech]}#",
           "name": "3.mp3",
           "startTime": 0,
-          "endTime":  #{[type27_2:audioduration]}#,
+          "endTime": "#{[type27_2:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -8946,7 +8946,7 @@
           "file": "#{[type15_3:speech]}#",
           "name": "4.mp3",
           "startTime": 0,
-          "endTime":#{[type15_3:audioduration]}#,
+          "endTime": "#{[type15_3:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -8955,7 +8955,7 @@
           "file":  "#{[type10_4:speech]}#",
           "name": "5.mp3",
           "startTime": 0,
-          "endTime":  #{[type10_4:audioduration]}#,
+          "endTime": "#{[type10_4:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -8964,7 +8964,7 @@
           "file": "#{[type17_5:speech]}#",
           "name": "6.mp3",
           "startTime": 0,
-          "endTime": #{[type17_5:audioduration]}#,
+          "endTime": "#{[type17_5:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -8973,7 +8973,7 @@
           "file":  "#{[type28_6:speech]}#",
           "name": "7.mp3",
           "startTime": 0,
-          "endTime":#{[type28_6:audioduration]}#,
+          "endTime": "#{[type28_6:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -8982,7 +8982,7 @@
           "file":  "#{[type6_7:speech]}#",
           "name": "8.mp3",
           "startTime": 0,
-          "endTime":#{[type6_7:audioduration]}#,
+          "endTime": "#{[type6_7:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -8991,7 +8991,7 @@
           "file": "#{[type1_8:speech]}#",
           "name": "9.mp3",
           "startTime": 0,
-          "endTime": #{[type1_8:audioduration]}#,
+          "endTime": "#{[type1_8:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -9000,7 +9000,7 @@
           "file":"#{[type10_9:speech]}#",
           "name": "10.mp3",
           "startTime": 0,
-          "endTime":  #{[type10_9:audioduration]}#,
+          "endTime": "#{[type10_9:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -9009,7 +9009,7 @@
           "file": "#{[type21_10:speech]}#",
           "name": "11.mp3",
           "startTime": 0,
-          "endTime":  #{[type21_10:audioduration]}#,
+          "endTime": "#{[type21_10:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -9019,7 +9019,7 @@
           "file":"#{[type100:speech]}#",
           "name": "AI_SiraSizde.mp3",
           "startTime": 0,
-          "endTime":  #{[type100:audioduration]}#,
+          "endTime": "#{[type100:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -9028,7 +9028,7 @@
           "file": "#{[type12_12:speech]}#",
           "name": "12.mp3",
           "startTime": 0,
-          "endTime":#{[type12_12:audioduration]}#,
+          "endTime": "#{[type12_12:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -9037,7 +9037,7 @@
           "file": "#{[type13_13:speech]}#",
           "name": "13.mp3",
           "startTime": 0,
-          "endTime": #{[type13_13:audioduration]}#,
+          "endTime": "#{[type13_13:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -9046,7 +9046,7 @@
           "file":  "#{[type14_14:speech]}#",
           "name": "14.mp3",
           "startTime": 0,
-          "endTime": #{[type14_14:audioduration]}#,
+          "endTime": "#{[type14_14:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -9055,7 +9055,7 @@
           "file": "#{[type101:speech]}#",
           "name": "AI_Tebrikler.mp3",
           "startTime": 0,
-          "endTime": #{[type101:audioduration]}#,
+          "endTime": "#{[type101:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -9064,7 +9064,7 @@
           "file":  "#{[type0:speech]}#",
           "name": "1.mp3",
           "startTime": 0,
-          "endTime": #{[type0:audioduration]}#,
+          "endTime": "#{[type0:audioduration]}#",
           "volumeLevel": 1
         }
       ]
@@ -11931,7 +11931,6 @@
       "reason": "saving_state"
     },
     "filesUploaded": {
-	#{[files-uploaded]}#
       "file-1752061742799": {
         "id": "file-1752061742799",
         "url": "https://ls.elearningsolutions.net//ContentFiles/IdealStudioFiles/654_da687368-ddf8-4169-a084-2d0e9d6f3c85.png",

@@ -3513,8 +3513,8 @@
         "pluginId": "MultipleChoice",
         "state": {
           "nBoxes": 4,
-          "showFeedback": #{[question-feedback-enable]}#,
-          "shuffle": #{[question-feedback-shuffle]}#,
+          "showFeedback": "#{[question-feedback-enable]}#",
+          "shuffle": "#{[question-feedback-shuffle]}#",
           "buttons": "tryAgain",
           "letters": "Harfler",
           "quizColor": "rgba(0,0,0,1)",
@@ -3876,8 +3876,8 @@
         "pluginId": "MultipleAnswer",
         "state": {
           "nBoxes": 4,
-          "showFeedback": #{[question-feedback-enable]}#,
-          "shuffle": #{[question-feedback-shuffle]}#,
+          "showFeedback": "#{[question-feedback-enable]}#",
+          "shuffle": "#{[question-feedback-shuffle]}#",
           "buttons": "tryAgain",
           "letters": "Harfler",
           "allowPartialScore": false,
@@ -5056,7 +5056,7 @@
         "background": "rgba(0,0,0,1)",
         "backgroundAttr": "full",
         "aspectRatio": "",
-        "isMandatory": #{[ai-mandatory]}#,
+        "isMandatory": "#{[ai-mandatory]}#",
         "mandatoryType": "waitForOneClick",
         "backgroundZoom": 100,
         "backgroundOpacity": 100
@@ -5075,7 +5075,7 @@
         "background": "rgba(0,0,0,1)",
         "backgroundAttr": "full",
         "aspectRatio": "",
-        "isMandatory": #{[ai-mandatory]}#,
+        "isMandatory": "#{[ai-mandatory]}#",
         "mandatoryType": "waitForSound",
         "backgroundZoom": 100,
         "backgroundOpacity": 100
@@ -5094,7 +5094,7 @@
         "background": "rgba(0,0,0,1)",
         "backgroundAttr": "full",
         "aspectRatio": "",
-        "isMandatory": #{[ai-mandatory]}#,
+        "isMandatory": "#{[ai-mandatory]}#",
         "mandatoryType": "waitForSound",
         "backgroundZoom": 100,
         "backgroundOpacity": 100
@@ -5113,7 +5113,7 @@
         "background": "rgba(0,0,0,1)",
         "backgroundAttr": "full",
         "aspectRatio": "",
-        "isMandatory": #{[ai-mandatory]}#,
+        "isMandatory": "#{[ai-mandatory]}#",
         "mandatoryType": "waitForSound",
         "backgroundZoom": 100,
         "backgroundOpacity": 100
@@ -5132,7 +5132,7 @@
         "background": "rgba(0,0,0,1)",
         "backgroundAttr": "full",
         "aspectRatio": "",
-        "isMandatory": #{[ai-mandatory]}#,
+        "isMandatory": "#{[ai-mandatory]}#",
         "mandatoryType": "waitForSound",
         "backgroundZoom": 100,
         "backgroundOpacity": 100
@@ -5151,7 +5151,7 @@
         "background": "rgba(0,0,0,1)",
         "backgroundAttr": "full",
         "aspectRatio": "",
-        "isMandatory": #{[ai-mandatory]}#,
+        "isMandatory": "#{[ai-mandatory]}#",
         "mandatoryType": "waitForSound",
         "backgroundZoom": 100,
         "backgroundOpacity": 100
@@ -5170,7 +5170,7 @@
         "background": "rgba(0,0,0,1)",
         "backgroundAttr": "full",
         "aspectRatio": "",
-        "isMandatory": #{[ai-mandatory]}#,
+        "isMandatory": "#{[ai-mandatory]}#",
         "mandatoryType": "waitForSound",
         "backgroundZoom": 100,
         "backgroundOpacity": 100
@@ -5189,7 +5189,7 @@
         "background": "rgba(0,0,0,1)",
         "backgroundAttr": "full",
         "aspectRatio": "",
-        "isMandatory": #{[ai-mandatory]}#,
+        "isMandatory": "#{[ai-mandatory]}#",
         "mandatoryType": "waitForAction",
         "backgroundZoom": 100,
         "backgroundOpacity": 100
@@ -5208,7 +5208,7 @@
         "background": "rgba(0,0,0,1)",
         "backgroundAttr": "full",
         "aspectRatio": "",
-        "isMandatory": #{[ai-mandatory]}#,
+        "isMandatory": "#{[ai-mandatory]}#",
         "mandatoryType": "waitForAction",
         "backgroundZoom": 100,
         "backgroundOpacity": 100
@@ -5227,7 +5227,7 @@
         "background": "rgba(0,0,0,1)",
         "backgroundAttr": "full",
         "aspectRatio": "",
-        "isMandatory": #{[ai-mandatory]}#,
+        "isMandatory": "#{[ai-mandatory]}#",
         "mandatoryType": "waitForSound",
         "backgroundZoom": 100,
         "backgroundOpacity": 100
@@ -5332,10 +5332,10 @@
             "weight": 1,
             "correctAnswer": 2,
             "currentAnswer": false,
-            "showFeedback": #{[question-feedback-enable]}#,
+            "showFeedback": "#{[question-feedback-enable]}#",
             "attempted": false,
             "score": 0,
-            "shuffle": #{[question-feedback-shuffle]}#,
+            "shuffle": "#{[question-feedback-shuffle]}#",
             "quizColor": "rgba(0,0,0,1)"
           }
         },
@@ -5363,7 +5363,7 @@
             "attempted": false,
             "score": 0,
             "allowPartialScore": false,
-            "shuffle": #{[question-feedback-shuffle]}#,
+            "shuffle": "#{[question-feedback-shuffle]}#",
             "quizColor": "rgba(0,0,0,1)"
           }
         },
@@ -5390,7 +5390,7 @@
           "file": "#{[type26_1:speech]}#",
           "name": "2.mp3",
           "startTime": 0,
-          "endTime": #{[type26_1:audioduration]}#,
+          "endTime": "#{[type26_1:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -5399,7 +5399,7 @@
           "file": "#{[type21_2:speech]}#",
           "name": "3.mp3",
           "startTime": 0,
-          "endTime": #{[type21_2:audioduration]}#,
+          "endTime": "#{[type21_2:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -5408,7 +5408,7 @@
           "file": "#{[type4_3:speech]}#",
           "name": "4.mp3",
           "startTime": 0,
-          "endTime": #{[type4_3:audioduration]}#,
+          "endTime": "#{[type4_3:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -5417,7 +5417,7 @@
           "file": "#{[type21_2:speech]}#",
           "name": "3.mp3",
           "startTime": 0,
-          "endTime": #{[type21_2:audioduration]}#,
+          "endTime": "#{[type21_2:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -5426,7 +5426,7 @@
           "file": "#{[type4_3:speech]}#",
           "name": "4.mp3",
           "startTime": 0,
-          "endTime": #{[type4_3:audioduration]}#,
+          "endTime": "#{[type4_3:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -5435,7 +5435,7 @@
           "file": "#{[type28_4:speech]}#",
           "name": "5.mp3",
           "startTime": 0,
-          "endTime": #{[type28_4:audioduration]}#,
+          "endTime": "#{[type28_4:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -5444,7 +5444,7 @@
           "file": "#{[type10_5:speech]}#",
           "name": "6.mp3",
           "startTime": 0,
-          "endTime": #{[type10_5:audioduration]}#,
+          "endTime": "#{[type10_5:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -5462,7 +5462,7 @@
           "file": "#{[type10_5:speech]}#",
           "name": "6.mp3",
           "startTime": 0,
-          "endTime": #{[type10_5:audioduration]}#,
+          "endTime": "#{[type10_5:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -5481,7 +5481,7 @@
           "file": "#{[type100:speech]}#",
           "name": "AI_SiraSizde.mp3",
           "startTime": 0,
-          "endTime": #{[type100:audioduration]}#,
+          "endTime": "#{[type100:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -5490,7 +5490,7 @@
           "file": "#{[type12_6:speech]}#",
           "name": "7.mp3",
           "startTime": 0,
-          "endTime": #{[type12_6:audioduration]}#,
+          "endTime": "#{[type12_6:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -5499,7 +5499,7 @@
           "file": "#{[type13_7:speech]}#",
           "name": "8.mp3",
           "startTime": 0,
-          "endTime": #{[type13_7:audioduration]}#,
+          "endTime": "#{[type13_7:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -5517,7 +5517,7 @@
           "file": "#{[type101:speech]}#",
           "name": "AI_Tebrikler.mp3",
           "startTime": 0,
-          "endTime": #{[type101:audioduration]}#,
+          "endTime": "#{[type101:audioduration]}#",
           "volumeLevel": 1
         }
       ],
@@ -5526,7 +5526,7 @@
           "file": "#{[type0:speech]}#",
           "name": "1.mp3",
           "startTime": 0,
-          "endTime": #{[type0:audioduration]}#,
+          "endTime": "#{[type0:audioduration]}#",
           "volumeLevel": 1
         }
       ]

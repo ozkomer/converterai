@@ -338,6 +338,10 @@ const swaggerDefinition: SwaggerDefinition = {
     {
       name: 'Outputs',
       description: 'Output file management endpoints'
+    },
+    {
+      name: 'Type0',
+      description: 'Type0 (intro scene) template generation endpoints'
     }
   ]
 };

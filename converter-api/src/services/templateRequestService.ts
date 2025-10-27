@@ -108,7 +108,7 @@ export class TemplateRequestService {
       }
 
       // Template dosya yolunu oluştur
-      const templateDir = path.join(__dirname, '../../../templates', sizeKey);
+      const templateDir = path.join(process.cwd(), 'templates', sizeKey);
       const templatePath = path.join(templateDir, fileName);
 
       // Dosyanın var olup olmadığını kontrol et
@@ -116,10 +116,13 @@ export class TemplateRequestService {
         throw createError(`Template file not found: ${templatePath}`, 404);
       }
 
-      // Template'i oku (tag placeholder'ları olabilir)
+      // Template'i oku ve JSON olarak parse et
       const templateStr = await fs.readFile(templatePath, 'utf8');
+      const templateJson = JSON.parse(templateStr);
       
-      // Template'i olduğu gibi döndür (temizleme yapmadan)
+      // Box sayısını hesapla
+      const boxesCount = templateJson.boxesById ? Object.keys(templateJson.boxesById).length : 0;
+      
       const stats = await fs.stat(templatePath);
       const fileSize = `${(stats.size / 1024 / 1024).toFixed(2)} MB`;
       const lastModified = stats.mtime.toISOString();
@@ -128,13 +131,13 @@ export class TemplateRequestService {
 
       return {
         success: true,
-        template: templateStr, // Raw template string (temizlenmemiş)
+        template: templateJson, // Parsed JSON object
         metadata: {
           size: request.size,
           brand: request.brand,
           fileName,
           fileSize,
-          boxesCount: 0, // Template string olduğu için box sayısı hesaplanamıyor
+          boxesCount,
           lastModified
         }
       };
@@ -154,7 +157,7 @@ export class TemplateRequestService {
         const fileName = this.templateFiles[sizeKey as keyof typeof this.templateFiles]?.[brandKey];
         
         if (fileName) {
-          const templateDir = path.join(__dirname, '../../../templates', sizeKey);
+          const templateDir = path.join(process.cwd(), 'templates', sizeKey);
           const templatePath = path.join(templateDir, fileName);
           const exists = await fs.pathExists(templatePath);
           

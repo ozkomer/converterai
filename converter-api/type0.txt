@@ -1,0 +1,252 @@
+Type 0 Tanımlamaları
+
+Eğitimin giriş sahnesi;
+
+
+BLUE THEME;
+
+SABİTLER;
+
+Sahne index; 1
+#{[type0:title]}#:
+
+Sahnenin kendisi: 
+
+"pa-1743144216127": {
+        "id": "pa-1743144216127",
+        "breadcrumb": "hidden",
+        "doc_type": "slide",
+        "viewName": "#{[type0:title]}#",
+        "courseTitle": "hidden",
+        "documentSubtitle": "hidden",
+        "documentSubtitleContent": "Alt Başlık",
+        "documentTitle": "hidden",
+        "documentTitleContent": "",
+        "numPage": "hidden",
+        "numPageContent": 1,
+        "customSize": 0,
+        "aspectRatio": true,
+        "background": "https://ls.elearningsolutions.net//ContentFiles/IdealStudioFiles/611_e12c9d51-de9f-4d6c-925e-9dff8ad77046.png",
+        "backgroundAttr": "full",
+        "backgroundZoom": 100,
+        "backgroundOpacity": 100,
+        "isMandatory": #{[ai-mandatory]}#,
+        "mandatoryType": "waitForSound"
+      }
+
+
+Sahne içindeki text:
+
+{"box":{"id":"bo-1743144513163","parent":"pa-1743144216127","container":0,"level":0,"col":0,"row":0,"position":{"x":"47.586200000000005%","y":"30.790200000000002%","type":"absolute"},"content":{},"draggable":true,"resizable":true,"showTextEditor":false,"fragment":{},"children":[],"sortableContainers":{},"containedViews":[]},"toolbar":{"id":"bo-1743144513163","pluginId":"BasicText","state":{"__text":"%3Cp%3E%3Cspan%20style=%22font-size:3.5714285714285716em;%22%3E%3Cspan%20style=%22font-family:Alata,sans-serif;%22%3E%3Cspan%20style=%22color:#ffffff;%22%3E#%7B%5Btype0:title%5D%7D#%3C/span%3E%3C/span%3E%3C/span%3E%3C/p%3E%0A"},"structure":{"height":"auto","width":51.40380952380952,"widthUnit":"%","heightUnit":"%","rotation":0,"aspectRatio":false,"position":"absolute","x":"47.586200000000005%","y":"30.790200000000002%"},"style":{"padding":7,"backgroundColor":"rgba(255,255,255,0)","borderWidth":0,"borderStyle":"solid","borderColor":"#000000","borderRadius":0,"opacity":1},"showTextEditor":false,"position":{"x":"47.586200000000005%","y":"30.790200000000002%","type":"absolute"}},"marks":{},"childBoxes":{},"childToolbars":{}}
+
+
+#{[type0:imageurl]}#: 
+
+{"box":{"id":"bo-1743144325455","parent":"pa-1743144216127","container":0,"level":0,"col":0,"row":0,"position":{"x":"3%","y":"20.29972752043597%","type":"absolute"},"content":{},"draggable":true,"resizable":true,"showTextEditor":false,"fragment":{},"children":[],"sortableContainers":{},"containedViews":[]},"toolbar":{"id":"bo-1743144325455","pluginId":"HotspotImages","state":{"url":"#{[type0:imageurl]}#","allowDeformed":true},"structure":{"height":54.504359673024524,"width":37.18153256704981,"widthUnit":"%","heightUnit":"%","rotation":0,"aspectRatio":true,"position":"absolute","x":"11.08%","y":"24.82%"},"style":{"padding":0,"backgroundColor":"rgba(255,255,255,0)","borderWidth":0,"borderStyle":"solid","borderColor":"#000000","borderRadius":0,"opacity":1},"showTextEditor":false,"position":{"x":"3%","y":"20.29972752043597%","type":"absolute"}},"marks":{},"childBoxes":{},"childToolbars":{}}
+
+ÖZEL İÇERİKLER;
+
+-Yok-
+
+----------------------------------------------------------------------------------
+SOMPO THEME:
+
+SABİTLER;
+
+Sahne index; 2
+#{[type0:title]}#:
+
+Sahnenin Kendisi:
+
+"pa-1758891232942": {
+                "id": "pa-1758891232942",
+                "breadcrumb": "hidden",
+                "doc_type": "slide",
+                "viewName": "#{[type0:title]}#",
+                "courseTitle": "hidden",
+                "documentSubtitle": "hidden",
+                "documentSubtitleContent": "Alt Başlık",
+                "documentTitle": "hidden",
+                "documentTitleContent": "",
+                "numPage": "hidden",
+                "numPageContent": 1,
+                "customSize": 0,
+                "aspectRatio": true,
+                "background": "#ffffff",
+                "backgroundAttr": "",
+                "autoNext": true,
+                "isMandatory": #{[ai-mandatory]}#,
+                "mandatoryType": "waitForVideo"
+            }
+			
+Sahne içindeki text: 
+
+{"box":{"id":"bo-1752061938623","parent":"pa-1497983247795","container":0,"level":0,"col":0,"row":0,"position":{"x":"4.328018223234624%","y":"16.734143049932523%","type":"absolute"},"content":{},"draggable":true,"resizable":true,"showTextEditor":false,"fragment":{},"children":[],"sortableContainers":{},"containedViews":[],"textAnimation":{"animation":{"name":"Scale In","animation":{"initial":{"scale":0,"opacity":0},"animate":{"scale":1,"opacity":1},"transition":{"duration":1}}},"duration":1,"delay":0}},"toolbar":{"id":"bo-1752061938623","pluginId":"BasicText","state":{"__text":"%3Cp%3E%3Cspan%20style=%22font-family:Interphases%20Pro,sans-serif;%22%3E%3Cspan%20style=%22color:#000000;%22%3E%3Cstrong%3E%3Cspan%20style=%22font-size:3.2142857142857144em;%22%3E#%7B%5Btype0:title%5D%7D#%3C/span%3E%3C/strong%3E%3C/span%3E%3C/span%3E%3C/p%3E%0A"},"structure":{"height":"auto","width":42.55564356435644,"widthUnit":"%","heightUnit":"%","rotation":0,"aspectRatio":false,"position":"absolute","x":"6.0396%","y":"28.521099999999997%"},"style":{"padding":7,"backgroundColor":"rgba(255,255,255,0)","borderWidth":0,"borderStyle":"solid","borderColor":"#000000","borderRadius":0,"opacity":1},"showTextEditor":false,"position":{"x":"4.328018223234624%","y":"16.734143049932523%","type":"absolute"}},"marks":{},"childBoxes":{},"childToolbars":{}}
+			
+			
+#{[type0:imageurl]}#: 
+
+
+{"box":{"id":"bo-1752061776007","parent":"pa-1497983247795","container":0,"level":0,"col":0,"row":0,"position":{"x":"48.8119%","y":"10.21127309859155%","type":"absolute"},"content":{},"draggable":true,"resizable":true,"showTextEditor":false,"fragment":{},"children":[],"sortableContainers":{},"containedViews":[]},"toolbar":{"id":"bo-1752061776007","pluginId":"HotspotImages","state":{"url":"#{[type0:imageurl]}#","allowDeformed":true},"structure":{"height":86.12464788732395,"width":48.027524752475244,"widthUnit":"%","heightUnit":"%","rotation":0,"aspectRatio":true,"position":"absolute","x":"48.8119%","y":"10.21127309859155%"},"style":{"padding":0,"backgroundColor":"rgba(255,255,255,0)","borderWidth":0,"borderStyle":"solid","borderColor":"#000000","borderRadius":0,"opacity":1},"showTextEditor":false,"position":{"x":"48.8119%","y":"10.21127309859155%","type":"absolute"}},"marks":{},"childBoxes":{},"childToolbars":{}}
+
+ÖZEL İÇERİKLER;
+
+Kurum logosu:
+
+{"box":{"id":"bo-1758793517590","parent":"pa-1497983247795","container":0,"level":0,"col":0,"row":0,"position":{"x":"89.3704%","y":"0%","type":"absolute"},"content":{},"draggable":true,"resizable":true,"showTextEditor":false,"fragment":{},"children":[],"sortableContainers":{},"containedViews":[]},"toolbar":{"id":"bo-1758793517590","pluginId":"HotspotImages","state":{"url":"https://ls.elearningsolutions.net//ContentFiles/IdealStudioFiles/685_928efe89-3aa7-4369-8bc4-2d63cbd0c16b.png","allowDeformed":true},"structure":{"height":7.248573943661972,"width":10.532178217821782,"widthUnit":"%","heightUnit":"%","rotation":0,"aspectRatio":true,"position":"absolute","x":"89.3704%","y":"0%"},"style":{"padding":0,"backgroundColor":"rgba(255,255,255,0)","borderWidth":0,"borderStyle":"solid","borderColor":"#000000","borderRadius":0,"opacity":1},"showTextEditor":false,"position":{"x":"89.3704%","y":"0%","type":"absolute"}},"marks":{},"childBoxes":{},"childToolbars":{}}
+
+Başla Gif'i:
+
+{"box":{"id":"bo-1755248522508","parent":"pa-1497983247795","container":0,"level":0,"col":0,"row":0,"position":{"x":"17.02970297029703%","y":"86.26760563380282%","type":"absolute"},"content":{},"draggable":true,"resizable":true,"showTextEditor":false,"fragment":{},"children":[],"sortableContainers":{},"containedViews":[]},"toolbar":{"id":"bo-1755248522508","pluginId":"OneClick","state":{"name":"IdealStudio"},"structure":{"height":9.57306338028169,"width":14.042376237623763,"widthUnit":"%","heightUnit":"%","rotation":0,"aspectRatio":false,"position":"absolute","x":"16.9307%","y":"86.44361267605633%"},"style":{},"showTextEditor":false,"position":{"x":"17.02970297029703%","y":"86.26760563380282%","type":"absolute"}},"marks":{"rm-1755248530260":{"id":"rm-1755248530260","origin":"bo-1755248522508","title":"Yeni İşaretçi 1","connection":"pa-1752062257526","color":"#222222","connectMode":"next","displayMode":"navigate","value":"0"}},"childBoxes":{},"childToolbars":{}}
+
+
+----------------------------------------------------------------------------------
+Samsung THEME;
+
+Sahne index; 2
+#{[type0:title]}#:
+
+Sahnenin Kendisi:
+
+"pa-1497983247795": {
+        "id": "pa-1497983247795",
+        "viewName": "#{[type0:title]}#",
+        "breadcrumb": "hidden",
+        "courseTitle": "hidden",
+        "documentSubtitle": "hidden",
+        "documentSubtitleContent": "Subtitle",
+        "documentTitle": "hidden",
+        "documentTitleContent": "",
+        "numPage": "hidden",
+        "numPageContent": "",
+        "background": "rgba(0,0,0,1)",
+        "backgroundAttr": "full",
+        "aspectRatio": "",
+        "isMandatory": #{[ai-mandatory]}#,
+        "mandatoryType": "waitForOneClick",
+        "backgroundZoom": 100,
+        "backgroundOpacity": 100
+      },
+	  
+Sahne içindeki text: 
+
+{"box":{"id":"bo-1752061938623","parent":"pa-1497983247795","container":0,"level":0,"col":0,"row":0,"position":{"x":"4.328018223234624%","y":"16.734143049932523%","type":"absolute"},"content":{},"draggable":true,"resizable":true,"showTextEditor":false,"fragment":{},"children":[],"sortableContainers":{},"containedViews":[],"textAnimation":{"animation":{"name":"Wavy Text","animation":{"initial":{},"animate":{},"transition":{"duration":2},"isWavy":true}},"duration":0.5,"delay":0}},"toolbar":{"id":"bo-1752061938623","pluginId":"BasicText","state":{"__text":"%3Cp%3E%3Cspan%20style=%22color:#ffffff;%22%3E%3Cstrong%3E%3Cspan%20style=%22font-size:3.142857142857143em;%22%3E%3Cspan%20style=%22font-family:Lucida%20Sans%20Unicode,Lucida%20Grande,sans-serif;%22%3E#%7B%5Btype0:title%5D%7D#%3C/span%3E%3C/span%3E%3C/strong%3E%3C/span%3E%3C/p%3E%0A"},"structure":{"height":"auto","width":42.55564356435644,"widthUnit":"%","heightUnit":"%","rotation":0,"aspectRatio":false,"position":"absolute","x":"6.0396%","y":"28.521099999999997%"},"style":{"padding":7,"backgroundColor":"rgba(255,255,255,0)","borderWidth":0,"borderStyle":"solid","borderColor":"#000000","borderRadius":0,"opacity":1},"showTextEditor":false,"position":{"x":"4.328018223234624%","y":"16.734143049932523%","type":"absolute"}},"marks":{},"childBoxes":{},"childToolbars":{}}
+
+
+#{[type0:imageurl]}#: 
+
+
+{"box":{"id":"bo-1752061776007","parent":"pa-1497983247795","container":0,"level":0,"col":0,"row":0,"position":{"x":"48.8119%","y":"10.21127309859155%","type":"absolute"},"content":{},"draggable":true,"resizable":true,"showTextEditor":false,"fragment":{},"children":[],"sortableContainers":{},"containedViews":[]},"toolbar":{"id":"bo-1752061776007","pluginId":"HotspotImages","state":{"url":"#{[type0:imageurl]}#","allowDeformed":true},"structure":{"height":86.12464788732395,"width":48.027524752475244,"widthUnit":"%","heightUnit":"%","rotation":0,"aspectRatio":true,"position":"absolute","x":"48.8119%","y":"10.21127309859155%"},"style":{"padding":0,"backgroundColor":"rgba(255,255,255,0)","borderWidth":0,"borderStyle":"solid","borderColor":"#000000","borderRadius":0,"opacity":1},"showTextEditor":false,"position":{"x":"48.8119%","y":"10.21127309859155%","type":"absolute"}},"marks":{},"childBoxes":{},"childToolbars":{}}
+
+ÖZEL İÇERİKLER;
+
+Kurum logosu:
+
+{"box":{"id":"bo-1755636907665","parent":"pa-1497983247795","container":0,"level":0,"col":0,"row":0,"position":{"x":"87.42574257425743%","y":"0%","type":"absolute"},"content":{},"draggable":true,"resizable":true,"showTextEditor":false,"fragment":{},"children":[],"sortableContainers":{},"containedViews":[]},"toolbar":{"id":"bo-1755636907665","pluginId":"HotspotImages","state":{"url":"https://ls.elearningsolutions.net//ContentFiles/IdealStudioFiles/669_fb898668-be6b-4f2d-8498-578adc7ab03b.png","allowDeformed":true,"translate":{"x":0,"y":-20}},"structure":{"height":15.349911971830984,"width":12.41960396039604,"widthUnit":"%","heightUnit":"%","rotation":0,"aspectRatio":true,"position":"absolute","x":"38.994257425742575%","y":"19.31%"},"style":{"padding":0,"backgroundColor":"rgba(255,255,255,0)","borderWidth":0,"borderStyle":"solid","borderColor":"#000000","borderRadius":0,"opacity":1},"showTextEditor":false,"position":{"x":"87.42574257425743%","y":"0%","type":"absolute"}},"marks":{},"childBoxes":{},"childToolbars":{}}
+
+Başla Gif'i:
+
+{"box":{"id":"bo-1755248522508","parent":"pa-1497983247795","container":0,"level":0,"col":0,"row":0,"position":{"x":"16.831683168316832%","y":"86.44366197183099%","type":"absolute"},"content":{},"draggable":true,"resizable":true,"showTextEditor":false,"fragment":{},"children":[],"sortableContainers":{},"containedViews":[]},"toolbar":{"id":"bo-1755248522508","pluginId":"OneClick","state":{"name":"IdealStudio"},"structure":{"height":10.103978873239436,"width":14.447722772277228,"widthUnit":"%","heightUnit":"%","rotation":0,"aspectRatio":false,"position":"absolute","x":"17.722800000000003%","y":"67.4296%"},"style":{},"showTextEditor":false,"position":{"x":"16.831683168316832%","y":"86.44366197183099%","type":"absolute"}},"marks":{"rm-1755248530260":{"id":"rm-1755248530260","origin":"bo-1755248522508","title":"Yeni İşaretçi 1","connection":"pa-1752062257526","color":"#222222","connectMode":"next","displayMode":"navigate","value":"0"}},"childBoxes":{},"childToolbars":{}}
+
+
+----------------------------------------------------------------------------------
+
+CHAMPS THEME;
+
+SABİTLER;
+
+Sahne index; 1
+#{[type0:title]}#:
+
+Sahnenin Kendisi:
+
+"pa-1756882835_1": {
+        "aspectRatio": "true",
+        "audio_preview_enable": false,
+        "autoNext": false,
+        "background": "#ffffff",
+        "backgroundAttr": "full",
+        "breadcrumb": "hidden",
+        "courseTitle": "hidden",
+        "documentSubtitle": "hidden",
+        "documentSubtitleContent": "Alt Başlık",
+        "documentTitle": "hidden",
+        "documentTitleContent": "",
+        "id": "pa-1756882835_1",
+        "isMandatory": #{[ai-mandatory]}#,
+        "mandatoryType": "waitForSound",
+        "minTime": 0,
+        "numPage": "hidden",
+        "numPageContent": "",
+        "viewName": "#{[type0:title]}#",
+        "backgroundZoom": 100,
+        "backgroundOpacity": 100
+      },
+	  
+Sahne içindeki text;
+
+{"box":{"children":[],"col":0,"containedViews":[],"container":0,"content":[],"draggable":true,"fragment":{},"id":"bo-1756882835_1","level":0,"parent":"pa-1756882835_1","position":{"x":"53.960396039603964%","y":"40.70422535211268%","type":"absolute"},"resizable":true,"row":0,"showTextEditor":false,"sortableContainers":{}},"toolbar":{"id":"bo-1756882835_1","pluginId":"BasicText","showTextEditor":false,"state":{"__text":"%3Cp%20style=%22;font-family:Times%20New%20Roman;text-align:left;%22%3E%3Cspan%20style=%22font-size:3.5714285714285716em;%22%3E%3Cspan%20style=%22font-family:Roboto,sans-serif;%22%3E%3Cfont%20color=%22#d03f8f%22%3E#%7B%5Btype0:title%5D%7D#%3C/font%3E%3C/span%3E%3C/span%3E%3C/p%3E%0A"},"structure":{"height":"auto","width":43.2817268371582,"widthUnit":"%","heightUnit":"%","rotation":0,"aspectRatio":true,"position":"absolute","x":"54.152245%","y":"51.006866%"},"style":{"borderWidth":0,"borderColor":"#000000","borderRadius":0,"opacity":1,"padding":0,"backgroundColor":"rgba(255,255,255,0)","borderStyle":"solid"},"position":{"x":"53.960396039603964%","y":"40.70422535211268%","type":"absolute"}},"marks":{},"childBoxes":{},"childToolbars":{}}
+
+
+#{[type0:ImageUrl]}#:
+
+-YOK-
+
+
+ÖZEL İÇERİKLER;
+
+Sabit resim:
+
+{"box":{"children":[],"col":0,"containedViews":[],"container":0,"content":[],"draggable":true,"fragment":{},"id":"bo-1756882835_4","level":0,"parent":"pa-1756882835_1","position":{"x":"0%","y":"10.740005%","type":"absolute"},"resizable":true,"row":0,"showTextEditor":false,"sortableContainers":null},"toolbar":{"id":"bo-1756882835_4","pluginId":"HotspotImages","showTextEditor":false,"state":{"url":"https://ls.elearningsolutions.net/ContentFiles/IdealStudioFiles/IdealStudioPPImage638924904364234980.png","allowDeformed":true},"structure":{"height":89.25999450683594,"width":51.58622360229492,"widthUnit":"%","heightUnit":"%","rotation":0,"aspectRatio":true,"position":"absolute"},"style":{"borderWidth":0,"borderColor":"#000000","borderRadius":0,"opacity":1,"padding":0,"backgroundColor":"rgba(255,255,255,0)","borderStyle":"solid"},"position":{"x":"0%","y":"10.740005%","type":"absolute"}},"marks":{},"childBoxes":{},"childToolbars":{}}
+
+Kurum Logosu:
+
+{"box":{"children":[],"col":0,"containedViews":[],"container":0,"content":[],"draggable":true,"fragment":{},"id":"bo-1756882835_3","level":0,"parent":"pa-1756882835_1","position":{"x":"63.96243%","y":"8.791433%","type":"absolute"},"resizable":true,"row":0,"showTextEditor":false,"sortableContainers":null},"toolbar":{"id":"bo-1756882835_3","pluginId":"HotspotImages","showTextEditor":false,"state":{"url":"https://ls.elearningsolutions.net/ContentFiles/IdealStudioFiles/IdealStudioPPImage638924904363721521.png","allowDeformed":true},"structure":{"height":25.465274810791016,"width":28.379852294921875,"widthUnit":"%","heightUnit":"%","rotation":0,"aspectRatio":true,"position":"absolute"},"style":{"borderWidth":0,"borderColor":"#000000","borderRadius":0,"opacity":1,"padding":0,"backgroundColor":"rgba(255,255,255,0)","borderStyle":"solid"},"position":{"x":"63.96243%","y":"8.791433%","type":"absolute"}},"marks":{},"childBoxes":{},"childToolbars":{}}
+
+Kurum Sloganı:
+
+{"box":{"children":[],"col":0,"containedViews":[],"container":0,"content":[],"draggable":true,"fragment":{},"id":"bo-1756882835_2","level":0,"parent":"pa-1756882835_1","position":{"x":"54.152245%","y":"81.4605%","type":"absolute"},"resizable":true,"row":0,"showTextEditor":false,"sortableContainers":{}},"toolbar":{"id":"bo-1756882835_2","pluginId":"BasicText","showTextEditor":false,"state":{"__text":"%3Cp%20style=%22;font-family:Times%20New%20Roman;text-align:left;%22%3E%3Cspan%20style=%22color:#271c65;%22%3E%3Cspan%20style=%22font-size:1.7857142857142858em;%22%3E%3Cspan%20style=%22font-family:Roboto,sans-serif;%22%3E%3Cb%3E%C4%B0%C5%9Fin%20Gelece%C4%9Fini%20%C4%B0n%C5%9Fa%20Ediyoruz%3C/b%3E%3C/span%3E%3C/span%3E%3C/span%3E%3C/p%3E%0A"},"structure":{"height":"auto","width":41.980377197265625,"widthUnit":"%","heightUnit":"%","rotation":0,"aspectRatio":true,"position":"absolute","x":"54.152245%","y":"75.4605%"},"style":{"borderWidth":0,"borderColor":"#000000","borderRadius":0,"opacity":1,"padding":0,"backgroundColor":"rgba(255,255,255,0)","borderStyle":"solid"},"position":{"x":"54.152245%","y":"81.4605%","type":"absolute"}},"marks":{},"childBoxes":{},"childToolbars":{}}
+
+
+
+----------------------------------------------------------------------------------
+
+CREATIO THEME;
+
+SABİTLER;
+
+Sahne index; 1
+#{[type0:title]}#:
+
+Sahnenin Kendisi:
+
+"pa-1497983247795": {
+        "id": "pa-1497983247795",
+        "viewName": "#{[type0:title]}#",
+        "breadcrumb": "hidden",
+        "courseTitle": "hidden",
+        "documentSubtitle": "hidden",
+        "documentSubtitleContent": "Subtitle",
+        "documentTitle": "hidden",
+        "documentTitleContent": "",
+        "numPage": "hidden",
+        "numPageContent": "",
+        "background": "#ffffff",
+        "backgroundAttr": "",
+        "aspectRatio": "",
+        "isMandatory": #{[ai-mandatory]}#,
+        "mandatoryType": "waitForVideo"
+      },
+
+
+#{[type0:ImageUrl]}#:
+
+-YOK-
+
+
+ÖZEL İÇERİKLER;
+
+Tüm sahneyi kaplayan video:
+
+{"box":{"id":"bo-1757679283000","parent":"pa-1497983247795","container":0,"level":0,"col":0,"row":0,"position":{"x":"0.012376237623762377%","y":"0%","type":"absolute"},"content":{},"draggable":true,"resizable":true,"showTextEditor":false,"fragment":{},"children":[],"sortableContainers":{},"containedViews":[]},"toolbar":{"id":"bo-1757679283000","pluginId":"EnrichedPlayer","state":{"url":"https://ls.elearningsolutions.net//ContentFiles/IdealStudioFiles/683_93e5c877-86ca-4a70-9ae9-510e5dfd65fe.mp4","controls":false,"autoPlay":true},"structure":{"height":100,"width":100,"widthUnit":"%","heightUnit":"%","rotation":0,"aspectRatio":true,"position":"absolute","x":"-0.211943102970297%","y":"0.0027508%"},"style":{"borderWidth":0,"borderStyle":"solid","borderColor":"#000000","borderRadius":0,"opacity":1},"showTextEditor":false,"position":{"x":"0.012376237623762377%","y":"0%","type":"absolute"}},"marks":{},"childBoxes":{},"childToolbars":{}}
+
