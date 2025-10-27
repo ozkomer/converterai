@@ -78,7 +78,7 @@ router.get('/detailed', (_req: Request, res: Response) => {
 
 /**
  * @swagger
- * /api/health/ping2:
+ * /api/health/ping3:
  *   get:
  *     summary: Ping endpoint
  *     description: Simple ping endpoint that returns ponkponk123
@@ -95,7 +95,7 @@ router.get('/detailed', (_req: Request, res: Response) => {
  *                   type: string
  *                   example: ponkponk123
  */
-router.get('/ping2', (_req: Request, res: Response) => {
+router.get('/ping3', (_req: Request, res: Response) => {
   res.json({ message: 'ponkponk123' });
 });
 
