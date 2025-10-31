@@ -10,6 +10,7 @@ import swaggerUi from 'swagger-ui-express';
 import { conversionRoutes } from './routes/conversion';
 import { healthRoutes } from './routes/health';
 import type0Routes from './routes/type0';
+import variantRoutes from './routes/variant';
 import { errorHandler } from './middleware/errorHandler';
 import { Logger } from './utils/logger';
 import { specs } from './config/swagger';
@@ -56,6 +57,7 @@ app.get('/api-docs.json', (_req, res) => {
 app.use('/api/health', healthRoutes);
 app.use('/api/convert', conversionRoutes);
 app.use('/api/convert/type0', type0Routes);
+app.use('/api/convert/variant', variantRoutes);
 
 // Root endpoint
 app.get('/', (_req, res) => {

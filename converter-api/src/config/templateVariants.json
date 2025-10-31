@@ -1,0 +1,100 @@
+{
+  "LSCapsule": {
+    "default": {
+      "brandName": "Default",
+      "colorPalette": ["#FFFFFF", "#F5F5F5", "#333333"],
+      "background": { "style": "solid", "value": "#FFFFFF" },
+      "logo": { "present": false, "position": null, "size": "sm" },
+      "typography": { "contrast": "normal", "notes": "Neutral font styling" },
+      "media": { "video": false, "image": true },
+      "mandatory": { "isMandatory": true, "type": "waitForSound" },
+      "animations": { "level": "low", "presets": [] },
+      "layout": { "emphasis": "balanced", "headlinePlacement": "top-center" },
+      "useCases": ["genel giriş", "nötr kurumsal"]
+    },
+    "blue": {
+      "brandName": "Blue",
+      "colorPalette": ["#1E88E5", "#1976D2", "#0D47A1", "#FFFFFF"],
+      "background": { "style": "image", "value": "brand-blue-hero" },
+      "logo": { "present": true, "position": "top-right", "size": "sm" },
+      "typography": { "contrast": "high", "notes": "Dark/blue background with light text" },
+      "media": { "video": false, "image": true },
+      "mandatory": { "isMandatory": true, "type": "waitForSound" },
+      "animations": { "level": "low", "presets": [] },
+      "layout": { "emphasis": "headline", "headlinePlacement": "right/center" },
+      "useCases": ["kurumsal giriş", "eğitim başlatma"]
+    },
+    "black": {
+      "brandName": "Black",
+      "colorPalette": ["#111111", "#222222", "#FFFFFF"],
+      "background": { "style": "solid", "value": "#000000" },
+      "logo": { "present": true, "position": "top-right", "size": "sm" },
+      "typography": { "contrast": "very-high", "notes": "High contrast white on black" },
+      "media": { "video": false, "image": true },
+      "mandatory": { "isMandatory": true, "type": "waitForSound" },
+      "animations": { "level": "low", "presets": [] },
+      "layout": { "emphasis": "visual", "headlinePlacement": "center" },
+      "useCases": ["dramatic look", "vurgulu intro"]
+    },
+    "green": {
+      "brandName": "Green",
+      "colorPalette": ["#2E7D32", "#43A047", "#81C784", "#FFFFFF"],
+      "background": { "style": "solid", "value": "#FFFFFF" },
+      "logo": { "present": true, "position": "top-right", "size": "sm" },
+      "typography": { "contrast": "normal", "notes": "Positive/eco visual hints" },
+      "media": { "video": false, "image": true },
+      "mandatory": { "isMandatory": true, "type": "waitForSound" },
+      "animations": { "level": "low", "presets": [] },
+      "layout": { "emphasis": "copy", "headlinePlacement": "top-left" },
+      "useCases": ["sürdürülebilirlik", "uyumluluk"]
+    },
+    "samsung": {
+      "brandName": "Samsung",
+      "colorPalette": ["#1428A0", "#000000", "#FFFFFF"],
+      "background": { "style": "solid", "value": "#000000" },
+      "logo": { "present": true, "position": "top-right", "size": "sm" },
+      "typography": { "contrast": "high", "notes": "Samsung look & feel spacing" },
+      "media": { "video": false, "image": true },
+      "mandatory": { "isMandatory": true, "type": "waitForOneClick" },
+      "animations": { "level": "medium", "presets": ["wavyText"] },
+      "layout": { "emphasis": "brand", "headlinePlacement": "left/top" },
+      "useCases": ["markalı giriş", "ürün odaklı"]
+    },
+    "sompo": {
+      "brandName": "Sompo",
+      "colorPalette": ["#E01F26", "#000000", "#FFFFFF"],
+      "background": { "style": "solid", "value": "#FFFFFF" },
+      "logo": { "present": true, "position": "top-right", "size": "xs" },
+      "typography": { "contrast": "high", "notes": "Kırmızı vurgular, insurance theme" },
+      "media": { "video": false, "image": true },
+      "mandatory": { "isMandatory": true, "type": "waitForVideo" },
+      "animations": { "level": "medium", "presets": ["scaleIn"] },
+      "layout": { "emphasis": "quiz", "headlinePlacement": "left/top" },
+      "useCases": ["sigorta", "quiz ağırlıklı"]
+    },
+    "champs": {
+      "brandName": "Champs",
+      "colorPalette": ["#D03F8F", "#271C65", "#FFFFFF"],
+      "background": { "style": "solid", "value": "#FFFFFF" },
+      "logo": { "present": true, "position": "top-right", "size": "sm" },
+      "typography": { "contrast": "medium", "notes": "Magenta accents, bold headline" },
+      "media": { "video": false, "image": true },
+      "mandatory": { "isMandatory": true, "type": "waitForSound" },
+      "animations": { "level": "low", "presets": [] },
+      "layout": { "emphasis": "headline", "headlinePlacement": "right/middle" },
+      "useCases": ["kampanya", "canlı tema"]
+    },
+    "creatio": {
+      "brandName": "Creatio",
+      "colorPalette": ["#FFFFFF", "#000000"],
+      "background": { "style": "video", "value": "full-bleed" },
+      "logo": { "present": false, "position": null, "size": "sm" },
+      "typography": { "contrast": "high", "notes": "Clean surface, video hero" },
+      "media": { "video": true, "image": false },
+      "mandatory": { "isMandatory": true, "type": "waitForVideo" },
+      "animations": { "level": "low", "presets": [] },
+      "layout": { "emphasis": "media", "headlinePlacement": "under-hero" },
+      "useCases": ["ürün tanıtım", "hero video giriş"]
+    }
+  }
+}
