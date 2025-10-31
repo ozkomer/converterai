@@ -6,23 +6,22 @@ export class VariantApplier {
 
     const updated = JSON.parse(JSON.stringify(template));
 
-    // Apply background and mandatory to all pages in template
     for (const pageId of Object.keys(updated.pages)) {
       const page = updated.pages[pageId];
-      // Background
+
+      // Apply background
       if (feature.background.style === 'solid') {
         page.background = feature.background.value;
         page.backgroundAttr = page.backgroundAttr ?? '';
       } else if (feature.background.style === 'image') {
-        page.background = feature.background.value; // consumer should resolve to actual image url by key
+        page.background = feature.background.value;
         page.backgroundAttr = 'full';
       } else if (feature.background.style === 'video') {
-        // leave background plain; video usually handled as a full-screen box
         page.background = page.background ?? '#ffffff';
         page.backgroundAttr = page.backgroundAttr ?? '';
       }
 
-      // Mandatory
+      // Apply mandatory settings
       page.isMandatory = feature.mandatory.isMandatory;
       page.mandatoryType = feature.mandatory.type;
     }

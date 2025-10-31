@@ -48,7 +48,7 @@ export class VariantService {
   }
 
   async load(): Promise<TemplateVariants> {
-    if (this.variantsCache) return this.variantsCache as TemplateVariants;
+    if (this.variantsCache) return this.variantsCache;
     const variantsPath = await this.resolvePath();
     const raw = await fs.readFile(variantsPath, 'utf8');
     const parsed: TemplateVariants = JSON.parse(raw);
@@ -58,7 +58,7 @@ export class VariantService {
 
   async getCapsuleVariant(variant: string): Promise<VariantFeature | null> {
     const v = await this.load();
-    const key = (variant || '').toLowerCase();
-    return (v.LSCapsule as any)[key] || null;
+    const key = variant.toLowerCase();
+    return v.LSCapsule[key] || null;
   }
 }

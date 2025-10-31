@@ -2,7 +2,6 @@ export class RawTemplateAdapter {
   buildMinimalScene(raw: any): any {
     if (!raw) return { pages: {}, boxesById: {} };
 
-    // If raw already has pages/boxesById (final format), return as-is
     if (raw.pages && raw.boxesById) {
       return { pages: raw.pages, boxesById: raw.boxesById };
     }
@@ -29,7 +28,6 @@ export class RawTemplateAdapter {
       backgroundOpacity: 100
     };
 
-    // Attempt to synthesize a headline box from title
     const headlineBoxId = 'bo-variant-headline';
     const headlineBox = {
       box: {
@@ -73,7 +71,6 @@ export class RawTemplateAdapter {
     if (!raw) return null;
     if (typeof raw["training-title"] === 'string') return raw["training-title"]; 
     if (raw.title && typeof raw.title === 'string') return raw.title;
-    // try nested present/globalConfig
     if (raw.present?.globalConfig?.title) return raw.present.globalConfig.title;
     return null;
   }

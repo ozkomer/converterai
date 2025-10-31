@@ -25,23 +25,19 @@ router.post('/generate', asyncHandler(async (req: Request, res: Response) => {
 
   Logger.info(`Variant generation requested: base=${base.size}-${base.brand}, variant=${variant}`);
 
-  // Load base template as object (raw)
   const baseResp = await templateRequestService.getTemplate({ size: base.size, brand: base.brand });
   const rawTemplate = baseResp?.template;
   if (!rawTemplate) {
     throw createError('Base template could not be loaded', 500);
   }
 
-  // Adapt to minimal scene for applying variant
   const baseMinimal = adapter.buildMinimalScene(rawTemplate);
 
-  // Load variant features
   const feature = await variantService.getCapsuleVariant(variant);
   if (!feature) {
     throw createError(`Unknown variant: ${variant}`, 404);
   }
 
-  // Apply
   const generated = applier.apply(baseMinimal, feature);
 
   res.json({
