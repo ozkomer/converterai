@@ -1,0 +1,64 @@
+{
+  "base": {
+    "template": {
+      "present": {
+        "version": "3",
+        "lastActionDispatched": "INDEX_SELECT",
+        "globalConfig": {
+          "allowComments": true,
+          "allowClone": true,
+          "allowDownload": true,
+          "title": "Servo Motorlara Giriş",
+          "description": "",
+          "canvasRatio": 1.7777777777777777,
+          "minTimeProgress": 0,
+          "visorNav": {
+            "player": true,
+            "sidebar": true,
+            "keyBindings": true
+          },
+          "trackProgress": true,
+          "age": {
+            "min": 0,
+            "max": 0
+          },
+          "rights": "public",
+          "keywords": [],
+          "typicalLearningTime": {
+            "h": 0,
+            "m": 0,
+            "s": 0
+          },
+          "version": "1.0.0",
+          "thumbnail": "",
+          "structure": "linear"
+        },
+        "boxesById": {
+          "bo-1743144230423": {
+            "id": "bo-1743144230423",
+            "parent": "pa-1743144216127",
+            "container": 0,
+            "level": 0,
+            "col": 0,
+            "row": 0,
+            "position": {
+              "x": "-0.075431%",
+              "y": "55.85826839237057%",
+              "type": "absolute"
+            },
+            "content": {},
+            "draggable": true,
+            "resizable": true,
+            "showTextEditor": false,
+            "fragment": {},
+            "children": [],
+            "sortableContainers": {},
+            "containedViews": []
+          }
+        }
+      }
+    }
+  },
+  "variant": "samsung"
+}
+
