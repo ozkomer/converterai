@@ -342,6 +342,10 @@ const swaggerDefinition: SwaggerDefinition = {
     {
       name: 'Type0',
       description: 'Type0 (intro scene) template generation endpoints'
+    },
+    {
+      name: 'Scene',
+      description: 'Scene analysis and prediction endpoints'
     }
   ]
 };

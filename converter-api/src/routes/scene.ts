@@ -7,8 +7,57 @@ const router = Router();
 const scenePredictor = new ScenePredictor();
 
 /**
- * POST /api/convert/scene/analyze
- * Body: { template: {...} } veya { templatePath: "path/to/file.json" }
+ * @swagger
+ * /api/convert/scene/analyze:
+ *   post:
+ *     summary: Analyze template scenes
+ *     description: Analyze all scenes in a template and predict scene types based on box content
+ *     tags: [Scene]
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               template:
+ *                 type: object
+ *                 description: Template JSON object (optional if templatePath provided)
+ *               templatePath:
+ *                 type: string
+ *                 description: Path to template JSON file (optional if template provided)
+ *                 example: "/path/to/template.json"
+ *     responses:
+ *       200:
+ *         description: Scene analysis results
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                   example: true
+ *                 analysis:
+ *                   type: object
+ *                   properties:
+ *                     scenes:
+ *                       type: array
+ *                       items:
+ *                         type: object
+ *                     summary:
+ *                       type: object
+ *                       properties:
+ *                         totalScenes:
+ *                           type: number
+ *                         totalBoxes:
+ *                           type: number
+ *                         sceneTypes:
+ *                           type: object
+ *       400:
+ *         $ref: '#/components/responses/BadRequest'
+ *       404:
+ *         $ref: '#/components/responses/NotFound'
  */
 router.post('/analyze', asyncHandler(async (req: Request, res: Response) => {
   const { template, templatePath } = req.body || {};
@@ -42,8 +91,61 @@ router.post('/analyze', asyncHandler(async (req: Request, res: Response) => {
 }));
 
 /**
- * GET /api/convert/scene/predict/:pageId
- * Query: ?templatePath=... veya body'de template gönderilmeli
+ * @swagger
+ * /api/convert/scene/predict/{pageId}:
+ *   get:
+ *     summary: Predict scene type for a specific page
+ *     description: Analyze boxes in a specific page/scene and predict its scene type
+ *     tags: [Scene]
+ *     parameters:
+ *       - in: path
+ *         name: pageId
+ *         required: true
+ *         schema:
+ *           type: string
+ *         description: Page ID (e.g., pa-1497983247795)
+ *         example: pa-1497983247795
+ *       - in: query
+ *         name: templatePath
+ *         required: true
+ *         schema:
+ *           type: string
+ *         description: Path to template JSON file
+ *         example: "/path/to/template.json"
+ *     responses:
+ *       200:
+ *         description: Scene prediction results
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                   example: true
+ *                 pageId:
+ *                   type: string
+ *                   example: pa-1497983247795
+ *                 scene:
+ *                   type: object
+ *                   properties:
+ *                     pageId:
+ *                       type: string
+ *                     textCount:
+ *                       type: number
+ *                     imageCount:
+ *                       type: number
+ *                     audioCount:
+ *                       type: number
+ *                     videoCount:
+ *                       type: number
+ *                     estimatedSceneType:
+ *                       type: string
+ *                       example: Type26
+ *       400:
+ *         $ref: '#/components/responses/BadRequest'
+ *       404:
+ *         $ref: '#/components/responses/NotFound'
  */
 router.get('/predict/:pageId', asyncHandler(async (req: Request, res: Response) => {
   const { pageId } = req.params;
